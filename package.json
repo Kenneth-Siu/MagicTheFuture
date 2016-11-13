@@ -15,6 +15,7 @@
     "react-dom": "^15.3.2"
   },
   "devDependencies": {
+    "json-loader": "^0.5.4",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^1.2.0"
   }

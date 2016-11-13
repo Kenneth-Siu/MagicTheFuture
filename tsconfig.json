@@ -8,6 +8,7 @@
         "jsx": "react"
     },
     "files": [
-        "./src/visualSpoiler.tsx"
+        "./src/visualSpoiler.tsx",
+        "./require.d.ts"
     ]
 }
