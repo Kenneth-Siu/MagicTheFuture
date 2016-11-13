@@ -2,7 +2,7 @@
   "name": "magic-the-future",
   "version": "1.0.0",
   "description": "Website for Magic the Gathering expansion, The Future.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

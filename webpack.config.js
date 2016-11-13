@@ -1,7 +1,7 @@
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: "./src/visualSpoiler.tsx",
     output: {
-        filename: "bundle.js",
+        filename: "visualSpoilerBundle.js",
         path: __dirname + "/dist"
     },
 
