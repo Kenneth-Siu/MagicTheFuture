@@ -1,9 +1,9 @@
 import * as React from "react";
 import CardImage from "./CardImage";
 
-export interface CardProps { name: string, imageUrl: string }
+export interface CardDivProps { name: string, imageUrl: string }
 
-export default class Card extends React.Component<CardProps, {}> {
+export default class CardDiv extends React.Component<CardDivProps, {}> {
     render() {
         return (
             <div>

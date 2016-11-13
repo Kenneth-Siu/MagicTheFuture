@@ -7,8 +7,7 @@
         "target": "es5",
         "jsx": "react"
     },
-    "files": [
-        "./src/visualSpoiler.tsx",
-        "./require.d.ts"
+    "exclude": [
+        "node_modules"
     ]
 }

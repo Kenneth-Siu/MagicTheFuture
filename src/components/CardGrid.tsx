@@ -1,15 +1,21 @@
 import * as React from "react";
-import Card from "./Card";
+import CardDiv from "./CardDiv";
 import cardList from "../cardList";
+import * as _ from "lodash";
+import Card from "../Card";
 
 export interface CardGridProps {}
 
 export default class CardGrid extends React.Component<CardGridProps, {}> {
+
+    getCardElement(card: Card) {
+        return <CardDiv name={card.name} imageUrl={card.imageUrl} />;
+    }
+
     render() {
         return (
             <div>
-                <Card name="Combat Drones" imageUrl="./src/resources/images/Combat Drones.jpg" />
-                <Card name="Hoverbike" imageUrl="./src/resources/images/Hoverbike.jpg" />
+                { _.map(cardList, card => this.getCardElement(card) )}
             </div>
         );
     }
