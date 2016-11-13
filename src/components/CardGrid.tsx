@@ -9,7 +9,7 @@ export interface CardGridProps {}
 export default class CardGrid extends React.Component<CardGridProps, {}> {
 
     getCardElement(card: Card) {
-        return <CardDiv name={card.name} imageUrl={card.imageUrl} />;
+        return <CardDiv key={card.id} name={card.name} imageUrl={card.imageUrl} />;
     }
 
     render() {
