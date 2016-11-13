@@ -1,4 +1,7 @@
 dist/*
+src/resources/cardListJson.json
+src/resources/cardListWorkstation.txt
+src/resources/images/*
 
 # Created by https://www.gitignore.io/api/node
 
