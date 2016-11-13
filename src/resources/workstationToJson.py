@@ -1,4 +1,5 @@
 import traceback
+from string import digits
 
 def writeName(inputText, outputFile, cardStartIndex):
     outputFile.write('        "name": ')
@@ -11,6 +12,15 @@ def writeImageName(outputFile, name):
     outputFile.write('        "imageName": ')
     outputFile.write('"' + name.replace(',', '').replace("'", "") + '",\n')
     return
+
+def writeColor(inputText, outputFile, cardStartIndex):
+    outputFile.write('        "color": ')
+    manaCostStartIndex = inputText.find('Mana Cost:\t', cardStartIndex)
+    manaCostEndIndex = inputText.find('\n', manaCostStartIndex)
+    manaCost = inputText[manaCostStartIndex + 11:manaCostEndIndex]
+    coloredMana = manaCost.translate(None, digits + 'X')
+    color = coloredMana.join(sorted(set(coloredMana), key=coloredMana.index))
+    outputFile.write('"' + color + '",\n')
 
 def writeCollectorsNumber(inputText, outputFile, cardStartIndex):
     outputFile.write('        "id": ')
@@ -34,6 +44,7 @@ try:
         endOfNameIndex = 0
         (name, endOfNameIndex) = writeName(inputText, outputFile, cardStartIndex)
         writeImageName(outputFile, name)
+        writeColor(inputText, outputFile, cardStartIndex)
         writeCollectorsNumber(inputText, outputFile, cardStartIndex)
 
         outputFile.write('    }')

@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "C:/Python27/Python",
+            "program": "${file}",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        }
+    ]
+}
