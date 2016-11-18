@@ -1,10 +1,10 @@
 import * as React from "react";
-import CardDiv from "./CardDiv";
 import cardList from "../cardList";
 import * as _ from "lodash";
-import Card from "../Card";
 import CardGridFilters from "./CardGridFilters";
 import {ColorFilter} from "../ColorFilter";
+import Card from "../Card";
+import CardGridRow from "./CardGridRow";
 
 export interface CardGridProps {}
 
@@ -14,24 +14,43 @@ interface CardGridState {
 
 export default class CardGrid extends React.Component<CardGridProps, {}> {
 
-    state: CardGridState
-
     constructor() {
         super();
         this.state = {
-            displayedCardElementsList: _.map(cardList, card => this.getCardElement(card))
-        };
+            displayedCardElementsList: this.getCardRowElementsList(cardList)
+        }
     }
 
-    getCardElement(card: Card) {
-        return <CardDiv key={card.id} name={card.name} imageUrl={card.imageUrl} />;
-    }
+    state: CardGridState;
+    displayedCardGridRowsList: JSX.Element[];
 
     handleFilterChange(colorFilter: ColorFilter) {
-        console.log(this.state);
         const filteredCardList = _.filter(cardList, card => colorFilter.showCard(card));
-        const filteredCardElementsList = _.map(filteredCardList, card => this.getCardElement(card));
-        this.setState({displayedCardElementsList: filteredCardElementsList});
+        this.setState({displayedCardElementsList: this.getCardRowElementsList(filteredCardList)});
+    }
+
+    getCardRowElementsList(cards: Card[]) {
+        return _.map(this.getCardRowsList(cards), cardRow => this.getCardGridRowElement(cardRow));
+    }
+
+    getCardRowsList(cards: Card[]) {
+        const cardRowsList: Card[][] = [];
+        let cardRow: Card[] = [];
+        _.forEach(cards, card => {
+            cardRow.push(card);
+            if (cardRow.length >= 4) {
+                cardRowsList.push(cardRow);
+                cardRow = [];
+            }
+        })
+        if (cardRow.length > 0) {
+            cardRowsList.push(cardRow);
+        }
+        return cardRowsList;
+    }
+
+    getCardGridRowElement(cards: Card[]) {
+        return <CardGridRow key={`${_.map(cards, card => card.id)}`} cards={cards}></CardGridRow>;
     }
 
     render() {
