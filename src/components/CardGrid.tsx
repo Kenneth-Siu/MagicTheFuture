@@ -55,8 +55,12 @@ export default class CardGrid extends React.Component<CardGridProps, {}> {
 
     render() {
         return (
-            <div>
-                <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); }} />
+            <div className="page-container">
+                <div className="row">
+                    <div className="col-md-12 spoiler-grid-filters">
+                        <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); }} />
+                    </div>
+                </div>
                 {this.state.displayedCardElementsList}
             </div>
         );
