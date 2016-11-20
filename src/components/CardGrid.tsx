@@ -2,11 +2,11 @@ import * as React from "react";
 import * as _ from "lodash";
 import cardList from "../cardList";
 import CardGridFilters from "./CardGridFilters";
-import {ColorFilter} from "../ColorFilter";
+import { ColorFilter } from "../ColorFilter";
 import Card from "../Card";
 import CardDiv from "./CardDiv";
 
-export interface CardGridProps {}
+export interface CardGridProps { }
 
 interface CardGridState {
     displayedCardElementsList: JSX.Element[];
@@ -25,7 +25,7 @@ export default class CardGrid extends React.Component<CardGridProps, {}> {
 
     handleFilterChange(colorFilter: ColorFilter) {
         const filteredCardList = _.filter(cardList, card => colorFilter.showCard(card));
-        this.setState({displayedCardElementsList: this.getCardGridElements(filteredCardList)});
+        this.setState({ displayedCardElementsList: this.getCardGridElements(filteredCardList) });
     }
 
     getCardGridElements(cards: Card[]) {
@@ -37,7 +37,7 @@ export default class CardGrid extends React.Component<CardGridProps, {}> {
             <div className="page-container">
                 <div className="row">
                     <div className="col-md-12">
-                        <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); }} />
+                        <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); } } />
                     </div>
                 </div>
                 <div className="row">
