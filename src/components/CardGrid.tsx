@@ -1,10 +1,10 @@
 import * as React from "react";
-import cardList from "../cardList";
 import * as _ from "lodash";
+import cardList from "../cardList";
 import CardGridFilters from "./CardGridFilters";
 import {ColorFilter} from "../ColorFilter";
 import Card from "../Card";
-import CardGridRow from "./CardGridRow";
+import CardDiv from "./CardDiv";
 
 export interface CardGridProps {}
 
@@ -14,43 +14,22 @@ interface CardGridState {
 
 export default class CardGrid extends React.Component<CardGridProps, {}> {
 
+    state: CardGridState;
+
     constructor() {
         super();
         this.state = {
-            displayedCardElementsList: this.getCardRowElementsList(cardList)
+            displayedCardElementsList: this.getCardGridElements(cardList)
         }
     }
-
-    state: CardGridState;
-    displayedCardGridRowsList: JSX.Element[];
 
     handleFilterChange(colorFilter: ColorFilter) {
         const filteredCardList = _.filter(cardList, card => colorFilter.showCard(card));
-        this.setState({displayedCardElementsList: this.getCardRowElementsList(filteredCardList)});
+        this.setState({displayedCardElementsList: this.getCardGridElements(filteredCardList)});
     }
 
-    getCardRowElementsList(cards: Card[]) {
-        return _.map(this.getCardRowsList(cards), cardRow => this.getCardGridRowElement(cardRow));
-    }
-
-    getCardRowsList(cards: Card[]) {
-        const cardRowsList: Card[][] = [];
-        let cardRow: Card[] = [];
-        _.forEach(cards, card => {
-            cardRow.push(card);
-            if (cardRow.length >= 4) {
-                cardRowsList.push(cardRow);
-                cardRow = [];
-            }
-        })
-        if (cardRow.length > 0) {
-            cardRowsList.push(cardRow);
-        }
-        return cardRowsList;
-    }
-
-    getCardGridRowElement(cards: Card[]) {
-        return <CardGridRow key={`${_.map(cards, card => card.id)}`} cards={cards}></CardGridRow>;
+    getCardGridElements(cards: Card[]) {
+        return _.map(cards, card => <CardDiv key={card.id} name={card.name} imageUrl={card.imageUrl} />);
     }
 
     render() {
@@ -61,7 +40,11 @@ export default class CardGrid extends React.Component<CardGridProps, {}> {
                         <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); }} />
                     </div>
                 </div>
-                {this.state.displayedCardElementsList}
+                <div className="row">
+                    <div className="col-md-12 spoiler-grid-cards">
+                        {this.state.displayedCardElementsList}
+                    </div>
+                </div>
             </div>
         );
     }

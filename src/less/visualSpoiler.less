@@ -2,13 +2,18 @@
 
 div.spoiler-card {
     text-align: center;
-
-    img {
-        width: 100%;
-        max-width: 375px;
-    }
 }
 
 div.spoiler-grid-filters {
     text-align: center;
+}
+
+div.spoiler-grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+        flex: 1;
+        margin: 0.5em 1em;
+    }
 }
