@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as _ from "lodash";
-import cardList from "../cardList";
+import cardList from "../../common/cardList";
 import CardGridFilters from "./CardGridFilters";
 import { ColorFilter } from "../ColorFilter";
-import Card from "../Card";
+import Card from "../../common/Card";
 import CardDiv from "./CardDiv";
 
 export interface CardGridProps { }

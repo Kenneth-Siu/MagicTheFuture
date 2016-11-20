@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../common/Card";
 import * as _ from "lodash";
 
 export type CardFilterColor = "colorless" | "white" | "blue" | "black" | "red" | "green" | "multicolor";

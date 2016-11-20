@@ -1,7 +1,7 @@
 module.exports = {
     entry: {
-        visualSpoiler: "./src/visualSpoiler.tsx",
-        draftSim: "./src/draftSim.tsx"
+        visualSpoiler: "./src/visualSpoiler/visualSpoiler.tsx",
+        draftSim: "./src/draftSim/draftSim.tsx"
     },
     output: {
         filename: "[name].bundle.js",

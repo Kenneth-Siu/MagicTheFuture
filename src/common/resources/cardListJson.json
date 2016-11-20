@@ -1,0 +1,1418 @@
+[
+    {
+        "name": "Supervolcanic Fallout",
+        "imageName": "Supervolcanic Fallout",
+        "color": "R",
+        "id": 163
+    },
+    {
+        "name": "Vis Whip",
+        "imageName": "Vis Whip",
+        "color": "B",
+        "id": 128
+    },
+    {
+        "name": "Ion Storm",
+        "imageName": "Ion Storm",
+        "color": "R",
+        "id": 149
+    },
+    {
+        "name": "The Chronos",
+        "imageName": "The Chronos",
+        "color": "U",
+        "id": 51
+    },
+    {
+        "name": "Radiation Strike",
+        "imageName": "Radiation Strike",
+        "color": "B",
+        "id": 113
+    },
+    {
+        "name": "Lone Wanderer",
+        "imageName": "Lone Wanderer",
+        "color": "G",
+        "id": 197
+    },
+    {
+        "name": "Surprise Round",
+        "imageName": "Surprise Round",
+        "color": "B",
+        "id": 121
+    },
+    {
+        "name": "Wild Game Huntmaster",
+        "imageName": "Wild Game Huntmaster",
+        "color": "R",
+        "id": 173
+    },
+    {
+        "name": "Deep into the Subconscious",
+        "imageName": "Deep into the Subconscious",
+        "color": "G",
+        "id": 180
+    },
+    {
+        "name": "Divide",
+        "imageName": "Divide",
+        "color": "B",
+        "id": 93
+    },
+    {
+        "name": "Gestation Cycle",
+        "imageName": "Gestation Cycle",
+        "color": "G",
+        "id": 190
+    },
+    {
+        "name": "Draco Guardian",
+        "imageName": "Draco Guardian",
+        "color": "W",
+        "id": 17
+    },
+    {
+        "name": "Gambling Ring",
+        "imageName": "Gambling Ring",
+        "color": "B",
+        "id": 98
+    },
+    {
+        "name": "Warzone Reinforcements",
+        "imageName": "Warzone Reinforcements",
+        "color": "W",
+        "id": 47
+    },
+    {
+        "name": "Raise the Alarm",
+        "imageName": "Raise the Alarm",
+        "color": "W",
+        "id": 34
+    },
+    {
+        "name": "Deconstruct",
+        "imageName": "Deconstruct",
+        "color": "U",
+        "id": 55
+    },
+    {
+        "name": "Ultramagnetic Interference",
+        "imageName": "Ultramagnetic Interference",
+        "color": "G",
+        "id": 211
+    },
+    {
+        "name": "Mechanized Rampager",
+        "imageName": "Mechanized Rampager",
+        "color": "R",
+        "id": 151
+    },
+    {
+        "name": "Radium Tracker",
+        "imageName": "Radium Tracker",
+        "color": "G",
+        "id": 200
+    },
+    {
+        "name": "Mongrel Companion",
+        "imageName": "Mongrel Companion",
+        "color": "W",
+        "id": 28
+    },
+    {
+        "name": "Suspension Squad",
+        "imageName": "Suspension Squad",
+        "color": "W",
+        "id": 42
+    },
+    {
+        "name": "Dropship",
+        "imageName": "Dropship",
+        "color": "W",
+        "id": 18
+    },
+    {
+        "name": "Helios Satellite",
+        "imageName": "Helios Satellite",
+        "color": "W",
+        "id": 23
+    },
+    {
+        "name": "Undercover Agent",
+        "imageName": "Undercover Agent",
+        "color": "W",
+        "id": 45
+    },
+    {
+        "name": "Head Detective",
+        "imageName": "Head Detective",
+        "color": "W",
+        "id": 22
+    },
+    {
+        "name": "The Hemera",
+        "imageName": "The Hemera",
+        "color": "W",
+        "id": 24
+    },
+    {
+        "name": "Response Team",
+        "imageName": "Response Team",
+        "color": "W",
+        "id": 36
+    },
+    {
+        "name": "Cultural Renaissance",
+        "imageName": "Cultural Renaissance",
+        "color": "W",
+        "id": 15
+    },
+    {
+        "name": "Cryonics Facility",
+        "imageName": "Cryonics Facility",
+        "color": "W",
+        "id": 14
+    },
+    {
+        "name": "Quartec Class Carrier",
+        "imageName": "Quartec Class Carrier",
+        "color": "W",
+        "id": 33
+    },
+    {
+        "name": "Remote Paralyzer",
+        "imageName": "Remote Paralyzer",
+        "color": "W",
+        "id": 35
+    },
+    {
+        "name": "Skysnare Squad",
+        "imageName": "Skysnare Squad",
+        "color": "W",
+        "id": 40
+    },
+    {
+        "name": "Heroic Act",
+        "imageName": "Heroic Act",
+        "color": "W",
+        "id": 25
+    },
+    {
+        "name": "Keep the Peace",
+        "imageName": "Keep the Peace",
+        "color": "W",
+        "id": 26
+    },
+    {
+        "name": "Supercharge",
+        "imageName": "Supercharge",
+        "color": "U",
+        "id": 82
+    },
+    {
+        "name": "Migratory City",
+        "imageName": "Migratory City",
+        "color": "U",
+        "id": 70
+    },
+    {
+        "name": "Atmospheric Survey Net",
+        "imageName": "Atmospheric Survey Net",
+        "color": "U",
+        "id": 50
+    },
+    {
+        "name": "Overwhelm Psyche",
+        "imageName": "Overwhelm Psyche",
+        "color": "U",
+        "id": 74
+    },
+    {
+        "name": "Collapse Consciousness",
+        "imageName": "Collapse Consciousness",
+        "color": "U",
+        "id": 53
+    },
+    {
+        "name": "Coordinate Scrambler",
+        "imageName": "Coordinate Scrambler",
+        "color": "U",
+        "id": 54
+    },
+    {
+        "name": "Plasma Reclaimer",
+        "imageName": "Plasma Reclaimer",
+        "color": "U",
+        "id": 75
+    },
+    {
+        "name": "Ambassadorship",
+        "imageName": "Ambassadorship",
+        "color": "U",
+        "id": 48
+    },
+    {
+        "name": "React",
+        "imageName": "React",
+        "color": "U",
+        "id": 76
+    },
+    {
+        "name": "Echo Bomber",
+        "imageName": "Echo Bomber",
+        "color": "U",
+        "id": 58
+    },
+    {
+        "name": "Fragment Firewall",
+        "imageName": "Fragment Firewall",
+        "color": "U",
+        "id": 62
+    },
+    {
+        "name": "W.A.S.P. Advance Prototype",
+        "imageName": "W.A.S.P. Advance Prototype",
+        "color": "U",
+        "id": 89
+    },
+    {
+        "name": "Lost in Space",
+        "imageName": "Lost in Space",
+        "color": "U",
+        "id": 69
+    },
+    {
+        "name": "Ryley, Guerrilla Zero",
+        "imageName": "Ryley Guerrilla Zero",
+        "color": "GGWW",
+        "id": 225
+    },
+    {
+        "name": "Punish",
+        "imageName": "Punish",
+        "color": "W",
+        "id": 32
+    },
+    {
+        "name": "Undercity Janitor",
+        "imageName": "Undercity Janitor",
+        "color": "B",
+        "id": 126
+    },
+    {
+        "name": "Corporate Spy",
+        "imageName": "Corporate Spy",
+        "color": "B",
+        "id": 91
+    },
+    {
+        "name": "State of Disrepair",
+        "imageName": "State of Disrepair",
+        "color": "B",
+        "id": 120
+    },
+    {
+        "name": "Double Agent",
+        "imageName": "Double Agent",
+        "color": "B",
+        "id": 94
+    },
+    {
+        "name": "Deprivation Torture",
+        "imageName": "Deprivation Torture",
+        "color": "B",
+        "id": 92
+    },
+    {
+        "name": "Moonlight Strider",
+        "imageName": "Moonlight Strider",
+        "color": "B",
+        "id": 108
+    },
+    {
+        "name": "Whisperer of Secrets",
+        "imageName": "Whisperer of Secrets",
+        "color": "B",
+        "id": 131
+    },
+    {
+        "name": "Tragedy of the Great War",
+        "imageName": "Tragedy of the Great War",
+        "color": "B",
+        "id": 125
+    },
+    {
+        "name": "Urban Revenant",
+        "imageName": "Urban Revenant",
+        "color": "B",
+        "id": 127
+    },
+    {
+        "name": "Smuggling Routes",
+        "imageName": "Smuggling Routes",
+        "color": "B",
+        "id": 119
+    },
+    {
+        "name": "Grasp of The Left Hand",
+        "imageName": "Grasp of The Left Hand",
+        "color": "B",
+        "id": 99
+    },
+    {
+        "name": "Neural Devourer",
+        "imageName": "Neural Devourer",
+        "color": "B",
+        "id": 110
+    },
+    {
+        "name": "Mortality",
+        "imageName": "Mortality",
+        "color": "B",
+        "id": 109
+    },
+    {
+        "name": "Hypercollider",
+        "imageName": "Hypercollider",
+        "color": "B",
+        "id": 101
+    },
+    {
+        "name": "Peacekeeper",
+        "imageName": "Peacekeeper",
+        "color": "B",
+        "id": 111
+    },
+    {
+        "name": "The Tartaros",
+        "imageName": "The Tartaros",
+        "color": "B",
+        "id": 123
+    },
+    {
+        "name": "Representative Vuissance",
+        "imageName": "Representative Vuissance",
+        "color": "WWBB",
+        "id": 227
+    },
+    {
+        "name": "Guerilla Fighters",
+        "imageName": "Guerilla Fighters",
+        "color": "R",
+        "id": 145
+    },
+    {
+        "name": "Induce Psychopathy",
+        "imageName": "Induce Psychopathy",
+        "color": "R",
+        "id": 147
+    },
+    {
+        "name": "Barrel Down",
+        "imageName": "Barrel Down",
+        "color": "R",
+        "id": 134
+    },
+    {
+        "name": "Gauss Scrapgunner",
+        "imageName": "Gauss Scrapgunner",
+        "color": "R",
+        "id": 144
+    },
+    {
+        "name": "Bergstadt Roboticists",
+        "imageName": "Bergstadt Roboticists",
+        "color": "R",
+        "id": 136
+    },
+    {
+        "name": "Warapur Company Heavy",
+        "imageName": "Warapur Company Heavy",
+        "color": "R",
+        "id": 171
+    },
+    {
+        "name": "Walking Furnace",
+        "imageName": "Walking Furnace",
+        "color": "R",
+        "id": 168
+    },
+    {
+        "name": "Electric Arc",
+        "imageName": "Electric Arc",
+        "color": "R",
+        "id": 140
+    },
+    {
+        "name": "Rocket Salvo",
+        "imageName": "Rocket Salvo",
+        "color": "R",
+        "id": 157
+    },
+    {
+        "name": "Gravitic Collector Alpha",
+        "imageName": "Gravitic Collector Alpha",
+        "color": "UURR",
+        "id": 228
+    },
+    {
+        "name": "The Ananke",
+        "imageName": "The Ananke",
+        "color": "R",
+        "id": 133
+    },
+    {
+        "name": "Insist",
+        "imageName": "Insist",
+        "color": "R",
+        "id": 148
+    },
+    {
+        "name": "Unstable Nanoreplicators",
+        "imageName": "Unstable Nanoreplicators",
+        "color": "R",
+        "id": 166
+    },
+    {
+        "name": "Psionics Augmentation",
+        "imageName": "Psionics Augmentation",
+        "color": "R",
+        "id": 154
+    },
+    {
+        "name": "Sewer Monster",
+        "imageName": "Sewer Monster",
+        "color": "G",
+        "id": 205
+    },
+    {
+        "name": "Hoverbike",
+        "imageName": "Hoverbike",
+        "color": "",
+        "id": 2
+    },
+    {
+        "name": "Growth Genetics",
+        "imageName": "Growth Genetics",
+        "color": "G",
+        "id": 191
+    },
+    {
+        "name": "Terraforming Works",
+        "imageName": "Terraforming Works",
+        "color": "G",
+        "id": 210
+    },
+    {
+        "name": "Wanderer Caravans",
+        "imageName": "Wanderer Caravans",
+        "color": "G",
+        "id": 215
+    },
+    {
+        "name": "Dominate",
+        "imageName": "Dominate",
+        "color": "G",
+        "id": 182
+    },
+    {
+        "name": "Neural Suppressor",
+        "imageName": "Neural Suppressor",
+        "color": "G",
+        "id": 199
+    },
+    {
+        "name": "The Kishar",
+        "imageName": "The Kishar",
+        "color": "G",
+        "id": 193
+    },
+    {
+        "name": "Genome Toggle",
+        "imageName": "Genome Toggle",
+        "color": "G",
+        "id": 189
+    },
+    {
+        "name": "Selfdestruct Sequence",
+        "imageName": "Selfdestruct Sequence",
+        "color": "R",
+        "id": 159
+    },
+    {
+        "name": "Kushak Artifact",
+        "imageName": "Kushak Artifact",
+        "color": "G",
+        "id": 194
+    },
+    {
+        "name": "Fleet Overseer",
+        "imageName": "Fleet Overseer",
+        "color": "W",
+        "id": 20
+    },
+    {
+        "name": "Voice of the Congregation",
+        "imageName": "Voice of the Congregation",
+        "color": "W",
+        "id": 46
+    },
+    {
+        "name": "Backalley Trafficker",
+        "imageName": "Backalley Trafficker",
+        "color": "B",
+        "id": 90
+    },
+    {
+        "name": "Honored Wurmcaller",
+        "imageName": "Honored Wurmcaller",
+        "color": "RRGG",
+        "id": 223
+    },
+    {
+        "name": "Strongarm Tactics",
+        "imageName": "Strongarm Tactics",
+        "color": "G",
+        "id": 207
+    },
+    {
+        "name": "Reverse Gravity",
+        "imageName": "Reverse Gravity",
+        "color": "G",
+        "id": 202
+    },
+    {
+        "name": "Defense Protocols",
+        "imageName": "Defense Protocols",
+        "color": "G",
+        "id": 181
+    },
+    {
+        "name": "Slipstream Hunters",
+        "imageName": "Slipstream Hunters",
+        "color": "R",
+        "id": 161
+    },
+    {
+        "name": "Reverse Polarity",
+        "imageName": "Reverse Polarity",
+        "color": "R",
+        "id": 155
+    },
+    {
+        "name": "Escape Velocity",
+        "imageName": "Escape Velocity",
+        "color": "U",
+        "id": 60
+    },
+    {
+        "name": "Tactical Freeze Ray",
+        "imageName": "Tactical Freeze Ray",
+        "color": "U",
+        "id": 84
+    },
+    {
+        "name": "Observation Blimp",
+        "imageName": "Observation Blimp",
+        "color": "W",
+        "id": 29
+    },
+    {
+        "name": "Police Badge",
+        "imageName": "Police Badge",
+        "color": "W",
+        "id": 30
+    },
+    {
+        "name": "Warapur Company Flagship",
+        "imageName": "Warapur Company Flagship",
+        "color": "R",
+        "id": 170
+    },
+    {
+        "name": "Cloud Darter",
+        "imageName": "Cloud Darter",
+        "color": "U",
+        "id": 52
+    },
+    {
+        "name": "Research Head Imatsu",
+        "imageName": "Research Head Imatsu",
+        "color": "GGUU",
+        "id": 234
+    },
+    {
+        "name": "Thousand Spares",
+        "imageName": "Thousand Spares",
+        "color": "BBRR",
+        "id": 220
+    },
+    {
+        "name": "High Judge Zephynius",
+        "imageName": "High Judge Zephynius",
+        "color": "WWUU",
+        "id": 216
+    },
+    {
+        "name": "Agent Magpie",
+        "imageName": "Agent Magpie",
+        "color": "RRWW",
+        "id": 232
+    },
+    {
+        "name": "Titan of Shisuku Sewers",
+        "imageName": "Titan of Shisuku Sewers",
+        "color": "BBGG",
+        "id": 231
+    },
+    {
+        "name": "Sewer Slitherer",
+        "imageName": "Sewer Slitherer",
+        "color": "B",
+        "id": 115
+    },
+    {
+        "name": "Laser Precision",
+        "imageName": "Laser Precision",
+        "color": "B",
+        "id": 103
+    },
+    {
+        "name": "Chase Down",
+        "imageName": "Chase Down",
+        "color": "G",
+        "id": 179
+    },
+    {
+        "name": "Wings of the Law",
+        "imageName": "Wings of the Law",
+        "color": "WWUU",
+        "id": 217
+    },
+    {
+        "name": "Twilight Strider",
+        "imageName": "Twilight Strider",
+        "color": "UUBB",
+        "id": 218
+    },
+    {
+        "name": "Scrap Ferries",
+        "imageName": "Scrap Ferries",
+        "color": "UURR",
+        "id": 229
+    },
+    {
+        "name": "Warapur Protection Service",
+        "imageName": "Warapur Protection Service",
+        "color": "BBRR",
+        "id": 221
+    },
+    {
+        "name": "Sewer Dredgers",
+        "imageName": "Sewer Dredgers",
+        "color": "BBGG",
+        "id": 230
+    },
+    {
+        "name": "Canyon Skitterer",
+        "imageName": "Canyon Skitterer",
+        "color": "RRGG",
+        "id": 222
+    },
+    {
+        "name": "Baljurashi Irregulars",
+        "imageName": "Baljurashi Irregulars",
+        "color": "RRWW",
+        "id": 233
+    },
+    {
+        "name": "Rooftop Misdirector",
+        "imageName": "Rooftop Misdirector",
+        "color": "GGWW",
+        "id": 224
+    },
+    {
+        "name": "Troposphere Drifter",
+        "imageName": "Troposphere Drifter",
+        "color": "GGUU",
+        "id": 235
+    },
+    {
+        "name": "Publicity Officer",
+        "imageName": "Publicity Officer",
+        "color": "WWBB",
+        "id": 226
+    },
+    {
+        "name": "Whisper, the Cleaner",
+        "imageName": "Whisper the Cleaner",
+        "color": "UUBB",
+        "id": 219
+    },
+    {
+        "name": "Mesosphere Dancer",
+        "imageName": "Mesosphere Dancer",
+        "color": "W",
+        "id": 27
+    },
+    {
+        "name": "Sand Sappers",
+        "imageName": "Sand Sappers",
+        "color": "W",
+        "id": 38
+    },
+    {
+        "name": "Baljurashi Watchmen",
+        "imageName": "Baljurashi Watchmen",
+        "color": "W",
+        "id": 6
+    },
+    {
+        "name": "Cache Mapper",
+        "imageName": "Cache Mapper",
+        "color": "W",
+        "id": 9
+    },
+    {
+        "name": "Community Officer",
+        "imageName": "Community Officer",
+        "color": "W",
+        "id": 11
+    },
+    {
+        "name": "Provision Supplier",
+        "imageName": "Provision Supplier",
+        "color": "W",
+        "id": 31
+    },
+    {
+        "name": "Biomech Corps",
+        "imageName": "Biomech Corps",
+        "color": "W",
+        "id": 8
+    },
+    {
+        "name": "Engine Welder",
+        "imageName": "Engine Welder",
+        "color": "U",
+        "id": 59
+    },
+    {
+        "name": "Thought Dampening Unit",
+        "imageName": "Thought Dampening Unit",
+        "color": "U",
+        "id": 85
+    },
+    {
+        "name": "Riptide Illuminator",
+        "imageName": "Riptide Illuminator",
+        "color": "U",
+        "id": 79
+    },
+    {
+        "name": "Refractive Skysoarer",
+        "imageName": "Refractive Skysoarer",
+        "color": "U",
+        "id": 78
+    },
+    {
+        "name": "Mindmelded Sysadmin",
+        "imageName": "Mindmelded Sysadmin",
+        "color": "U",
+        "id": 71
+    },
+    {
+        "name": "Guidance Pods",
+        "imageName": "Guidance Pods",
+        "color": "U",
+        "id": 66
+    },
+    {
+        "name": "Arrester Drone",
+        "imageName": "Arrester Drone",
+        "color": "U",
+        "id": 49
+    },
+    {
+        "name": "Reconstruction Specialist",
+        "imageName": "Reconstruction Specialist",
+        "color": "U",
+        "id": 77
+    },
+    {
+        "name": "Kushak Exile",
+        "imageName": "Kushak Exile",
+        "color": "U",
+        "id": 68
+    },
+    {
+        "name": "Undercroft Winder",
+        "imageName": "Undercroft Winder",
+        "color": "U",
+        "id": 87
+    },
+    {
+        "name": "Frontline Eviscerator",
+        "imageName": "Frontline Eviscerator",
+        "color": "B",
+        "id": 97
+    },
+    {
+        "name": "Rumor Marketer",
+        "imageName": "Rumor Marketer",
+        "color": "B",
+        "id": 114
+    },
+    {
+        "name": "Warapur Security Detail",
+        "imageName": "Warapur Security Detail",
+        "color": "B",
+        "id": 129
+    },
+    {
+        "name": "Surveillance Craft",
+        "imageName": "Surveillance Craft",
+        "color": "B",
+        "id": 122
+    },
+    {
+        "name": "Prototype Evader",
+        "imageName": "Prototype Evader",
+        "color": "B",
+        "id": 112
+    },
+    {
+        "name": "Mindmeld Torturer",
+        "imageName": "Mindmeld Torturer",
+        "color": "B",
+        "id": 107
+    },
+    {
+        "name": "Figment of Death",
+        "imageName": "Figment of Death",
+        "color": "B",
+        "id": 96
+    },
+    {
+        "name": "Shisuku Enforcer",
+        "imageName": "Shisuku Enforcer",
+        "color": "B",
+        "id": 116
+    },
+    {
+        "name": "Throatslitter",
+        "imageName": "Throatslitter",
+        "color": "B",
+        "id": 124
+    },
+    {
+        "name": "Charge Captain",
+        "imageName": "Charge Captain",
+        "color": "R",
+        "id": 138
+    },
+    {
+        "name": "Basement Patrol",
+        "imageName": "Basement Patrol",
+        "color": "R",
+        "id": 135
+    },
+    {
+        "name": "Adopted Wanderer",
+        "imageName": "Adopted Wanderer",
+        "color": "R",
+        "id": 132
+    },
+    {
+        "name": "Supply Runner",
+        "imageName": "Supply Runner",
+        "color": "R",
+        "id": 164
+    },
+    {
+        "name": "Slagthrower",
+        "imageName": "Slagthrower",
+        "color": "R",
+        "id": 160
+    },
+    {
+        "name": "Warapur Company Duo",
+        "imageName": "Warapur Company Duo",
+        "color": "R",
+        "id": 169
+    },
+    {
+        "name": "Blitz Agent",
+        "imageName": "Blitz Agent",
+        "color": "R",
+        "id": 137
+    },
+    {
+        "name": "Octopus Squad",
+        "imageName": "Octopus Squad",
+        "color": "R",
+        "id": 152
+    },
+    {
+        "name": "Ohm Wrecker",
+        "imageName": "Ohm Wrecker",
+        "color": "R",
+        "id": 153
+    },
+    {
+        "name": "Salvation Class Warship",
+        "imageName": "Salvation Class Warship",
+        "color": "W",
+        "id": 37
+    },
+    {
+        "name": "Exiled Xenologist",
+        "imageName": "Exiled Xenologist",
+        "color": "U",
+        "id": 61
+    },
+    {
+        "name": "Covering Fire",
+        "imageName": "Covering Fire",
+        "color": "W",
+        "id": 12
+    },
+    {
+        "name": "Eviction Order",
+        "imageName": "Eviction Order",
+        "color": "W",
+        "id": 19
+    },
+    {
+        "name": "Crash Landing",
+        "imageName": "Crash Landing",
+        "color": "W",
+        "id": 13
+    },
+    {
+        "name": "Time Traveller",
+        "imageName": "Time Traveller",
+        "color": "W",
+        "id": 43
+    },
+    {
+        "name": "Ventilation Shaft",
+        "imageName": "Ventilation Shaft",
+        "color": "U",
+        "id": 88
+    },
+    {
+        "name": "Execute Takeover Protocol",
+        "imageName": "Execute Takeover Protocol",
+        "color": "R",
+        "id": 141
+    },
+    {
+        "name": "Umida Incorporated",
+        "imageName": "Umida Incorporated",
+        "color": "G",
+        "id": 212
+    },
+    {
+        "name": "Engineered Endemic",
+        "imageName": "Engineered Endemic",
+        "color": "B",
+        "id": 95
+    },
+    {
+        "name": "Comms Disruptor",
+        "imageName": "Comms Disruptor",
+        "color": "W",
+        "id": 10
+    },
+    {
+        "name": "Frantic Filibustering",
+        "imageName": "Frantic Filibustering",
+        "color": "U",
+        "id": 63
+    },
+    {
+        "name": "Slipstream Distorter",
+        "imageName": "Slipstream Distorter",
+        "color": "U",
+        "id": 81
+    },
+    {
+        "name": "Time Loop",
+        "imageName": "Time Loop",
+        "color": "U",
+        "id": 86
+    },
+    {
+        "name": "Nanoreplicator Zero",
+        "imageName": "Nanoreplicator Zero",
+        "color": "U",
+        "id": 72
+    },
+    {
+        "name": "Neural Implants",
+        "imageName": "Neural Implants",
+        "color": "U",
+        "id": 73
+    },
+    {
+        "name": "Growing Tanks",
+        "imageName": "Growing Tanks",
+        "color": "B",
+        "id": 100
+    },
+    {
+        "name": "Supercoolant Technician",
+        "imageName": "Supercoolant Technician",
+        "color": "U",
+        "id": 83
+    },
+    {
+        "name": "Screeching Terror",
+        "imageName": "Screeching Terror",
+        "color": "G",
+        "id": 204
+    },
+    {
+        "name": "Ecosystem Collapse",
+        "imageName": "Ecosystem Collapse",
+        "color": "G",
+        "id": 183
+    },
+    {
+        "name": "Sewer Unit",
+        "imageName": "Sewer Unit",
+        "color": "G",
+        "id": 206
+    },
+    {
+        "name": "Lifestrider",
+        "imageName": "Lifestrider",
+        "color": "G",
+        "id": 196
+    },
+    {
+        "name": "Beast of Burden",
+        "imageName": "Beast of Burden",
+        "color": "G",
+        "id": 175
+    },
+    {
+        "name": "Urban Ravager",
+        "imageName": "Urban Ravager",
+        "color": "G",
+        "id": 214
+    },
+    {
+        "name": "SAM Team",
+        "imageName": "SAM Team",
+        "color": "G",
+        "id": 203
+    },
+    {
+        "name": "Diplomat's Prerogative",
+        "imageName": "Diplomats Prerogative",
+        "color": "W",
+        "id": 16
+    },
+    {
+        "name": "Support Team",
+        "imageName": "Support Team",
+        "color": "G",
+        "id": 209
+    },
+    {
+        "name": "Frontier Anatomist",
+        "imageName": "Frontier Anatomist",
+        "color": "G",
+        "id": 188
+    },
+    {
+        "name": "Supply Scavengers",
+        "imageName": "Supply Scavengers",
+        "color": "G",
+        "id": 208
+    },
+    {
+        "name": "Escaped Test Subject",
+        "imageName": "Escaped Test Subject",
+        "color": "G",
+        "id": 184
+    },
+    {
+        "name": "Brood Ambush",
+        "imageName": "Brood Ambush",
+        "color": "G",
+        "id": 178
+    },
+    {
+        "name": "Unstable Growth",
+        "imageName": "Unstable Growth",
+        "color": "G",
+        "id": 213
+    },
+    {
+        "name": "The Left Hand",
+        "imageName": "The Left Hand",
+        "color": "B",
+        "id": 104
+    },
+    {
+        "name": "Research Team Basirah",
+        "imageName": "Research Team Basirah",
+        "color": "G",
+        "id": 201
+    },
+    {
+        "name": "Swallowers of Civilization",
+        "imageName": "Swallowers of Civilization",
+        "color": "",
+        "id": 5
+    },
+    {
+        "name": "Bioarchitect",
+        "imageName": "Bioarchitect",
+        "color": "G",
+        "id": 176
+    },
+    {
+        "name": "Extraterrestrial Discovery",
+        "imageName": "Extraterrestrial Discovery",
+        "color": "G",
+        "id": 187
+    },
+    {
+        "name": "Myth of Baljurashi",
+        "imageName": "Myth of Baljurashi",
+        "color": "G",
+        "id": 198
+    },
+    {
+        "name": "Experiment T.I.T.A.N.",
+        "imageName": "Experiment T.I.T.A.N.",
+        "color": "G",
+        "id": 185
+    },
+    {
+        "name": "Kushak Brood Warden",
+        "imageName": "Kushak Brood Warden",
+        "color": "G",
+        "id": 195
+    },
+    {
+        "name": "Badawi Trooper",
+        "imageName": "Badawi Trooper",
+        "color": "G",
+        "id": 174
+    },
+    {
+        "name": "Biosample Courier",
+        "imageName": "Biosample Courier",
+        "color": "G",
+        "id": 177
+    },
+    {
+        "name": "The Free Thinkers",
+        "imageName": "The Free Thinkers",
+        "color": "R",
+        "id": 143
+    },
+    {
+        "name": "District 16 High Court",
+        "imageName": "District 16 High Court",
+        "color": "U",
+        "id": 57
+    },
+    {
+        "name": "Bergstadt Police Department ",
+        "imageName": "Bergstadt Police Department ",
+        "color": "W",
+        "id": 7
+    },
+    {
+        "name": "Combined Effort",
+        "imageName": "Combined Effort",
+        "color": "R",
+        "id": 139
+    },
+    {
+        "name": "Threaten",
+        "imageName": "Threaten",
+        "color": "R",
+        "id": 165
+    },
+    {
+        "name": "Vulcan Devastators",
+        "imageName": "Vulcan Devastators",
+        "color": "R",
+        "id": 167
+    },
+    {
+        "name": "Supply-Line Jet",
+        "imageName": "Supply-Line Jet",
+        "color": "W",
+        "id": 41
+    },
+    {
+        "name": "Silent Infiltrator",
+        "imageName": "Silent Infiltrator",
+        "color": "B",
+        "id": 117
+    },
+    {
+        "name": "Speed Demon",
+        "imageName": "Speed Demon",
+        "color": "R",
+        "id": 162
+    },
+    {
+        "name": "Financier Cutthroat",
+        "imageName": "Financier Cutthroat",
+        "color": "R",
+        "id": 142
+    },
+    {
+        "name": "Rip Space-Time",
+        "imageName": "Rip Space-Time",
+        "color": "R",
+        "id": 156
+    },
+    {
+        "name": "Market Manipulation",
+        "imageName": "Market Manipulation",
+        "color": "B",
+        "id": 105
+    },
+    {
+        "name": "Situation Room",
+        "imageName": "Situation Room",
+        "color": "W",
+        "id": 39
+    },
+    {
+        "name": "Turn the Tide of Battle",
+        "imageName": "Turn the Tide of Battle",
+        "color": "W",
+        "id": 44
+    },
+    {
+        "name": "Glitch in Space-Time",
+        "imageName": "Glitch in Space-Time",
+        "color": "U",
+        "id": 65
+    },
+    {
+        "name": "Interrogation Process",
+        "imageName": "Interrogation Process",
+        "color": "B",
+        "id": 102
+    },
+    {
+        "name": "Metamorphotic Membrane",
+        "imageName": "Metamorphotic Membrane",
+        "color": "B",
+        "id": 106
+    },
+    {
+        "name": "Sink into the Oceans",
+        "imageName": "Sink into the Oceans",
+        "color": "B",
+        "id": 118
+    },
+    {
+        "name": "Week of Hate",
+        "imageName": "Week of Hate",
+        "color": "R",
+        "id": 172
+    },
+    {
+        "name": "Genetic Contortion",
+        "imageName": "Genetic Contortion",
+        "color": "U",
+        "id": 64
+    },
+    {
+        "name": "Deep Freeze",
+        "imageName": "Deep Freeze",
+        "color": "U",
+        "id": 56
+    },
+    {
+        "name": "Scrapyard Salvager",
+        "imageName": "Scrapyard Salvager",
+        "color": "R",
+        "id": 158
+    },
+    {
+        "name": "Iridium Throwing Knife",
+        "imageName": "Iridium Throwing Knife",
+        "color": "R",
+        "id": 150
+    },
+    {
+        "name": "Warship Phantom",
+        "imageName": "Warship Phantom",
+        "color": "B",
+        "id": 130
+    },
+    {
+        "name": "Holoship Fleet",
+        "imageName": "Holoship Fleet",
+        "color": "U",
+        "id": 67
+    },
+    {
+        "name": "Scorned Researcher",
+        "imageName": "Scorned Researcher",
+        "color": "U",
+        "id": 80
+    },
+    {
+        "name": "Biodome",
+        "imageName": "Biodome",
+        "color": "",
+        "id": 236
+    },
+    {
+        "name": "Jetpack",
+        "imageName": "Jetpack",
+        "color": "",
+        "id": 3
+    },
+    {
+        "name": "Forcefield Device",
+        "imageName": "Forcefield Device",
+        "color": "W",
+        "id": 21
+    },
+    {
+        "name": "Combat Drones",
+        "imageName": "Combat Drones",
+        "color": "",
+        "id": 1
+    },
+    {
+        "name": "Mindmeld Interface",
+        "imageName": "Mindmeld Interface",
+        "color": "",
+        "id": 4
+    },
+    {
+        "name": "Homeostimulation Suit",
+        "imageName": "Homeostimulation Suit",
+        "color": "R",
+        "id": 146
+    },
+    {
+        "name": "Incubation Hulk",
+        "imageName": "Incubation Hulk",
+        "color": "G",
+        "id": 192
+    },
+    {
+        "name": "Experimental Serum",
+        "imageName": "Experimental Serum",
+        "color": "G",
+        "id": 186
+    }
+]

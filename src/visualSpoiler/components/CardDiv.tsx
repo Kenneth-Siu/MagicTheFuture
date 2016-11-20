@@ -1,5 +1,5 @@
 import * as React from "react";
-import CardImage from "./CardImage";
+import CardImage from "../../common/components/CardImage";
 
 export interface CardDivProps { name: string, imageUrl: string }
 
