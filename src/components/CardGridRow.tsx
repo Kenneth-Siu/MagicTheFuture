@@ -5,8 +5,6 @@ import Card from "../Card";
 
 export interface CardGridRowProps { cards: Card[] }
 
-
-
 export default class CardGrid extends React.Component<CardGridRowProps, {}> {
 
     cardElements: JSX.Element[];

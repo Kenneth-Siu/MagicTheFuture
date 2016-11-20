@@ -1,5 +1,6 @@
 import * as React from "react";
 import {ColorFilter, CardFilterColor} from "../ColorFilter";
+import CardGridFilterButton from "./CardGridFilterButton";
 
 export interface CardGridFiltersProps { onFilterChange: (colorFilter: ColorFilter) => void }
 
@@ -22,13 +23,13 @@ export default class CardGridFilters extends React.Component<CardGridFiltersProp
     render() {
         return (
             <div>
-                <button onClick={() => this.handleClick("white")}>White</button>
-                <button onClick={() => this.handleClick("blue")}>Blue</button>
-                <button onClick={() => this.handleClick("black")}>Black</button>
-                <button onClick={() => this.handleClick("red")}>Red</button>
-                <button onClick={() => this.handleClick("green")}>Green</button>
-                <button onClick={() => this.handleClick("multicolor")}>Multicolor</button>
-                <button onClick={() => this.handleClick("colorless")}>Colorless</button>
+                <CardGridFilterButton name="White" onClick={() => this.handleClick("white")} />
+                <CardGridFilterButton name="Blue" onClick={() => this.handleClick("blue")} />
+                <CardGridFilterButton name="Black" onClick={() => this.handleClick("black")} />
+                <CardGridFilterButton name="Red" onClick={() => this.handleClick("red")} />
+                <CardGridFilterButton name="Green" onClick={() => this.handleClick("green")} />
+                <CardGridFilterButton name="Multicolor" onClick={() => this.handleClick("multicolor")} />
+                <CardGridFilterButton name="Colorless" onClick={() => this.handleClick("colorless")} />
             </div>
         );
     }
