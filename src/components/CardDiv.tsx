@@ -8,7 +8,7 @@ export default class CardDiv extends React.Component<CardDivProps, {}> {
         return (
             <div className="spoiler-card">
                 <CardImage url={this.props.imageUrl} />
-                <div>{this.props.name}</div>
+                <div className="card-name">{this.props.name}</div>
             </div>
         );
     }

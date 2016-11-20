@@ -36,7 +36,7 @@ export default class CardGrid extends React.Component<CardGridProps, {}> {
         return (
             <div className="page-container">
                 <div className="row">
-                    <div className="col-md-12 spoiler-grid-filters">
+                    <div className="col-md-12">
                         <CardGridFilters onFilterChange={(colorFilter: ColorFilter) => { this.handleFilterChange(colorFilter); }} />
                     </div>
                 </div>

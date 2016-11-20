@@ -25,6 +25,6 @@ export default class CardGridFilterButton extends React.Component<CardGridFitler
     }
 
     render() {
-        return <button className={"btn btn-default" + (this.state.active ? " active" : "")} onClick={() => this.handleClick()}>{this.props.name}</button>;
+        return <a className={"btn btn-default" + (this.state.active ? " active" : "")} onClick={() => this.handleClick()}>{this.props.name}</a>;
     }
 }
