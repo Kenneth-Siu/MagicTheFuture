@@ -38,7 +38,7 @@ export default class Player {
     }
 
     makePick(card: Card) {
-        if (!this.nextPack) {
+        if (!this.nextPack || this.nextPack.cards.length === 0) {
             throw "No next pack?!?!";
         }
         this.pack = this.nextPack;
@@ -64,8 +64,8 @@ export default class Player {
     }
 
     computerPick() {
-        this.pack = this.nextPack;
-        this.picks.push(this.cardPicker.makePick(this.pack));
+        const pick = this.cardPicker.decidePick(this.nextPack);
+        this.makePick(pick);
     }
 
     openPack() {
