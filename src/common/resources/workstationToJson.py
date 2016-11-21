@@ -26,8 +26,17 @@ def writeCollectorsNumber(inputText, outputFile, cardStartIndex):
     outputFile.write('        "id": ')
     collectorsNumberStartIndex = inputText.find('Card #:\t', cardStartIndex)
     collectorsNumberEndIndex = inputText.find('/', collectorsNumberStartIndex)
-    outputFile.write(inputText[collectorsNumberStartIndex + 9:collectorsNumberEndIndex] + '\n')
-    return
+    outputFile.write(inputText[collectorsNumberStartIndex + 9:collectorsNumberEndIndex] + ',\n')
+
+def writeRarity(inputText, outputFile, cardStartIndex):
+    outputFile.write('        "rarity": ')
+    rarityStartIndex = inputText.find('Rarity:', cardStartIndex)
+    rarityEndIndex = inputText.find('\n', rarityStartIndex)
+    rarity = inputText[rarityStartIndex + 9:rarityEndIndex]
+    if (inputText.find('Type & Class:\tOrganization', cardStartIndex, rarityStartIndex) != -1) or (inputText.find('Legendary Device Unit - Battleship', cardStartIndex, rarityStartIndex) != -1):
+        outputFile.write('"M"\n')
+    else:
+        outputFile.write('"' + rarity + '"\n')
 
 try:
     inputFile = open('./cardListWorkstation.txt', 'r')
@@ -46,6 +55,7 @@ try:
         writeImageName(outputFile, name)
         writeColor(inputText, outputFile, cardStartIndex)
         writeCollectorsNumber(inputText, outputFile, cardStartIndex)
+        writeRarity(inputText, outputFile, cardStartIndex)
 
         outputFile.write('    }')
         cardStartIndex = inputText.find('Card Name:\t', endOfNameIndex)
