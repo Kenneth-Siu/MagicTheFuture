@@ -1,1 +1,2 @@
-npm install -g webpack less less-watch-compiler
+npm install -g webpack typescript less less-watch-compiler
+npm install
