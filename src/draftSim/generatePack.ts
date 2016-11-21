@@ -12,17 +12,17 @@ const commons = _.filter(cardList, card => card.rarity === "C");
 const numOfCommons = commons.length;
 
 export default function generatePack(): Card[] {
-    const pack: Card[] = [];
+    const cards: Card[] = [];
     if (_.random(0, 7) === 0) {
-        pack.push(mythics[_.random(0, numOfMythics - 1)]);
+        cards.push(_.cloneDeep(mythics[_.random(0, numOfMythics - 1)]).assignUuid());
     } else {
-        pack.push(rares[_.random(0, numOfRares - 1)]);
+        cards.push(_.cloneDeep(rares[_.random(0, numOfRares - 1)]).assignUuid());
     }
     for (let i = 0; i < 3; i++) {
-        pack.push(uncommons[_.random(0, numOfUncommons - 1)]);
+        cards.push(_.cloneDeep(uncommons[_.random(0, numOfUncommons - 1)]).assignUuid());
     }
     for (let i = 0; i < 10; i++) {
-        pack.push(commons[_.random(0, numOfCommons - 1)]);
+        cards.push(_.cloneDeep(commons[_.random(0, numOfCommons - 1)]).assignUuid());
     }
-    return pack;
+    return cards;
 }

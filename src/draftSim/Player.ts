@@ -2,6 +2,7 @@ import * as _ from "lodash";
 import Pack from "./Pack";
 import CardPicker from "./CardPicker";
 import Card from "../common/Card";
+import { PassDirection } from "./components/DraftSim";
 
 export default class Player {
 
@@ -50,8 +51,12 @@ export default class Player {
         this.picks.push(pick);
     }
 
-    passPackLeft() {
-        this.leftHandPlayer.receivePack(this.pack);
+    passPack(passDirection: PassDirection) {
+        if (passDirection === "left") {
+            this.leftHandPlayer.receivePack(this.pack);
+        } else {
+            this.rightHandPlayer.receivePack(this.pack);
+        }
     }
 
     receivePack(pack: Pack) {
@@ -61,6 +66,10 @@ export default class Player {
     computerPick() {
         this.pack = this.nextPack;
         this.picks.push(this.cardPicker.makePick(this.pack));
+    }
+
+    openPack() {
+        this.nextPack = new Pack();
     }
 
     static initTableOfPlayers() {
