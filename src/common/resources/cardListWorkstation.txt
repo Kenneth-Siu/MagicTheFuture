@@ -1,7 +1,7 @@
  Spoiler List
 Set exported using Magic Set Editor 2, version 2.0.0
 
-Spoiler List created on 2016-11-20 22:41:05
+Spoiler List created on 2016-11-22 00:09:45
 
 Card Name:	Supervolcanic Fallout
 Card Color:	R
@@ -328,8 +328,8 @@ Card Color:	W
 Mana Cost:	1WW
 Type & Class:	Development
 Pow/Tou:	
-Card Text:	Whenever a nontoken unit enters the warzone under your control, put a +1/+1 counter on it.
-		4WW, T: Put a +1/+1 counter on each nontoken unit you control.
+Card Text:	When Cultural Renaissance enters the warzone, put a +1/+1 counter on each unit you control.
+		3WW, T: Put a +1/+1 counter on each unit you control.
 Flavor Text:	
 Artist:		Li Tung Chi
 Rarity:		R
@@ -466,7 +466,7 @@ Card Color:	U
 Mana Cost:	1UU
 Type & Class:	Unit - Hacker
 Pow/Tou:	1/1
-Card Text:	X2, T, Return a unit you control to its owner's hand: Put a unit card with converted psi cost less than or equal to the returned unit's converted psi cost plus X from your hand into the warzone.
+Card Text:	X3, T, Return a unit you control to its owner's hand: Put a unit card with converted psi cost less than or equal to the returned unit's converted psi cost plus X from your hand into the warzone.
 Flavor Text:	
 Artist:		Emmy Wahlbäck
 Rarity:		R
@@ -559,7 +559,7 @@ Artist:		AbikK & Voxmortem
 Rarity:		C
 Card #:		69/236
 
-Card Name:	Ryley, Guerrilla Zero
+Card Name:	Ingolf, the Catalyst
 Card Color:	Gld
 Mana Cost:	4GW
 Type & Class:	Legendary Unit - Rebel Commando
@@ -568,7 +568,7 @@ Card Text:	Whenever another unit enters the warzone under your control, put a +1
 Flavor Text:	
 Artist:		sandara
 Rarity:		R
-Card #:		225/236
+Card #:		224/236
 
 Card Name:	Punish
 Card Color:	W
@@ -1452,7 +1452,7 @@ Card Text:	When Rooftop Misdirector enters the warzone, create a 0/1 colorless H
 Flavor Text:	
 Artist:		Tervola
 Rarity:		U
-Card #:		224/236
+Card #:		225/236
 
 Card Name:	Troposphere Drifter
 Card Color:	Gld
@@ -2066,10 +2066,10 @@ Card #:		86/236
 
 Card Name:	Nanoreplicator Zero
 Card Color:	Gld
-Mana Cost:	4UU
+Mana Cost:	3UU
 Type & Class:	Device Unit - Nanobot Constructor
 Pow/Tou:	0/1
-Card Text:	At the beginning of your upkeep, you may pay X. If you do, choose target unit with converted psi cost X. Create a token that's a copy of the chosen unit except it's a device in addition to its other types.
+Card Text:	At the beginning of your upkeep, you may pay X. If you do, choose a unit with converted psi cost X. Create a token that's a copy of the chosen unit except it's a device in addition to its other types.
 Flavor Text:	
 Artist:		dainbramage1
 Rarity:		R
@@ -2749,7 +2749,7 @@ Card Color:	Art
 Mana Cost:	2
 Type & Class:	Device - Equipment
 Pow/Tou:	
-Card Text:	Equipped unit gets +2/+0 and has furtive. (It can't be intercepted as long as it's attacking with exactly one other unit.)
+Card Text:	Equipped unit gets +1/+0 and has furtive. (It can't be intercepted as long as it's attacking with exactly one other unit.)
 		Equip 2
 Flavor Text:	
 Artist:		Amélie Hutt

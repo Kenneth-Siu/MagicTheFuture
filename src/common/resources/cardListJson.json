@@ -329,10 +329,10 @@
         "rarity": "C"
     },
     {
-        "name": "Ryley, Guerrilla Zero",
-        "imageName": "Ryley Guerrilla Zero",
+        "name": "Ingolf, the Catalyst",
+        "imageName": "Ingolf the Catalyst",
         "color": "GGWW",
-        "id": 225,
+        "id": 224,
         "rarity": "R"
     },
     {
@@ -850,7 +850,7 @@
         "name": "Rooftop Misdirector",
         "imageName": "Rooftop Misdirector",
         "color": "GGWW",
-        "id": 224,
+        "id": 225,
         "rarity": "U"
     },
     {
