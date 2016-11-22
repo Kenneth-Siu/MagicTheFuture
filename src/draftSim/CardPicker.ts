@@ -53,7 +53,7 @@ export default class CardPicker {
             throw "Sorry Dave, I can't let you pick from a nonexistent or empty pack.";
         }
         const colorChoice = this.colorCount.getColorChoice();
-        let pick = _.find(pack.cards, card => card.color.indexOf(colorChoice) !== -1);
+        let pick = _.find(pack.cards, card => card.color === "" || card.color.indexOf(colorChoice) !== -1);
         if (!pick || colorChoice === "") {
             pick = pack.cards[0];
         }
