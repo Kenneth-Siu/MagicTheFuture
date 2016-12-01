@@ -1,0 +1,95 @@
+﻿mse version: 0.3.8
+short name: JSON
+full name: JSON Exporter
+position hint: 006
+version: 2013-01-27
+
+depends on:
+	package: magic.mse-game
+	version: 2015-04-08
+
+game: magic
+file type: *.json
+
+option field:
+	type: text
+	name: setcode
+	description: Enter the setcode (ie SOM, DKA, RTR etc)
+option field:
+	type: text
+	name: longname
+	description: Enter the set name (ie Scars of Mirrodin, Return to Ravnica etc)
+
+script:
+	# Formats rules text w/ only italic tags.
+	forum_rules_filter_plain := replace@(match:"[(]", replace:"[i](")+
+		replace@(match:"[)]", replace: ")[/i]")
+	paragraph_count := replace@(match:"\n", replace:"•")+
+		filter_text@(match:"•")
+	imageNameFilter := replace@(match:"’|,", replace:"")
+	colorIdentityFilter := replace@(match:"[0-9|X]", replace:"")+
+		replace@(match:"(.)(\\1)+", replace: "\\1")
+	rarityFilter := {
+		shortRarity := substring(input, end:1)
+		to_upper(shortRarity)
+	}
+	write_non_rules_text := {
+		name := card.name
+		imageName := imageNameFilter(name)
+		color := colorIdentityFilter(card.casting_cost)
+		id := cardNumber
+		rarity := rarityFilter(card.rarity)
+		"        \"name\": \""+name+"\",\n"
+		+"        \"imageName\": \""+imageName+"\",\n"
+		+"        \"color\": \""+color+"\",\n"
+		+"        \"id\": "+id+",\n"
+		+"        \"rarity\": \""+rarity+"\",\n"
+	}
+	rulesTextFilter := replace@(match:"\n", replace:"\\\\n")
+	write_normal_rules_text := {
+		rulesText := rulesTextFilter(card.rule_text)
+		"        \"rulesText\": \""+rulesText+"\"\n"
+	}
+	write_walker_rules_text := {
+		# The First Ability
+		rulesText := card.loyalty_cost_1
+			+(if card.loyalty_cost_1 !="" then ": ")
+			+forum_rules_filter_plain(split_text(match:"\n", card.rule_text).0)
+		# The Second Ability
+		+(if contains(paragraph_count(card.rule_text), match:"•") then "\n")
+			+card.loyalty_cost_2
+			+(if card.loyalty_cost_2 !="" then ": ")
+			+(if contains(paragraph_count(card.rule_text), match:"•") then forum_rules_filter_plain(split_text(match:"\n", card.rule_text).1))
+		# The Third Ability
+		+(if contains(paragraph_count(card.rule_text), match:"••") then "\n")
+			+card.loyalty_cost_3
+			+(if card.loyalty_cost_3 !="" then ": ")
+			+(if contains(paragraph_count(card.rule_text), match:"••") then forum_rules_filter_plain(split_text(match:"\n", card.rule_text).2))
+		# The Fourth Ability
+		+(if contains(paragraph_count(card.rule_text), match:"•••") then "\n")
+			+card.loyalty_cost_4
+			+(if card.loyalty_cost_4 !="" then ": ")
+			+(if contains(paragraph_count(card.rule_text), match:"•••") then forum_rules_filter_plain(split_text(match:"\n", card.rule_text).3))
+		"        \"rulesText\": \""+rulesTextFilter(rulesText)+"\"\n"
+	}
+	write_card := { 
+	
+		cardNonRulesText := if contains(card.shape, match:"token") or contains(card.shape, match:"rulestip") then ""
+		else write_non_rules_text()
+		
+		cardRulesText := if contains(card.shape, match:"token") or contains(card.shape, match:"rulestip") then ""
+		else if card.loyalty != "" then write_walker_rules_text()
+		else write_normal_rules_text()
+		
+		comma := if cardNumber+1 != totalCards then ",\n" else ""
+		
+		"    \{\n" + cardNonRulesText + cardRulesText + "    \}" + comma
+	}
+	write_cards := {
+		cardList := sort_list(cards, order_by: {input.card_number})
+		totalCards := length(cardList)
+		to_text(for each cardNumber:card in cardList do write_card())
+	}
+	to_string("[\n"
+		 +write_cards()
+		 +"]\n")

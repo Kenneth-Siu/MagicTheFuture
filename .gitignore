@@ -1,6 +1,8 @@
-dist/*
-src/resources/cardListJson.json
-src/resources/cardListWorkstation.txt
+/dist/*
+/MSE/*
+!/MSE/data
+/MSE/data/*
+!/MSE/data/magic-json.mse-export-template/
 
 # Created by https://www.gitignore.io/api/node
 
