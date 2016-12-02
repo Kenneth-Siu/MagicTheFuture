@@ -39,11 +39,13 @@ script:
 		color := colorIdentityFilter(card.casting_cost)
 		id := cardNumber
 		rarity := rarityFilter(card.rarity)
+		notes := card.notes
 		"        \"name\": \""+name+"\",\n"
 		+"        \"imageName\": \""+imageName+"\",\n"
 		+"        \"color\": \""+color+"\",\n"
 		+"        \"id\": "+id+",\n"
 		+"        \"rarity\": \""+rarity+"\",\n"
+		+"        \"notes\": \{\n"+notes+"\n        \},\n"
 	}
 	rulesTextFilter := replace@(match:"\n", replace:"\\\\n")
 	write_normal_rules_text := {

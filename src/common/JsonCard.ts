@@ -1,4 +1,4 @@
-import {Color, Rarity} from "./Card";
+import {Color, Rarity, INotes} from "./Card";
 
 export default class JsonCard {
     id: number;
@@ -6,4 +6,6 @@ export default class JsonCard {
     imageName: string;
     color: Color;
     rarity: Rarity;
+    notes: INotes;
+    rulesText: string;
 }

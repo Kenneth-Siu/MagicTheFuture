@@ -3,6 +3,10 @@ import * as uuid from "uuid";
 export type Color = "" | "W" | "U" | "B" | "R" | "G" | "WU" | "WB" | "UB" | "UR" | "BR" | "BG" | "RG" | "RW" | "GW" | "GU" | "WUB" | "UBR" | "BRG" | "RGW" | "GWU" | "WBG" | "URW" | "BGU" | "RWB" | "GUR" | "UBRG" | "BRGW" | "RGWU" | "GWUB" | "WUBR" | "WUBRG";
 export type Rarity = "M" | "R" | "U" | "C";
 
+export interface INotes {
+    power: number
+}
+
 export default class Card {
     uuid: string;
     id: number;
@@ -10,13 +14,17 @@ export default class Card {
     color: Color;
     imageUrl: string;
     rarity: Rarity;
+    notes: INotes;
+    rulesText: string;
 
-    constructor(id: number, name: string, color: Color, imageUrl: string, rarity: Rarity) {
+    constructor(id: number, name: string, color: Color, imageUrl: string, rarity: Rarity, notes: INotes, rulesText: string) {
         this.id = id;
         this.name = name;
         this.color = color;
         this.imageUrl = imageUrl;
         this.rarity = rarity;
+        this.notes = notes;
+        this.rulesText = rulesText;
     }
 
     assignUuid() {
