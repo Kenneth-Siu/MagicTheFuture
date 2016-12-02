@@ -864,9 +864,9 @@
         "id": 78,
         "rarity": "C",
         "notes": {
-"power": 0.5
+"power": 3.0
         },
-        "rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nWhenever Riptide Illuminator or another unit enters the warzone under your control, Riptide Illuminator has base power and toughness 2/4 until end of turn. Untap Riptide Illuminator."
+        "rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
     },
     {
         "name": "Scorned Researcher",
@@ -1053,7 +1053,7 @@
         "notes": {
 "power": 1.0
         },
-        "rulesText": "Vigilance\nInnervate (Damage this unit deals also causes you to gain that much command.)\nFigment of Death can’t intercept device units and can’t be intercepted by device units."
+        "rulesText": "Vigilance\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card into the warzone and the rest on the bottom of your library in a random order.)"
     },
     {
         "name": "Frontline Eviscerator",
@@ -1128,9 +1128,9 @@
         "id": 102,
         "rarity": "U",
         "notes": {
-"power": 1.5
+"power": 1.0
         },
-        "rulesText": "Modify unit\nModified unit has plunder. (Whenever it deals combat damage to a player, its controller creates a colorless Credit device token.)\nB, Sacrifice another nonland permanent: Modified unit gains your choice of first strike, lethality, or innervate until end of turn."
+        "rulesText": "Modify unit\nModified unit has plunder. (Whenever it deals combat damage to a player, its controller creates a colorless Credit device token.)\nSacrifice another nonland permanent: Modified unit gains your choice of first strike, lethality, or innervate until end of turn."
     },
     {
         "name": "The Left Hand",
@@ -1194,9 +1194,9 @@
         "id": 108,
         "rarity": "R",
         "notes": {
-"power": 2.5
+"power": 3.0
         },
-        "rulesText": "Each 3 command you pay as you issue Mortality reduces its cost by 1.\nInnervate (Damage this unit deals also causes you to gain that much command.)\nMortality can’t intercept device units and can’t be intercepted by device units."
+        "rulesText": "Each 3 command you pay as you issue Mortality reduces its cost by 1.\nInnervate, mutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card into the warzone and the rest on the bottom of your library in a random order.)"
     },
     {
         "name": "Neural Devourer",
@@ -1372,7 +1372,7 @@
         "notes": {
 "power": 3.5
         },
-        "rulesText": "Units you don’t control get -2/-2 until end of turn. Whenever a unit falls this turn, you lose 1 command."
+        "rulesText": "Units you don’t control get -2/-2 until end of turn."
     },
     {
         "name": "Undercity Janitor",
@@ -1394,7 +1394,7 @@
         "notes": {
 "power": 2.5
         },
-        "rulesText": "Innervate (Damage this unit deals also causes you to gain that much command.)\nUrban Revenant can’t intercept device units and can’t be intercepted by device units.\nSacrifice another nonland permanent: Put a +1/+1 counter on Urban Revenant."
+        "rulesText": "Sacrifice another nonland permanent: Put a +1/+1 counter on Urban Revenant.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card into the warzone and the rest on the bottom of your library in a random order.)"
     },
     {
         "name": "Vis Whip",
@@ -1471,7 +1471,7 @@
         "notes": {
 "power": 0.0
         },
-        "rulesText": "Up to two target units each get +2/+0 and gain overwhelm until end of turn."
+        "rulesText": "Up to two target units each get +2/+2 and gain overwhelm until end of turn."
     },
     {
         "name": "Basement Patrol",
@@ -1711,7 +1711,7 @@
         "id": 155,
         "rarity": "C",
         "notes": {
-"power": 2.5
+"power": 3.0
         },
         "rulesText": "Rip Space-Time deals 5 damage to target unit or player and 2 damage to you."
     },
@@ -1722,9 +1722,9 @@
         "id": 156,
         "rarity": "C",
         "notes": {
-"power": 3.5
+"power": 3.0
         },
-        "rulesText": "Rocket Salvo deals 2 damage to target unit.\nRocket Salvo deals 3 damage to that unit instead if you control three or more devices."
+        "rulesText": "Rocket Salvo deals 2 damage to target unit.\nRocket Salvo deals 4 damage to that unit instead if you control three or more devices."
     },
     {
         "name": "Scrapyard Salvager",
@@ -2230,7 +2230,7 @@
         "notes": {
 "power": 2.5
         },
-        "rulesText": "Whenever SAM Team or another unit enters the warzone under your control, SAM Team has base power and toughness 3/3 until end of turn and gains rocketry until end of turn. Untap SAM Team. (It can intercept units with flight.)"
+        "rulesText": "Rocketry (This unit can intercept units with flight.)"
     },
     {
         "name": "Screeching Terror",
