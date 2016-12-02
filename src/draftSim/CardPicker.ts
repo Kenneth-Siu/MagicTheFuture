@@ -1,24 +1,42 @@
 import * as _ from "lodash";
 import Pack from "./Pack";
 import Card from "../common/Card";
-import {Color} from "../common/Card";
+import { Color, SingleColor } from "../common/Card";
 
-class ColorCount {
-    white: number;
-    blue: number;
-    black: number;
-    red: number;
-    green: number;
+class CardRating {
+    card: Card;
+    rating: number;
 
-    constructor() {
+    constructor(card: Card, rating: number) {
+        this.card = card;
+        this.rating = rating;
+    }
+}
+
+class ColorAnalyser {
+
+    private readonly fuzzAmount = 5;
+
+    private white: number;
+    private blue: number;
+    private black: number;
+    private red: number;
+    private green: number;
+
+    constructor(cards: Card[]) {
         this.white = 0;
         this.blue = 0;
         this.black = 0;
         this.red = 0;
         this.green = 0;
+        this.countCards(cards);
     }
 
-    countCard(card: Card) {
+    private countCards(cards: Card[]): void {
+        cards.forEach(card => this.countCard(card));
+    }
+
+    private countCard(card: Card): void {
         if (card.color.indexOf("W") !== -1) this.white++;
         if (card.color.indexOf("U") !== -1) this.blue++;
         if (card.color.indexOf("B") !== -1) this.black++;
@@ -26,38 +44,58 @@ class ColorCount {
         if (card.color.indexOf("G") !== -1) this.green++;
     }
 
-    getColorChoice(): Color {
-        const largestCount = _.max([this.white, this.blue, this.black, this.red, this.green]);
-        let colors = "";
-        if (this.white === largestCount) colors += "W";
-        if (this.blue === largestCount) colors += "U";
-        if (this.black === largestCount) colors += "B";
-        if (this.red === largestCount) colors += "R";
-        if (this.green === largestCount) colors += "G";
+    getModifier(cardColors: Color): number {
+        if (cardColors === "") return Math.max(...this.getModifierArray("WUBRG"));
+        return Math.min(...this.getModifierArray(cardColors));
+    }
 
-        if (colors.length === 5) return "";
-        else if (colors.length === 1) return colors as Color;
-        else return colors.charAt(_.random(0, colors.length - 1)) as Color;
+    private getModifierArray(cardColors: Color): number[] {
+        const colorArray = cardColors.split("") as SingleColor[];
+        return colorArray.map(color => this.getModifierForSingleColor(color));
+    }
+
+    private getModifierForSingleColor(color: SingleColor): number {
+        if (color === "W") return this.fuzz(this.white) / this.getTotalFuzzyCount();
+        if (color === "U") return this.fuzz(this.blue) / this.getTotalFuzzyCount();
+        if (color === "B") return this.fuzz(this.black) / this.getTotalFuzzyCount();
+        if (color === "R") return this.fuzz(this.red) / this.getTotalFuzzyCount();
+        return this.fuzz(this.green) / this.getTotalFuzzyCount();
+    }
+
+    private getTotalFuzzyCount(): number {
+        return this.fuzz(this.white) + this.fuzz(this.blue) + this.fuzz(this.black) + this.fuzz(this.red) + this.fuzz(this.green);
+    }
+
+    private fuzz(num: number): number {
+        return num + this.fuzzAmount;
     }
 }
 
 export default class CardPicker {
-    colorCount: ColorCount;
+    colorAnalyser: ColorAnalyser;
+    packRatings: CardRating[];
 
-    constructor() {
-        this.colorCount = new ColorCount();
+    decidePick(pack: Pack, picks: Card[]): Card {
+        if (!pack || pack.cards.length === 0) throw "Sorry Dave, I can't let you pick from a nonexistent or empty pack.";
+        this.analysePicks(picks);
+        this.evaluatePack(pack);
+        return this.makePick();
     }
 
-    decidePick(pack: Pack) {
-        if (!pack || pack.cards.length === 0) {
-            throw "Sorry Dave, I can't let you pick from a nonexistent or empty pack.";
-        }
-        const colorChoice = this.colorCount.getColorChoice();
-        let pick = _.find(pack.cards, card => card.color === "" || card.color.indexOf(colorChoice) !== -1);
-        if (!pick || colorChoice === "") {
-            pick = pack.cards[0];
-        }
-        this.colorCount.countCard(pick);
-        return pick;
+    private analysePicks(picks: Card[]): void {
+        this.colorAnalyser = new ColorAnalyser(picks);
+    }
+
+    private evaluatePack(pack: Pack): void {
+        this.packRatings = pack.cards.map(card => this.evaluateCard(card));
+    }
+
+    private evaluateCard(card: Card): CardRating {
+        const rating = card.notes.power * this.colorAnalyser.getModifier(card.color);
+        return new CardRating(card, rating);
+    }
+
+    private makePick(): Card {
+        return _.maxBy(this.packRatings, card => card.rating).card;
     }
 }

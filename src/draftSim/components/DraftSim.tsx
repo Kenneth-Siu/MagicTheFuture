@@ -21,7 +21,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
 
     constructor() {
         super();
-        this.computerPlayers = Player.initTableOfPlayers();
+        this.computerPlayers = Player.createTableOfPlayers();
         this.humanPlayer = this.computerPlayers.shift();
         this.state = {
             pack: this.humanPlayer.nextPack,

@@ -23,21 +23,21 @@ export default class Player {
         }
     }
 
-    setLeftHandPlayer(leftHandPlayer: Player) {
+    setLeftHandPlayer(leftHandPlayer: Player): void {
         this.leftHandPlayer = leftHandPlayer;
         if (!leftHandPlayer.rightHandPlayer) {
             leftHandPlayer.setRightHandPlayer(this);
         }
     }
 
-    setRightHandPlayer(rightHandPlayer: Player) {
+    setRightHandPlayer(rightHandPlayer: Player): void {
         this.rightHandPlayer = rightHandPlayer;
         if (!rightHandPlayer.leftHandPlayer) {
             rightHandPlayer.setLeftHandPlayer(this);
         }
     }
 
-    makePick(card: Card) {
+    makePick(card: Card): void {
         if (!this.nextPack || this.nextPack.cards.length === 0) {
             throw "No next pack?!?!";
         }
@@ -51,7 +51,7 @@ export default class Player {
         this.picks.push(pick);
     }
 
-    passPack(passDirection: PassDirection) {
+    passPack(passDirection: PassDirection): void {
         if (passDirection === "left") {
             this.leftHandPlayer.receivePack(this.pack);
         } else {
@@ -59,20 +59,20 @@ export default class Player {
         }
     }
 
-    receivePack(pack: Pack) {
+    receivePack(pack: Pack): void {
         this.nextPack = pack;
     }
 
-    computerPick() {
-        const pick = this.cardPicker.decidePick(this.nextPack);
+    computerPick(): void {
+        const pick = this.cardPicker.decidePick(this.nextPack, this.picks);
         this.makePick(pick);
     }
 
-    openPack() {
+    openPack(): void {
         this.nextPack = new Pack();
     }
 
-    static initTableOfPlayers() {
+    static createTableOfPlayers(): Player[] {
         const numOfPlayers = 8;
         const players: Player[] = [];
         for (let i = 0; i < numOfPlayers; i++) {

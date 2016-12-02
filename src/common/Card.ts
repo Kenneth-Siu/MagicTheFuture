@@ -1,6 +1,10 @@
 import * as uuid from "uuid";
 
-export type Color = "" | "W" | "U" | "B" | "R" | "G" | "WU" | "WB" | "UB" | "UR" | "BR" | "BG" | "RG" | "RW" | "GW" | "GU" | "WUB" | "UBR" | "BRG" | "RGW" | "GWU" | "WBG" | "URW" | "BGU" | "RWB" | "GUR" | "UBRG" | "BRGW" | "RGWU" | "GWUB" | "WUBR" | "WUBRG";
+export type SingleColor = "W" | "U" | "B" | "R" | "G";
+export type ColorPair = "WU" | "WB" | "UB" | "UR" | "BR" | "BG" | "RG" | "RW" | "GW" | "GU";
+export type ColorTrio = "WUB" | "UBR" | "BRG" | "RGW" | "GWU" | "WBG" | "URW" | "BGU" | "RWB" | "GUR";
+export type ColorQuad = "UBRG" | "BRGW" | "RGWU" | "GWUB" | "WUBR";
+export type Color = "" | SingleColor | ColorPair | ColorTrio | ColorQuad | "WUBRG";
 export type Rarity = "M" | "R" | "U" | "C";
 
 export interface INotes {
