@@ -3,6 +3,7 @@
         "name": "Combat Drones",
         "imageName": "Combat Drones",
         "color": "",
+        "castingCost": "3",
         "id": 0,
         "rarity": "U",
         "notes": {
@@ -14,6 +15,7 @@
         "name": "Hoverbike",
         "imageName": "Hoverbike",
         "color": "",
+        "castingCost": "2",
         "id": 1,
         "rarity": "U",
         "notes": {
@@ -25,6 +27,7 @@
         "name": "Jetpack",
         "imageName": "Jetpack",
         "color": "",
+        "castingCost": "2",
         "id": 2,
         "rarity": "C",
         "notes": {
@@ -36,6 +39,7 @@
         "name": "Mindmeld Interface",
         "imageName": "Mindmeld Interface",
         "color": "",
+        "castingCost": "2",
         "id": 3,
         "rarity": "C",
         "notes": {
@@ -47,6 +51,7 @@
         "name": "Swallowers of Civilization",
         "imageName": "Swallowers of Civilization",
         "color": "",
+        "castingCost": "2",
         "id": 4,
         "rarity": "R",
         "notes": {
@@ -58,6 +63,7 @@
         "name": "Baljurashi Watchmen",
         "imageName": "Baljurashi Watchmen",
         "color": "W",
+        "castingCost": "2W",
         "id": 5,
         "rarity": "C",
         "notes": {
@@ -69,6 +75,7 @@
         "name": "Bergstadt Police Department ",
         "imageName": "Bergstadt Police Department ",
         "color": "W",
+        "castingCost": "4W",
         "id": 6,
         "rarity": "M",
         "notes": {
@@ -80,6 +87,7 @@
         "name": "Biomech Corps",
         "imageName": "Biomech Corps",
         "color": "W",
+        "castingCost": "1W",
         "id": 7,
         "rarity": "C",
         "notes": {
@@ -91,6 +99,7 @@
         "name": "Cache Mapper",
         "imageName": "Cache Mapper",
         "color": "W",
+        "castingCost": "2W",
         "id": 8,
         "rarity": "C",
         "notes": {
@@ -102,6 +111,7 @@
         "name": "Comms Disruptor",
         "imageName": "Comms Disruptor",
         "color": "W",
+        "castingCost": "1W",
         "id": 9,
         "rarity": "R",
         "notes": {
@@ -113,6 +123,7 @@
         "name": "Community Officer",
         "imageName": "Community Officer",
         "color": "W",
+        "castingCost": "2W",
         "id": 10,
         "rarity": "C",
         "notes": {
@@ -124,6 +135,7 @@
         "name": "Covering Fire",
         "imageName": "Covering Fire",
         "color": "W",
+        "castingCost": "3W",
         "id": 11,
         "rarity": "C",
         "notes": {
@@ -135,6 +147,7 @@
         "name": "Crash Landing",
         "imageName": "Crash Landing",
         "color": "W",
+        "castingCost": "4W",
         "id": 12,
         "rarity": "C",
         "notes": {
@@ -146,6 +159,7 @@
         "name": "Cryonics Facility",
         "imageName": "Cryonics Facility",
         "color": "W",
+        "castingCost": "3W",
         "id": 13,
         "rarity": "U",
         "notes": {
@@ -157,6 +171,7 @@
         "name": "Cultural Renaissance",
         "imageName": "Cultural Renaissance",
         "color": "W",
+        "castingCost": "1WW",
         "id": 14,
         "rarity": "R",
         "notes": {
@@ -168,6 +183,7 @@
         "name": "Diplomat’s Prerogative",
         "imageName": "Diplomats Prerogative",
         "color": "W",
+        "castingCost": "2W",
         "id": 15,
         "rarity": "U",
         "notes": {
@@ -179,6 +195,7 @@
         "name": "Draco Guardian",
         "imageName": "Draco Guardian",
         "color": "W",
+        "castingCost": "4W",
         "id": 16,
         "rarity": "C",
         "notes": {
@@ -190,6 +207,7 @@
         "name": "Dropship",
         "imageName": "Dropship",
         "color": "W",
+        "castingCost": "1WW",
         "id": 17,
         "rarity": "R",
         "notes": {
@@ -201,6 +219,7 @@
         "name": "Eviction Order",
         "imageName": "Eviction Order",
         "color": "W",
+        "castingCost": "2W",
         "id": 18,
         "rarity": "C",
         "notes": {
@@ -212,6 +231,7 @@
         "name": "Fleet Overseer",
         "imageName": "Fleet Overseer",
         "color": "W",
+        "castingCost": "1W",
         "id": 19,
         "rarity": "U",
         "notes": {
@@ -223,6 +243,7 @@
         "name": "Forcefield Device",
         "imageName": "Forcefield Device",
         "color": "W",
+        "castingCost": "1W",
         "id": 20,
         "rarity": "C",
         "notes": {
@@ -234,6 +255,7 @@
         "name": "Head Detective",
         "imageName": "Head Detective",
         "color": "W",
+        "castingCost": "2WW",
         "id": 21,
         "rarity": "U",
         "notes": {
@@ -245,6 +267,7 @@
         "name": "Helios Satellite",
         "imageName": "Helios Satellite",
         "color": "W",
+        "castingCost": "1W",
         "id": 22,
         "rarity": "R",
         "notes": {
@@ -256,6 +279,7 @@
         "name": "The Hemera",
         "imageName": "The Hemera",
         "color": "W",
+        "castingCost": "6WW",
         "id": 23,
         "rarity": "M",
         "notes": {
@@ -267,6 +291,7 @@
         "name": "Heroic Act",
         "imageName": "Heroic Act",
         "color": "W",
+        "castingCost": "W",
         "id": 24,
         "rarity": "C",
         "notes": {
@@ -278,6 +303,7 @@
         "name": "Keep the Peace",
         "imageName": "Keep the Peace",
         "color": "W",
+        "castingCost": "1W",
         "id": 25,
         "rarity": "C",
         "notes": {
@@ -289,6 +315,7 @@
         "name": "Mesosphere Dancer",
         "imageName": "Mesosphere Dancer",
         "color": "W",
+        "castingCost": "3W",
         "id": 26,
         "rarity": "C",
         "notes": {
@@ -300,6 +327,7 @@
         "name": "Mongrel Companion",
         "imageName": "Mongrel Companion",
         "color": "W",
+        "castingCost": "W",
         "id": 27,
         "rarity": "C",
         "notes": {
@@ -311,6 +339,7 @@
         "name": "Observation Blimp",
         "imageName": "Observation Blimp",
         "color": "W",
+        "castingCost": "3W",
         "id": 28,
         "rarity": "U",
         "notes": {
@@ -322,6 +351,7 @@
         "name": "Police Badge",
         "imageName": "Police Badge",
         "color": "W",
+        "castingCost": "2W",
         "id": 29,
         "rarity": "U",
         "notes": {
@@ -333,6 +363,7 @@
         "name": "Provision Supplier",
         "imageName": "Provision Supplier",
         "color": "W",
+        "castingCost": "5W",
         "id": 30,
         "rarity": "C",
         "notes": {
@@ -344,6 +375,7 @@
         "name": "Punish",
         "imageName": "Punish",
         "color": "W",
+        "castingCost": "3WW",
         "id": 31,
         "rarity": "R",
         "notes": {
@@ -355,6 +387,7 @@
         "name": "Quartec Class Carrier",
         "imageName": "Quartec Class Carrier",
         "color": "W",
+        "castingCost": "4WW",
         "id": 32,
         "rarity": "R",
         "notes": {
@@ -366,6 +399,7 @@
         "name": "Raise the Alarm",
         "imageName": "Raise the Alarm",
         "color": "W",
+        "castingCost": "1W",
         "id": 33,
         "rarity": "C",
         "notes": {
@@ -377,6 +411,7 @@
         "name": "Remote Paralyzer",
         "imageName": "Remote Paralyzer",
         "color": "W",
+        "castingCost": "1W",
         "id": 34,
         "rarity": "C",
         "notes": {
@@ -388,6 +423,7 @@
         "name": "Response Team",
         "imageName": "Response Team",
         "color": "W",
+        "castingCost": "3WW",
         "id": 35,
         "rarity": "R",
         "notes": {
@@ -399,6 +435,7 @@
         "name": "Salvation Class Warship",
         "imageName": "Salvation Class Warship",
         "color": "W",
+        "castingCost": "4W",
         "id": 36,
         "rarity": "U",
         "notes": {
@@ -410,6 +447,7 @@
         "name": "Sand Sappers",
         "imageName": "Sand Sappers",
         "color": "W",
+        "castingCost": "1W",
         "id": 37,
         "rarity": "C",
         "notes": {
@@ -421,6 +459,7 @@
         "name": "Situation Room",
         "imageName": "Situation Room",
         "color": "W",
+        "castingCost": "1W",
         "id": 38,
         "rarity": "U",
         "notes": {
@@ -432,6 +471,7 @@
         "name": "Skysnare Squad",
         "imageName": "Skysnare Squad",
         "color": "W",
+        "castingCost": "1WW",
         "id": 39,
         "rarity": "C",
         "notes": {
@@ -443,6 +483,7 @@
         "name": "Supply-Line Jet",
         "imageName": "Supply-Line Jet",
         "color": "W",
+        "castingCost": "1WW",
         "id": 40,
         "rarity": "U",
         "notes": {
@@ -454,6 +495,7 @@
         "name": "Suspension Squad",
         "imageName": "Suspension Squad",
         "color": "W",
+        "castingCost": "2W",
         "id": 41,
         "rarity": "U",
         "notes": {
@@ -465,6 +507,7 @@
         "name": "Time Traveller",
         "imageName": "Time Traveller",
         "color": "W",
+        "castingCost": "3WW",
         "id": 42,
         "rarity": "R",
         "notes": {
@@ -476,6 +519,7 @@
         "name": "Turn the Tide of Battle",
         "imageName": "Turn the Tide of Battle",
         "color": "W",
+        "castingCost": "1WWW",
         "id": 43,
         "rarity": "U",
         "notes": {
@@ -487,6 +531,7 @@
         "name": "Undercover Agent",
         "imageName": "Undercover Agent",
         "color": "W",
+        "castingCost": "W",
         "id": 44,
         "rarity": "U",
         "notes": {
@@ -498,6 +543,7 @@
         "name": "Voice of the Congregation",
         "imageName": "Voice of the Congregation",
         "color": "W",
+        "castingCost": "3W",
         "id": 45,
         "rarity": "U",
         "notes": {
@@ -509,6 +555,7 @@
         "name": "Warzone Reinforcements",
         "imageName": "Warzone Reinforcements",
         "color": "W",
+        "castingCost": "3W",
         "id": 46,
         "rarity": "C",
         "notes": {
@@ -520,6 +567,7 @@
         "name": "Ambassadorship",
         "imageName": "Ambassadorship",
         "color": "U",
+        "castingCost": "2UU",
         "id": 47,
         "rarity": "R",
         "notes": {
@@ -531,6 +579,7 @@
         "name": "Arrester Drone",
         "imageName": "Arrester Drone",
         "color": "U",
+        "castingCost": "2U",
         "id": 48,
         "rarity": "C",
         "notes": {
@@ -542,6 +591,7 @@
         "name": "Atmospheric Survey Net",
         "imageName": "Atmospheric Survey Net",
         "color": "U",
+        "castingCost": "3U",
         "id": 49,
         "rarity": "C",
         "notes": {
@@ -553,6 +603,7 @@
         "name": "The Chronos",
         "imageName": "The Chronos",
         "color": "U",
+        "castingCost": "6UU",
         "id": 50,
         "rarity": "M",
         "notes": {
@@ -564,6 +615,7 @@
         "name": "Cloud Darter",
         "imageName": "Cloud Darter",
         "color": "U",
+        "castingCost": "2U",
         "id": 51,
         "rarity": "R",
         "notes": {
@@ -575,6 +627,7 @@
         "name": "Collapse Consciousness",
         "imageName": "Collapse Consciousness",
         "color": "U",
+        "castingCost": "2UU",
         "id": 52,
         "rarity": "C",
         "notes": {
@@ -586,6 +639,7 @@
         "name": "Coordinate Scrambler",
         "imageName": "Coordinate Scrambler",
         "color": "U",
+        "castingCost": "1UU",
         "id": 53,
         "rarity": "R",
         "notes": {
@@ -597,6 +651,7 @@
         "name": "Deconstruct",
         "imageName": "Deconstruct",
         "color": "U",
+        "castingCost": "1U",
         "id": 54,
         "rarity": "C",
         "notes": {
@@ -608,6 +663,7 @@
         "name": "Deep Freeze",
         "imageName": "Deep Freeze",
         "color": "U",
+        "castingCost": "1U",
         "id": 55,
         "rarity": "C",
         "notes": {
@@ -619,6 +675,7 @@
         "name": "District 16 High Court",
         "imageName": "District 16 High Court",
         "color": "U",
+        "castingCost": "1U",
         "id": 56,
         "rarity": "M",
         "notes": {
@@ -630,6 +687,7 @@
         "name": "Echo Bomber",
         "imageName": "Echo Bomber",
         "color": "U",
+        "castingCost": "5U",
         "id": 57,
         "rarity": "U",
         "notes": {
@@ -641,6 +699,7 @@
         "name": "Engine Welder",
         "imageName": "Engine Welder",
         "color": "U",
+        "castingCost": "2U",
         "id": 58,
         "rarity": "C",
         "notes": {
@@ -652,6 +711,7 @@
         "name": "Escape Velocity",
         "imageName": "Escape Velocity",
         "color": "U",
+        "castingCost": "1U",
         "id": 59,
         "rarity": "U",
         "notes": {
@@ -663,6 +723,7 @@
         "name": "Exiled Xenologist",
         "imageName": "Exiled Xenologist",
         "color": "U",
+        "castingCost": "1U",
         "id": 60,
         "rarity": "U",
         "notes": {
@@ -674,6 +735,7 @@
         "name": "Fragment Firewall",
         "imageName": "Fragment Firewall",
         "color": "U",
+        "castingCost": "1UUU",
         "id": 61,
         "rarity": "U",
         "notes": {
@@ -685,6 +747,7 @@
         "name": "Frantic Filibustering",
         "imageName": "Frantic Filibustering",
         "color": "U",
+        "castingCost": "1U",
         "id": 62,
         "rarity": "C",
         "notes": {
@@ -696,6 +759,7 @@
         "name": "Genetic Contortion",
         "imageName": "Genetic Contortion",
         "color": "U",
+        "castingCost": "U",
         "id": 63,
         "rarity": "U",
         "notes": {
@@ -707,6 +771,7 @@
         "name": "Glitch in Space-Time",
         "imageName": "Glitch in Space-Time",
         "color": "U",
+        "castingCost": "1U",
         "id": 64,
         "rarity": "R",
         "notes": {
@@ -718,6 +783,7 @@
         "name": "Guidance Pods",
         "imageName": "Guidance Pods",
         "color": "U",
+        "castingCost": "U",
         "id": 65,
         "rarity": "C",
         "notes": {
@@ -729,6 +795,7 @@
         "name": "Holoship Fleet",
         "imageName": "Holoship Fleet",
         "color": "U",
+        "castingCost": "2U",
         "id": 66,
         "rarity": "R",
         "notes": {
@@ -740,6 +807,7 @@
         "name": "Kushak Exile",
         "imageName": "Kushak Exile",
         "color": "U",
+        "castingCost": "7UU",
         "id": 67,
         "rarity": "C",
         "notes": {
@@ -751,6 +819,7 @@
         "name": "Lost in Space",
         "imageName": "Lost in Space",
         "color": "U",
+        "castingCost": "3U",
         "id": 68,
         "rarity": "C",
         "notes": {
@@ -762,6 +831,7 @@
         "name": "Migratory City",
         "imageName": "Migratory City",
         "color": "U",
+        "castingCost": "1U",
         "id": 69,
         "rarity": "C",
         "notes": {
@@ -773,6 +843,7 @@
         "name": "Mindmelded Sysadmin",
         "imageName": "Mindmelded Sysadmin",
         "color": "U",
+        "castingCost": "1U",
         "id": 70,
         "rarity": "C",
         "notes": {
@@ -784,6 +855,7 @@
         "name": "Nanoreplicator Zero",
         "imageName": "Nanoreplicator Zero",
         "color": "U",
+        "castingCost": "3UU",
         "id": 71,
         "rarity": "R",
         "notes": {
@@ -795,6 +867,7 @@
         "name": "Neural Implants",
         "imageName": "Neural Implants",
         "color": "U",
+        "castingCost": "U",
         "id": 72,
         "rarity": "U",
         "notes": {
@@ -806,6 +879,7 @@
         "name": "Overwhelm Psyche",
         "imageName": "Overwhelm Psyche",
         "color": "U",
+        "castingCost": "1U",
         "id": 73,
         "rarity": "C",
         "notes": {
@@ -817,6 +891,7 @@
         "name": "Plasma Reclaimer",
         "imageName": "Plasma Reclaimer",
         "color": "U",
+        "castingCost": "3U",
         "id": 74,
         "rarity": "C",
         "notes": {
@@ -828,6 +903,7 @@
         "name": "React",
         "imageName": "React",
         "color": "U",
+        "castingCost": "2UU",
         "id": 75,
         "rarity": "R",
         "notes": {
@@ -839,6 +915,7 @@
         "name": "Reconstruction Specialist",
         "imageName": "Reconstruction Specialist",
         "color": "U",
+        "castingCost": "3UU",
         "id": 76,
         "rarity": "C",
         "notes": {
@@ -850,6 +927,7 @@
         "name": "Refractive Skysoarer",
         "imageName": "Refractive Skysoarer",
         "color": "U",
+        "castingCost": "1U",
         "id": 77,
         "rarity": "C",
         "notes": {
@@ -861,6 +939,7 @@
         "name": "Riptide Illuminator",
         "imageName": "Riptide Illuminator",
         "color": "U",
+        "castingCost": "3U",
         "id": 78,
         "rarity": "C",
         "notes": {
@@ -872,6 +951,7 @@
         "name": "Scorned Researcher",
         "imageName": "Scorned Researcher",
         "color": "U",
+        "castingCost": "2U",
         "id": 79,
         "rarity": "U",
         "notes": {
@@ -883,6 +963,7 @@
         "name": "Slipstream Distorter",
         "imageName": "Slipstream Distorter",
         "color": "U",
+        "castingCost": "3U",
         "id": 80,
         "rarity": "U",
         "notes": {
@@ -894,6 +975,7 @@
         "name": "Supercharge",
         "imageName": "Supercharge",
         "color": "U",
+        "castingCost": "3U",
         "id": 81,
         "rarity": "C",
         "notes": {
@@ -905,6 +987,7 @@
         "name": "Supercoolant Technician",
         "imageName": "Supercoolant Technician",
         "color": "U",
+        "castingCost": "2U",
         "id": 82,
         "rarity": "U",
         "notes": {
@@ -916,6 +999,7 @@
         "name": "Tactical Freeze Ray",
         "imageName": "Tactical Freeze Ray",
         "color": "U",
+        "castingCost": "4U",
         "id": 83,
         "rarity": "U",
         "notes": {
@@ -927,6 +1011,7 @@
         "name": "Thought Dampening Unit",
         "imageName": "Thought Dampening Unit",
         "color": "U",
+        "castingCost": "2U",
         "id": 84,
         "rarity": "U",
         "notes": {
@@ -938,6 +1023,7 @@
         "name": "Time Loop",
         "imageName": "Time Loop",
         "color": "U",
+        "castingCost": "2UU",
         "id": 85,
         "rarity": "R",
         "notes": {
@@ -949,6 +1035,7 @@
         "name": "Undercroft Winder",
         "imageName": "Undercroft Winder",
         "color": "U",
+        "castingCost": "3U",
         "id": 86,
         "rarity": "C",
         "notes": {
@@ -960,6 +1047,7 @@
         "name": "Ventilation Shaft",
         "imageName": "Ventilation Shaft",
         "color": "U",
+        "castingCost": "1U",
         "id": 87,
         "rarity": "U",
         "notes": {
@@ -971,6 +1059,7 @@
         "name": "W.A.S.P. Advance Prototype",
         "imageName": "W.A.S.P. Advance Prototype",
         "color": "U",
+        "castingCost": "1U",
         "id": 88,
         "rarity": "U",
         "notes": {
@@ -982,6 +1071,7 @@
         "name": "Backalley Trafficker",
         "imageName": "Backalley Trafficker",
         "color": "B",
+        "castingCost": "2B",
         "id": 89,
         "rarity": "U",
         "notes": {
@@ -993,6 +1083,7 @@
         "name": "Corporate Spy",
         "imageName": "Corporate Spy",
         "color": "B",
+        "castingCost": "1B",
         "id": 90,
         "rarity": "C",
         "notes": {
@@ -1004,6 +1095,7 @@
         "name": "Deprivation Torture",
         "imageName": "Deprivation Torture",
         "color": "B",
+        "castingCost": "XBB",
         "id": 91,
         "rarity": "C",
         "notes": {
@@ -1015,6 +1107,7 @@
         "name": "Divide",
         "imageName": "Divide",
         "color": "B",
+        "castingCost": "2BB",
         "id": 92,
         "rarity": "R",
         "notes": {
@@ -1026,6 +1119,7 @@
         "name": "Double Agent",
         "imageName": "Double Agent",
         "color": "B",
+        "castingCost": "2B",
         "id": 93,
         "rarity": "C",
         "notes": {
@@ -1037,6 +1131,7 @@
         "name": "Engineered Endemic",
         "imageName": "Engineered Endemic",
         "color": "B",
+        "castingCost": "1B",
         "id": 94,
         "rarity": "R",
         "notes": {
@@ -1048,6 +1143,7 @@
         "name": "Figment of Death",
         "imageName": "Figment of Death",
         "color": "B",
+        "castingCost": "3B",
         "id": 95,
         "rarity": "C",
         "notes": {
@@ -1059,6 +1155,7 @@
         "name": "Frontline Eviscerator",
         "imageName": "Frontline Eviscerator",
         "color": "B",
+        "castingCost": "1B",
         "id": 96,
         "rarity": "C",
         "notes": {
@@ -1070,6 +1167,7 @@
         "name": "Gambling Ring",
         "imageName": "Gambling Ring",
         "color": "B",
+        "castingCost": "1B",
         "id": 97,
         "rarity": "U",
         "notes": {
@@ -1081,6 +1179,7 @@
         "name": "Grasp of The Left Hand",
         "imageName": "Grasp of The Left Hand",
         "color": "B",
+        "castingCost": "B",
         "id": 98,
         "rarity": "U",
         "notes": {
@@ -1092,6 +1191,7 @@
         "name": "Growing Tanks",
         "imageName": "Growing Tanks",
         "color": "B",
+        "castingCost": "3B",
         "id": 99,
         "rarity": "R",
         "notes": {
@@ -1103,6 +1203,7 @@
         "name": "Hypercollider",
         "imageName": "Hypercollider",
         "color": "B",
+        "castingCost": "BB",
         "id": 100,
         "rarity": "R",
         "notes": {
@@ -1114,6 +1215,7 @@
         "name": "Interrogation Process",
         "imageName": "Interrogation Process",
         "color": "B",
+        "castingCost": "1B",
         "id": 101,
         "rarity": "C",
         "notes": {
@@ -1125,6 +1227,7 @@
         "name": "Laser Precision",
         "imageName": "Laser Precision",
         "color": "B",
+        "castingCost": "B",
         "id": 102,
         "rarity": "U",
         "notes": {
@@ -1136,6 +1239,7 @@
         "name": "The Left Hand",
         "imageName": "The Left Hand",
         "color": "B",
+        "castingCost": "4BB",
         "id": 103,
         "rarity": "M",
         "notes": {
@@ -1147,6 +1251,7 @@
         "name": "Market Manipulation",
         "imageName": "Market Manipulation",
         "color": "B",
+        "castingCost": "1B",
         "id": 104,
         "rarity": "C",
         "notes": {
@@ -1158,6 +1263,7 @@
         "name": "Metamorphotic Membrane",
         "imageName": "Metamorphotic Membrane",
         "color": "B",
+        "castingCost": "1B",
         "id": 105,
         "rarity": "C",
         "notes": {
@@ -1169,6 +1275,7 @@
         "name": "Mindmeld Torturer",
         "imageName": "Mindmeld Torturer",
         "color": "B",
+        "castingCost": "2B",
         "id": 106,
         "rarity": "C",
         "notes": {
@@ -1180,6 +1287,7 @@
         "name": "Moonlight Strider",
         "imageName": "Moonlight Strider",
         "color": "B",
+        "castingCost": "BB",
         "id": 107,
         "rarity": "U",
         "notes": {
@@ -1191,6 +1299,7 @@
         "name": "Mortality",
         "imageName": "Mortality",
         "color": "B",
+        "castingCost": "6BBB",
         "id": 108,
         "rarity": "R",
         "notes": {
@@ -1202,6 +1311,7 @@
         "name": "Neural Devourer",
         "imageName": "Neural Devourer",
         "color": "B",
+        "castingCost": "2B",
         "id": 109,
         "rarity": "U",
         "notes": {
@@ -1213,6 +1323,7 @@
         "name": "Peacekeeper",
         "imageName": "Peacekeeper",
         "color": "B",
+        "castingCost": "1BB",
         "id": 110,
         "rarity": "R",
         "notes": {
@@ -1224,6 +1335,7 @@
         "name": "Prototype Evader",
         "imageName": "Prototype Evader",
         "color": "B",
+        "castingCost": "2B",
         "id": 111,
         "rarity": "C",
         "notes": {
@@ -1235,6 +1347,7 @@
         "name": "Radiation Strike",
         "imageName": "Radiation Strike",
         "color": "B",
+        "castingCost": "3BB",
         "id": 112,
         "rarity": "R",
         "notes": {
@@ -1246,6 +1359,7 @@
         "name": "Rumor Marketer",
         "imageName": "Rumor Marketer",
         "color": "B",
+        "castingCost": "2B",
         "id": 113,
         "rarity": "C",
         "notes": {
@@ -1257,6 +1371,7 @@
         "name": "Sewer Slitherer",
         "imageName": "Sewer Slitherer",
         "color": "B",
+        "castingCost": "4B",
         "id": 114,
         "rarity": "C",
         "notes": {
@@ -1268,6 +1383,7 @@
         "name": "Shisuku Enforcer",
         "imageName": "Shisuku Enforcer",
         "color": "B",
+        "castingCost": "4BB",
         "id": 115,
         "rarity": "C",
         "notes": {
@@ -1279,6 +1395,7 @@
         "name": "Silent Infiltrator",
         "imageName": "Silent Infiltrator",
         "color": "B",
+        "castingCost": "3B",
         "id": 116,
         "rarity": "U",
         "notes": {
@@ -1290,6 +1407,7 @@
         "name": "Sink into the Oceans",
         "imageName": "Sink into the Oceans",
         "color": "B",
+        "castingCost": "1B",
         "id": 117,
         "rarity": "C",
         "notes": {
@@ -1301,6 +1419,7 @@
         "name": "Smuggling Routes",
         "imageName": "Smuggling Routes",
         "color": "B",
+        "castingCost": "3B",
         "id": 118,
         "rarity": "U",
         "notes": {
@@ -1312,6 +1431,7 @@
         "name": "State of Disrepair",
         "imageName": "State of Disrepair",
         "color": "B",
+        "castingCost": "3B",
         "id": 119,
         "rarity": "C",
         "notes": {
@@ -1323,6 +1443,7 @@
         "name": "Surprise Round",
         "imageName": "Surprise Round",
         "color": "B",
+        "castingCost": "B",
         "id": 120,
         "rarity": "C",
         "notes": {
@@ -1334,6 +1455,7 @@
         "name": "Surveillance Craft",
         "imageName": "Surveillance Craft",
         "color": "B",
+        "castingCost": "B",
         "id": 121,
         "rarity": "C",
         "notes": {
@@ -1345,6 +1467,7 @@
         "name": "The Tartaros",
         "imageName": "The Tartaros",
         "color": "B",
+        "castingCost": "6BB",
         "id": 122,
         "rarity": "M",
         "notes": {
@@ -1356,6 +1479,7 @@
         "name": "Throatslitter",
         "imageName": "Throatslitter",
         "color": "B",
+        "castingCost": "2B",
         "id": 123,
         "rarity": "C",
         "notes": {
@@ -1367,6 +1491,7 @@
         "name": "Tragedy of the Great War",
         "imageName": "Tragedy of the Great War",
         "color": "B",
+        "castingCost": "1BBB",
         "id": 124,
         "rarity": "U",
         "notes": {
@@ -1378,6 +1503,7 @@
         "name": "Undercity Janitor",
         "imageName": "Undercity Janitor",
         "color": "B",
+        "castingCost": "3B",
         "id": 125,
         "rarity": "U",
         "notes": {
@@ -1389,6 +1515,7 @@
         "name": "Urban Revenant",
         "imageName": "Urban Revenant",
         "color": "B",
+        "castingCost": "2B",
         "id": 126,
         "rarity": "U",
         "notes": {
@@ -1400,6 +1527,7 @@
         "name": "Vis Whip",
         "imageName": "Vis Whip",
         "color": "B",
+        "castingCost": "1B",
         "id": 127,
         "rarity": "U",
         "notes": {
@@ -1411,6 +1539,7 @@
         "name": "Warapur Security Detail",
         "imageName": "Warapur Security Detail",
         "color": "B",
+        "castingCost": "1B",
         "id": 128,
         "rarity": "C",
         "notes": {
@@ -1422,6 +1551,7 @@
         "name": "Warship Phantom",
         "imageName": "Warship Phantom",
         "color": "B",
+        "castingCost": "3BB",
         "id": 129,
         "rarity": "R",
         "notes": {
@@ -1433,6 +1563,7 @@
         "name": "Whisperer of Secrets",
         "imageName": "Whisperer of Secrets",
         "color": "B",
+        "castingCost": "2B",
         "id": 130,
         "rarity": "U",
         "notes": {
@@ -1444,6 +1575,7 @@
         "name": "Adopted Wanderer",
         "imageName": "Adopted Wanderer",
         "color": "R",
+        "castingCost": "1R",
         "id": 131,
         "rarity": "C",
         "notes": {
@@ -1455,6 +1587,7 @@
         "name": "The Ananke",
         "imageName": "The Ananke",
         "color": "R",
+        "castingCost": "6RR",
         "id": 132,
         "rarity": "M",
         "notes": {
@@ -1466,6 +1599,7 @@
         "name": "Barrel Down",
         "imageName": "Barrel Down",
         "color": "R",
+        "castingCost": "1R",
         "id": 133,
         "rarity": "C",
         "notes": {
@@ -1477,6 +1611,7 @@
         "name": "Basement Patrol",
         "imageName": "Basement Patrol",
         "color": "R",
+        "castingCost": "1RR",
         "id": 134,
         "rarity": "U",
         "notes": {
@@ -1488,6 +1623,7 @@
         "name": "Bergstadt Roboticists",
         "imageName": "Bergstadt Roboticists",
         "color": "R",
+        "castingCost": "3R",
         "id": 135,
         "rarity": "U",
         "notes": {
@@ -1499,6 +1635,7 @@
         "name": "Blitz Agent",
         "imageName": "Blitz Agent",
         "color": "R",
+        "castingCost": "2R",
         "id": 136,
         "rarity": "C",
         "notes": {
@@ -1510,6 +1647,7 @@
         "name": "Charge Captain",
         "imageName": "Charge Captain",
         "color": "R",
+        "castingCost": "R",
         "id": 137,
         "rarity": "C",
         "notes": {
@@ -1521,6 +1659,7 @@
         "name": "Combined Effort",
         "imageName": "Combined Effort",
         "color": "R",
+        "castingCost": "R",
         "id": 138,
         "rarity": "U",
         "notes": {
@@ -1532,6 +1671,7 @@
         "name": "Electric Arc",
         "imageName": "Electric Arc",
         "color": "R",
+        "castingCost": "1RRR",
         "id": 139,
         "rarity": "U",
         "notes": {
@@ -1543,6 +1683,7 @@
         "name": "Execute Takeover Protocol",
         "imageName": "Execute Takeover Protocol",
         "color": "R",
+        "castingCost": "5RR",
         "id": 140,
         "rarity": "R",
         "notes": {
@@ -1554,6 +1695,7 @@
         "name": "Financier Cutthroat",
         "imageName": "Financier Cutthroat",
         "color": "R",
+        "castingCost": "R",
         "id": 141,
         "rarity": "U",
         "notes": {
@@ -1565,6 +1707,7 @@
         "name": "The Free Thinkers",
         "imageName": "The Free Thinkers",
         "color": "R",
+        "castingCost": "3RR",
         "id": 142,
         "rarity": "M",
         "notes": {
@@ -1576,6 +1719,7 @@
         "name": "Gauss Scrapgunner",
         "imageName": "Gauss Scrapgunner",
         "color": "R",
+        "castingCost": "4R",
         "id": 143,
         "rarity": "C",
         "notes": {
@@ -1587,6 +1731,7 @@
         "name": "Guerilla Fighters",
         "imageName": "Guerilla Fighters",
         "color": "R",
+        "castingCost": "3R",
         "id": 144,
         "rarity": "C",
         "notes": {
@@ -1598,6 +1743,7 @@
         "name": "Homeostimulation Suit",
         "imageName": "Homeostimulation Suit",
         "color": "R",
+        "castingCost": "2R",
         "id": 145,
         "rarity": "C",
         "notes": {
@@ -1609,6 +1755,7 @@
         "name": "Induce Psychopathy",
         "imageName": "Induce Psychopathy",
         "color": "R",
+        "castingCost": "1R",
         "id": 146,
         "rarity": "C",
         "notes": {
@@ -1620,6 +1767,7 @@
         "name": "Insist",
         "imageName": "Insist",
         "color": "R",
+        "castingCost": "RR",
         "id": 147,
         "rarity": "R",
         "notes": {
@@ -1631,6 +1779,7 @@
         "name": "Ion Storm",
         "imageName": "Ion Storm",
         "color": "R",
+        "castingCost": "5RR",
         "id": 148,
         "rarity": "U",
         "notes": {
@@ -1642,6 +1791,7 @@
         "name": "Iridium Throwing Knife",
         "imageName": "Iridium Throwing Knife",
         "color": "R",
+        "castingCost": "1R",
         "id": 149,
         "rarity": "U",
         "notes": {
@@ -1653,6 +1803,7 @@
         "name": "Mechanized Rampager",
         "imageName": "Mechanized Rampager",
         "color": "R",
+        "castingCost": "2R",
         "id": 150,
         "rarity": "U",
         "notes": {
@@ -1664,6 +1815,7 @@
         "name": "Octopus Squad",
         "imageName": "Octopus Squad",
         "color": "R",
+        "castingCost": "2R",
         "id": 151,
         "rarity": "C",
         "notes": {
@@ -1675,6 +1827,7 @@
         "name": "Ohm Wrecker",
         "imageName": "Ohm Wrecker",
         "color": "R",
+        "castingCost": "3R",
         "id": 152,
         "rarity": "C",
         "notes": {
@@ -1686,6 +1839,7 @@
         "name": "Psionics Augmentation",
         "imageName": "Psionics Augmentation",
         "color": "R",
+        "castingCost": "1R",
         "id": 153,
         "rarity": "R",
         "notes": {
@@ -1697,6 +1851,7 @@
         "name": "Reverse Polarity",
         "imageName": "Reverse Polarity",
         "color": "R",
+        "castingCost": "X1RR",
         "id": 154,
         "rarity": "U",
         "notes": {
@@ -1708,6 +1863,7 @@
         "name": "Rip Space-Time",
         "imageName": "Rip Space-Time",
         "color": "R",
+        "castingCost": "3RR",
         "id": 155,
         "rarity": "C",
         "notes": {
@@ -1719,6 +1875,7 @@
         "name": "Rocket Salvo",
         "imageName": "Rocket Salvo",
         "color": "R",
+        "castingCost": "1R",
         "id": 156,
         "rarity": "C",
         "notes": {
@@ -1730,6 +1887,7 @@
         "name": "Scrapyard Salvager",
         "imageName": "Scrapyard Salvager",
         "color": "R",
+        "castingCost": "1R",
         "id": 157,
         "rarity": "R",
         "notes": {
@@ -1741,6 +1899,7 @@
         "name": "Selfdestruct Sequence",
         "imageName": "Selfdestruct Sequence",
         "color": "R",
+        "castingCost": "R",
         "id": 158,
         "rarity": "C",
         "notes": {
@@ -1752,6 +1911,7 @@
         "name": "Slagthrower",
         "imageName": "Slagthrower",
         "color": "R",
+        "castingCost": "2R",
         "id": 159,
         "rarity": "C",
         "notes": {
@@ -1763,6 +1923,7 @@
         "name": "Slipstream Hunters",
         "imageName": "Slipstream Hunters",
         "color": "R",
+        "castingCost": "4R",
         "id": 160,
         "rarity": "U",
         "notes": {
@@ -1774,6 +1935,7 @@
         "name": "Speed Demon",
         "imageName": "Speed Demon",
         "color": "R",
+        "castingCost": "1RR",
         "id": 161,
         "rarity": "U",
         "notes": {
@@ -1785,6 +1947,7 @@
         "name": "Supervolcanic Fallout",
         "imageName": "Supervolcanic Fallout",
         "color": "R",
+        "castingCost": "3RR",
         "id": 162,
         "rarity": "C",
         "notes": {
@@ -1796,6 +1959,7 @@
         "name": "Supply Runner",
         "imageName": "Supply Runner",
         "color": "R",
+        "castingCost": "1R",
         "id": 163,
         "rarity": "C",
         "notes": {
@@ -1807,6 +1971,7 @@
         "name": "Threaten",
         "imageName": "Threaten",
         "color": "R",
+        "castingCost": "2R",
         "id": 164,
         "rarity": "C",
         "notes": {
@@ -1818,6 +1983,7 @@
         "name": "Unstable Nanoreplicators",
         "imageName": "Unstable Nanoreplicators",
         "color": "R",
+        "castingCost": "2R",
         "id": 165,
         "rarity": "R",
         "notes": {
@@ -1829,6 +1995,7 @@
         "name": "Vulcan Devastators",
         "imageName": "Vulcan Devastators",
         "color": "R",
+        "castingCost": "5R",
         "id": 166,
         "rarity": "C",
         "notes": {
@@ -1840,6 +2007,7 @@
         "name": "Walking Furnace",
         "imageName": "Walking Furnace",
         "color": "R",
+        "castingCost": "2R",
         "id": 167,
         "rarity": "U",
         "notes": {
@@ -1851,6 +2019,7 @@
         "name": "Warapur Company Duo",
         "imageName": "Warapur Company Duo",
         "color": "R",
+        "castingCost": "1R",
         "id": 168,
         "rarity": "C",
         "notes": {
@@ -1862,6 +2031,7 @@
         "name": "Warapur Company Flagship",
         "imageName": "Warapur Company Flagship",
         "color": "R",
+        "castingCost": "4RR",
         "id": 169,
         "rarity": "R",
         "notes": {
@@ -1873,6 +2043,7 @@
         "name": "Warapur Company Heavy",
         "imageName": "Warapur Company Heavy",
         "color": "R",
+        "castingCost": "3R",
         "id": 170,
         "rarity": "U",
         "notes": {
@@ -1884,6 +2055,7 @@
         "name": "Week of Hate",
         "imageName": "Week of Hate",
         "color": "R",
+        "castingCost": "3RR",
         "id": 171,
         "rarity": "R",
         "notes": {
@@ -1895,6 +2067,7 @@
         "name": "Wild Game Huntmaster",
         "imageName": "Wild Game Huntmaster",
         "color": "R",
+        "castingCost": "4R",
         "id": 172,
         "rarity": "R",
         "notes": {
@@ -1906,6 +2079,7 @@
         "name": "Badawi Trooper",
         "imageName": "Badawi Trooper",
         "color": "G",
+        "castingCost": "3GG",
         "id": 173,
         "rarity": "U",
         "notes": {
@@ -1917,6 +2091,7 @@
         "name": "Beast of Burden",
         "imageName": "Beast of Burden",
         "color": "G",
+        "castingCost": "2GG",
         "id": 174,
         "rarity": "C",
         "notes": {
@@ -1928,6 +2103,7 @@
         "name": "Bioarchitect",
         "imageName": "Bioarchitect",
         "color": "G",
+        "castingCost": "1G",
         "id": 175,
         "rarity": "R",
         "notes": {
@@ -1939,6 +2115,7 @@
         "name": "Biosample Courier",
         "imageName": "Biosample Courier",
         "color": "G",
+        "castingCost": "3G",
         "id": 176,
         "rarity": "U",
         "notes": {
@@ -1950,6 +2127,7 @@
         "name": "Brood Ambush",
         "imageName": "Brood Ambush",
         "color": "G",
+        "castingCost": "2G",
         "id": 177,
         "rarity": "C",
         "notes": {
@@ -1961,6 +2139,7 @@
         "name": "Chase Down",
         "imageName": "Chase Down",
         "color": "G",
+        "castingCost": "G",
         "id": 178,
         "rarity": "C",
         "notes": {
@@ -1972,6 +2151,7 @@
         "name": "Deep into the Subconscious",
         "imageName": "Deep into the Subconscious",
         "color": "G",
+        "castingCost": "1G",
         "id": 179,
         "rarity": "C",
         "notes": {
@@ -1983,6 +2163,7 @@
         "name": "Defense Protocols",
         "imageName": "Defense Protocols",
         "color": "G",
+        "castingCost": "3G",
         "id": 180,
         "rarity": "U",
         "notes": {
@@ -1994,6 +2175,7 @@
         "name": "Dominate",
         "imageName": "Dominate",
         "color": "G",
+        "castingCost": "2GG",
         "id": 181,
         "rarity": "R",
         "notes": {
@@ -2005,6 +2187,7 @@
         "name": "Ecosystem Collapse",
         "imageName": "Ecosystem Collapse",
         "color": "G",
+        "castingCost": "1GGG",
         "id": 182,
         "rarity": "U",
         "notes": {
@@ -2016,6 +2199,7 @@
         "name": "Escaped Test Subject",
         "imageName": "Escaped Test Subject",
         "color": "G",
+        "castingCost": "G",
         "id": 183,
         "rarity": "C",
         "notes": {
@@ -2027,6 +2211,7 @@
         "name": "Experiment T.I.T.A.N.",
         "imageName": "Experiment T.I.T.A.N.",
         "color": "G",
+        "castingCost": "3GG",
         "id": 184,
         "rarity": "U",
         "notes": {
@@ -2038,6 +2223,7 @@
         "name": "Experimental Serum",
         "imageName": "Experimental Serum",
         "color": "G",
+        "castingCost": "2G",
         "id": 185,
         "rarity": "U",
         "notes": {
@@ -2049,6 +2235,7 @@
         "name": "Extraterrestrial Discovery",
         "imageName": "Extraterrestrial Discovery",
         "color": "G",
+        "castingCost": "2G",
         "id": 186,
         "rarity": "C",
         "notes": {
@@ -2060,6 +2247,7 @@
         "name": "Frontier Anatomist",
         "imageName": "Frontier Anatomist",
         "color": "G",
+        "castingCost": "1G",
         "id": 187,
         "rarity": "U",
         "notes": {
@@ -2071,6 +2259,7 @@
         "name": "Genome Toggle",
         "imageName": "Genome Toggle",
         "color": "G",
+        "castingCost": "5GG",
         "id": 188,
         "rarity": "R",
         "notes": {
@@ -2082,6 +2271,7 @@
         "name": "Gestation Cycle",
         "imageName": "Gestation Cycle",
         "color": "G",
+        "castingCost": "2G",
         "id": 189,
         "rarity": "C",
         "notes": {
@@ -2093,6 +2283,7 @@
         "name": "Growth Genetics",
         "imageName": "Growth Genetics",
         "color": "G",
+        "castingCost": "2GG",
         "id": 190,
         "rarity": "C",
         "notes": {
@@ -2104,6 +2295,7 @@
         "name": "Incubation Hulk",
         "imageName": "Incubation Hulk",
         "color": "G",
+        "castingCost": "5GG",
         "id": 191,
         "rarity": "R",
         "notes": {
@@ -2115,6 +2307,7 @@
         "name": "The Kishar",
         "imageName": "The Kishar",
         "color": "G",
+        "castingCost": "5GGG",
         "id": 192,
         "rarity": "M",
         "notes": {
@@ -2126,6 +2319,7 @@
         "name": "Kushak Artifact",
         "imageName": "Kushak Artifact",
         "color": "G",
+        "castingCost": "G",
         "id": 193,
         "rarity": "R",
         "notes": {
@@ -2137,6 +2331,7 @@
         "name": "Kushak Brood Warden",
         "imageName": "Kushak Brood Warden",
         "color": "G",
+        "castingCost": "3G",
         "id": 194,
         "rarity": "U",
         "notes": {
@@ -2148,6 +2343,7 @@
         "name": "Lifestrider",
         "imageName": "Lifestrider",
         "color": "G",
+        "castingCost": "2G",
         "id": 195,
         "rarity": "C",
         "notes": {
@@ -2159,6 +2355,7 @@
         "name": "Lone Wanderer",
         "imageName": "Lone Wanderer",
         "color": "G",
+        "castingCost": "2G",
         "id": 196,
         "rarity": "U",
         "notes": {
@@ -2170,6 +2367,7 @@
         "name": "Myth of Baljurashi",
         "imageName": "Myth of Baljurashi",
         "color": "G",
+        "castingCost": "4G",
         "id": 197,
         "rarity": "U",
         "notes": {
@@ -2181,6 +2379,7 @@
         "name": "Neural Suppressor",
         "imageName": "Neural Suppressor",
         "color": "G",
+        "castingCost": "4GG",
         "id": 198,
         "rarity": "R",
         "notes": {
@@ -2192,6 +2391,7 @@
         "name": "Radium Tracker",
         "imageName": "Radium Tracker",
         "color": "G",
+        "castingCost": "3G",
         "id": 199,
         "rarity": "C",
         "notes": {
@@ -2203,6 +2403,7 @@
         "name": "Research Team Basirah",
         "imageName": "Research Team Basirah",
         "color": "G",
+        "castingCost": "1GG",
         "id": 200,
         "rarity": "R",
         "notes": {
@@ -2214,6 +2415,7 @@
         "name": "Reverse Gravity",
         "imageName": "Reverse Gravity",
         "color": "G",
+        "castingCost": "4GG",
         "id": 201,
         "rarity": "U",
         "notes": {
@@ -2225,6 +2427,7 @@
         "name": "SAM Team",
         "imageName": "SAM Team",
         "color": "G",
+        "castingCost": "1GG",
         "id": 202,
         "rarity": "C",
         "notes": {
@@ -2236,6 +2439,7 @@
         "name": "Screeching Terror",
         "imageName": "Screeching Terror",
         "color": "G",
+        "castingCost": "3GG",
         "id": 203,
         "rarity": "C",
         "notes": {
@@ -2247,6 +2451,7 @@
         "name": "Sewer Monster",
         "imageName": "Sewer Monster",
         "color": "G",
+        "castingCost": "7GG",
         "id": 204,
         "rarity": "C",
         "notes": {
@@ -2258,6 +2463,7 @@
         "name": "Sewer Unit",
         "imageName": "Sewer Unit",
         "color": "G",
+        "castingCost": "1G",
         "id": 205,
         "rarity": "C",
         "notes": {
@@ -2269,6 +2475,7 @@
         "name": "Strongarm Tactics",
         "imageName": "Strongarm Tactics",
         "color": "G",
+        "castingCost": "4G",
         "id": 206,
         "rarity": "U",
         "notes": {
@@ -2280,6 +2487,7 @@
         "name": "Supply Scavengers",
         "imageName": "Supply Scavengers",
         "color": "G",
+        "castingCost": "2G",
         "id": 207,
         "rarity": "C",
         "notes": {
@@ -2291,6 +2499,7 @@
         "name": "Support Team",
         "imageName": "Support Team",
         "color": "G",
+        "castingCost": "1G",
         "id": 208,
         "rarity": "C",
         "notes": {
@@ -2302,6 +2511,7 @@
         "name": "Terraforming Works",
         "imageName": "Terraforming Works",
         "color": "G",
+        "castingCost": "4GG",
         "id": 209,
         "rarity": "R",
         "notes": {
@@ -2313,6 +2523,7 @@
         "name": "Ultramagnetic Interference",
         "imageName": "Ultramagnetic Interference",
         "color": "G",
+        "castingCost": "2G",
         "id": 210,
         "rarity": "C",
         "notes": {
@@ -2324,6 +2535,7 @@
         "name": "Umida Incorporated",
         "imageName": "Umida Incorporated",
         "color": "G",
+        "castingCost": "3G",
         "id": 211,
         "rarity": "M",
         "notes": {
@@ -2335,6 +2547,7 @@
         "name": "Unstable Growth",
         "imageName": "Unstable Growth",
         "color": "G",
+        "castingCost": "1G",
         "id": 212,
         "rarity": "C",
         "notes": {
@@ -2346,6 +2559,7 @@
         "name": "Urban Ravager",
         "imageName": "Urban Ravager",
         "color": "G",
+        "castingCost": "3G",
         "id": 213,
         "rarity": "U",
         "notes": {
@@ -2357,6 +2571,7 @@
         "name": "Wanderer Caravans",
         "imageName": "Wanderer Caravans",
         "color": "G",
+        "castingCost": "2G",
         "id": 214,
         "rarity": "C",
         "notes": {
@@ -2368,6 +2583,7 @@
         "name": "High Judge Zephynius",
         "imageName": "High Judge Zephynius",
         "color": "WU",
+        "castingCost": "2WU",
         "id": 215,
         "rarity": "R",
         "notes": {
@@ -2379,6 +2595,7 @@
         "name": "Wings of the Law",
         "imageName": "Wings of the Law",
         "color": "WU",
+        "castingCost": "2WU",
         "id": 216,
         "rarity": "U",
         "notes": {
@@ -2390,6 +2607,7 @@
         "name": "Twilight Strider",
         "imageName": "Twilight Strider",
         "color": "UB",
+        "castingCost": "2UB",
         "id": 217,
         "rarity": "U",
         "notes": {
@@ -2401,6 +2619,7 @@
         "name": "Whisper, the Cleaner",
         "imageName": "Whisper the Cleaner",
         "color": "UB",
+        "castingCost": "1UB",
         "id": 218,
         "rarity": "R",
         "notes": {
@@ -2412,6 +2631,7 @@
         "name": "Thousand Spares",
         "imageName": "Thousand Spares",
         "color": "BR",
+        "castingCost": "1BR",
         "id": 219,
         "rarity": "R",
         "notes": {
@@ -2423,6 +2643,7 @@
         "name": "Warapur Protection Service",
         "imageName": "Warapur Protection Service",
         "color": "BR",
+        "castingCost": "BR",
         "id": 220,
         "rarity": "U",
         "notes": {
@@ -2434,6 +2655,7 @@
         "name": "Canyon Skitterer",
         "imageName": "Canyon Skitterer",
         "color": "RG",
+        "castingCost": "2RG",
         "id": 221,
         "rarity": "U",
         "notes": {
@@ -2445,6 +2667,7 @@
         "name": "Honored Wurmcaller",
         "imageName": "Honored Wurmcaller",
         "color": "RG",
+        "castingCost": "3RG",
         "id": 222,
         "rarity": "R",
         "notes": {
@@ -2456,6 +2679,7 @@
         "name": "Ingolf, the Catalyst",
         "imageName": "Ingolf the Catalyst",
         "color": "GW",
+        "castingCost": "4GW",
         "id": 223,
         "rarity": "R",
         "notes": {
@@ -2467,6 +2691,7 @@
         "name": "Rooftop Misdirector",
         "imageName": "Rooftop Misdirector",
         "color": "GW",
+        "castingCost": "2GW",
         "id": 224,
         "rarity": "U",
         "notes": {
@@ -2478,6 +2703,7 @@
         "name": "Publicity Officer",
         "imageName": "Publicity Officer",
         "color": "WB",
+        "castingCost": "1WB",
         "id": 225,
         "rarity": "U",
         "notes": {
@@ -2489,6 +2715,7 @@
         "name": "Representative Vuissance",
         "imageName": "Representative Vuissance",
         "color": "WB",
+        "castingCost": "2WB",
         "id": 226,
         "rarity": "R",
         "notes": {
@@ -2500,6 +2727,7 @@
         "name": "Gravitic Collector Alpha",
         "imageName": "Gravitic Collector Alpha",
         "color": "UR",
+        "castingCost": "2UR",
         "id": 227,
         "rarity": "R",
         "notes": {
@@ -2511,6 +2739,7 @@
         "name": "Scrap Ferries",
         "imageName": "Scrap Ferries",
         "color": "UR",
+        "castingCost": "2UR",
         "id": 228,
         "rarity": "U",
         "notes": {
@@ -2522,6 +2751,7 @@
         "name": "Sewer Dredgers",
         "imageName": "Sewer Dredgers",
         "color": "BG",
+        "castingCost": "1BG",
         "id": 229,
         "rarity": "U",
         "notes": {
@@ -2533,6 +2763,7 @@
         "name": "Titan of Shisuku Sewers",
         "imageName": "Titan of Shisuku Sewers",
         "color": "BG",
+        "castingCost": "3BG",
         "id": 230,
         "rarity": "R",
         "notes": {
@@ -2544,6 +2775,7 @@
         "name": "Agent Magpie",
         "imageName": "Agent Magpie",
         "color": "RW",
+        "castingCost": "1RW",
         "id": 231,
         "rarity": "R",
         "notes": {
@@ -2555,6 +2787,7 @@
         "name": "Baljurashi Irregulars",
         "imageName": "Baljurashi Irregulars",
         "color": "RW",
+        "castingCost": "RW",
         "id": 232,
         "rarity": "U",
         "notes": {
@@ -2566,6 +2799,7 @@
         "name": "Research Head Imatsu",
         "imageName": "Research Head Imatsu",
         "color": "GU",
+        "castingCost": "2GU",
         "id": 233,
         "rarity": "R",
         "notes": {
@@ -2577,6 +2811,7 @@
         "name": "Troposphere Drifter",
         "imageName": "Troposphere Drifter",
         "color": "GU",
+        "castingCost": "1GU",
         "id": 234,
         "rarity": "U",
         "notes": {
@@ -2588,6 +2823,7 @@
         "name": "Biodome",
         "imageName": "Biodome",
         "color": "",
+        "castingCost": "",
         "id": 235,
         "rarity": "C",
         "notes": {

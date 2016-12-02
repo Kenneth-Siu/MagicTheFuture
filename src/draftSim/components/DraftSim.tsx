@@ -8,7 +8,7 @@ import CardImage from "../../common/components/CardImage";
 
 export type PassDirection = "left" | "right";
 
-interface DraftSimState { pack: Pack, picks: Card[], packNumber: number };
+interface DraftSimState { pack: Pack, picks: Card[][], packNumber: number };
 
 export interface DraftSimProps { }
 
@@ -25,13 +25,44 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         this.humanPlayer = this.computerPlayers.shift();
         this.state = {
             pack: this.humanPlayer.nextPack,
-            picks: [],
+            picks: this.splitIntoCmcPiles([]),
             packNumber: 1
         };
         this.passDirection = "left";
     }
 
-    makePick(card: Card) {
+    render(): JSX.Element {
+        return (
+            <div className="page-container">
+                {this.state.pack.cards.length > 0 &&
+                    <div className="row">
+                        <div className="col-md-12"><h2>Pack {this.state.packNumber}</h2></div>
+                        <div className="col-md-12 draft-pack">
+                            {_.map(this.state.pack.cards, card => this.getCardPickElement(card))}
+                        </div>
+                    </div>
+                }
+                <div className="row">
+                    <div className="col-md-12"><h2>Picks</h2></div>
+                    <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
+                        {_.map(this.state.picks, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    private splitIntoCmcPiles(cards: Card[]): Card[][] {
+        const piles: Card[][] = [[], [], [], [], [], [], [], []];
+        cards.forEach(card => {
+            if (card.cmc === "X" || card.cmc === 0) piles[7].push(card);
+            else if (card.cmc >= 7) piles[6].push(card);
+            else piles[card.cmc - 1].push(card);
+        });
+        return piles;
+    }
+
+    private makePick(card: Card): void {
         this.humanPlayer.makePick(card);
         for (const computerPlayer of this.computerPlayers) {
             computerPlayer.computerPick();
@@ -50,35 +81,22 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         }
         this.setState({
             pack: this.humanPlayer.nextPack,
-            picks: this.humanPlayer.picks
+            picks: this.splitIntoCmcPiles(this.humanPlayer.picks)
         });
     }
 
-    getCardPickElement(card: Card) {
+    private getCardPickElement(card: Card): JSX.Element {
         return <CardPick key={card.uuid} onClick={() => { this.makePick(card) } } imageUrl={card.imageUrl} />
     }
 
-    getCardImageElement(card: Card) {
-        return <CardImage key={card.uuid} url={card.imageUrl} />
+    private getCardImageElement(card: Card, index: number): JSX.Element {
+        return <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
     }
 
-    render() {
+    private getCmcPileElement(pile: Card[], index: number): JSX.Element {
         return (
-            <div className="page-container">
-                {this.state.pack.cards.length > 0 &&
-                    <div className="row">
-                        <div className="col-md-12"><h2>Pack {this.state.packNumber}</h2></div>
-                        <div className="col-md-12 draft-pack">
-                            {_.map(this.state.pack.cards, card => this.getCardPickElement(card))}
-                        </div>
-                    </div>
-                }
-                <div className="row">
-                    <div className="col-md-12"><h2>Picks</h2></div>
-                    <div className="col-md-12 draft-picks">
-                        {_.map(this.state.picks, card => this.getCardImageElement(card))}
-                    </div>
-                </div>
+            <div className={`cmc pile-size-${pile.length}`} key={index}>
+                {_.map(pile, (card, index) => this.getCardImageElement(card, index))}
             </div>
         );
     }

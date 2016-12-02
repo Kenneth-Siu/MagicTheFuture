@@ -5,6 +5,7 @@ export default class JsonCard {
     name: string;
     imageName: string;
     color: Color;
+    castingCost: string;
     rarity: Rarity;
     notes: INotes;
     rulesText: string;

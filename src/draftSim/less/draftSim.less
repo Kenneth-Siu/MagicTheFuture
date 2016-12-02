@@ -1,21 +1,49 @@
 @import "../../common/less/shared";
 
-.draft-pack {
+@maxNumberOfPicks: 45;
+
+div.draft-pack {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
 
     > div {
         margin: 0.1em;
     }
 }
 
-.draft-picks {
+div.draft-picks {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 0;
 
-    > div {
-        margin: 0.1em;
+    .picks-size-loop(@index) when (@index < @maxNumberOfPicks) {
+        &.picks-size-@{index} {
+            padding-bottom: 5.81% + @index * 5.81% + 2em;
+        }
+        .picks-size-loop(@index + 1);
+    }
+    .picks-size-loop(0);
+
+    .cmc {
+        flex-grow: 1;
+        position: relative;
+        padding-bottom: 5.81%;
+
+        .card {
+            width: 100%;
+            height: auto;
+            position: absolute;
+
+            .pile-index-loop (@index) when (@index < @maxNumberOfPicks) {
+                &.pile-index-@{index} {
+                    top: unit(@index * 100, ~"%");
+                }
+                .pile-index-loop(@index + 1);
+            }
+            .pile-index-loop(0);
+        }
     }
 }
