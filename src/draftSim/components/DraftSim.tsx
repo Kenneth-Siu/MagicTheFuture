@@ -8,7 +8,7 @@ import CardImage from "../../common/components/CardImage";
 
 export type PassDirection = "left" | "right";
 
-interface DraftSimState { pack: Pack, picks: Card[][], packNumber: number };
+interface DraftSimState { pack: Pack, packNumber: number, picks: Card[][], computerPicks: Card[][][] };
 
 export interface DraftSimProps { }
 
@@ -25,8 +25,10 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         this.humanPlayer = this.computerPlayers.shift();
         this.state = {
             pack: this.humanPlayer.nextPack,
+            packNumber: 1,
             picks: this.splitIntoCmcPiles([]),
-            packNumber: 1
+            computerPicks: [this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]),
+            this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([])]
         };
         this.passDirection = "left";
     }
@@ -48,6 +50,16 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                         {_.map(this.state.picks, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
                     </div>
                 </div>
+                {
+                    this.state.computerPicks.map((ai, index) =>
+                        <div className="row" key={index}>
+                            <div className="col-md-12"><h2>AI {index}</h2></div>
+                            <div className={`col-md-12 draft-picks picks-size-${_.max(ai.map(cmcPile => cmcPile.length))}`}>
+                                {_.map(ai, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                            </div>
+                        </div>
+                    )
+                }
             </div>
         );
     }
@@ -81,7 +93,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         }
         this.setState({
             pack: this.humanPlayer.nextPack,
-            picks: this.splitIntoCmcPiles(this.humanPlayer.picks)
+            picks: this.splitIntoCmcPiles(this.humanPlayer.picks),
+            computerPicks: this.computerPlayers.map(computerPlayer => this.splitIntoCmcPiles(computerPlayer.picks))
         });
     }
 
