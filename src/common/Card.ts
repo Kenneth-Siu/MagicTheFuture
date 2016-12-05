@@ -9,7 +9,13 @@ export type Rarity = "M" | "R" | "U" | "C";
 export type Cmc = number | "X";
 
 export interface INotes {
-    power: number
+    power: number;
+    synergies?: ITags;
+    tags?: ITags;
+}
+
+interface ITags {
+    devices?: number;
 }
 
 export default class Card {

@@ -41,18 +41,18 @@ script:
 		id := cardNumber
 		rarity := rarityFilter(card.rarity)
 		notes := card.notes
-		"        \"name\": \""+name+"\",\n"
-		+"        \"imageName\": \""+imageName+"\",\n"
-		+"        \"color\": \""+color+"\",\n"
-		+"        \"castingCost\": \""+castingCost+"\",\n"
-		+"        \"id\": "+id+",\n"
-		+"        \"rarity\": \""+rarity+"\",\n"
-		+"        \"notes\": \{\n"+notes+"\n        \},\n"
+		"\"name\": \""+name+"\",\n"
+		+"\"imageName\": \""+imageName+"\",\n"
+		+"\"color\": \""+color+"\",\n"
+		+"\"castingCost\": \""+castingCost+"\",\n"
+		+"\"id\": "+id+",\n"
+		+"\"rarity\": \""+rarity+"\",\n"
+		+"\"notes\": \{\n"+notes+"\n\},\n"
 	}
 	rulesTextFilter := replace@(match:"\n", replace:"\\\\n")
 	write_normal_rules_text := {
 		rulesText := rulesTextFilter(card.rule_text)
-		"        \"rulesText\": \""+rulesText+"\"\n"
+		"\"rulesText\": \""+rulesText+"\"\n"
 	}
 	write_walker_rules_text := {
 		# The First Ability
@@ -87,7 +87,7 @@ script:
 		
 		comma := if cardNumber+1 != totalCards then ",\n" else ""
 		
-		"    \{\n" + cardNonRulesText + cardRulesText + "    \}" + comma
+		"\{\n" + cardNonRulesText + cardRulesText + "\}" + comma
 	}
 	write_cards := {
 		cardList := sort_list(cards, order_by: {input.card_number})
