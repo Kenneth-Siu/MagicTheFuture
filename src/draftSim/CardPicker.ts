@@ -15,7 +15,7 @@ class CardRating {
 
 class ColorAnalyser {
 
-    private readonly fuzzAmount = 5;
+    private readonly fuzzAmount = 12;
 
     private white: number;
     private blue: number;
@@ -23,13 +23,14 @@ class ColorAnalyser {
     private red: number;
     private green: number;
 
-    constructor(cards: Card[]) {
+    constructor(picks: Card[], pick: Card) {
         this.white = 0;
         this.blue = 0;
         this.black = 0;
         this.red = 0;
         this.green = 0;
-        this.countCards(cards);
+        this.countCards(picks);
+        this.countCard(pick);
     }
 
     private countCards(cards: Card[]): void {
@@ -72,18 +73,14 @@ class ColorAnalyser {
 }
 
 export default class CardPicker {
-    colorAnalyser: ColorAnalyser;
+    picks: Card[];
     packRatings: CardRating[];
 
     decidePick(pack: Pack, picks: Card[]): Card {
         if (!pack || pack.cards.length === 0) throw "Sorry Dave, I can't let you pick from a nonexistent or empty pack.";
-        this.analysePicks(picks);
+        this.picks = picks;
         this.evaluatePack(pack);
         return this.makePick();
-    }
-
-    private analysePicks(picks: Card[]): void {
-        this.colorAnalyser = new ColorAnalyser(picks);
     }
 
     private evaluatePack(pack: Pack): void {
@@ -91,8 +88,12 @@ export default class CardPicker {
     }
 
     private evaluateCard(card: Card): CardRating {
-        const rating = card.notes.power * this.colorAnalyser.getModifier(card.color);
-        return new CardRating(card, rating);
+        const colorAnalyser = new ColorAnalyser(this.picks, card);
+        const pickRatings = this.picks.map(pick => {
+            return pick.notes.power * colorAnalyser.getModifier(pick.color)
+        }).reduce((a, b) => a + b, 0);
+        const cardRating = card.notes.power * colorAnalyser.getModifier(card.color);
+        return new CardRating(card, pickRatings + cardRating);
     }
 
     private makePick(): Card {
