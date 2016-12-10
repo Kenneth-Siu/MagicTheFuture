@@ -16,6 +16,17 @@ export interface INotes {
 
 interface ITags {
     devices?: number;
+    deviceTokens?: number;
+    lifeloss?: number;
+    lifegain?: number;
+    unitTokens?: number;
+    deathTrigger?: number;
+    etb?: number;
+    equipment?: number;
+    atarka?: number;
+    tactical?: number;
+    evasion?: number;
+    ramp?: number;
 }
 
 export default class Card {
