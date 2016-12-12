@@ -1,9 +1,8 @@
+import * as _ from "lodash";
 import Card from "../common/Card";
 import { Color, SingleColor } from "../common/Card";
 
 export default class ColorAnalyser {
-
-    private readonly fuzzAmount = 8;
 
     private white: number = 0;
     private blue: number = 0;
@@ -11,7 +10,10 @@ export default class ColorAnalyser {
     private red: number = 0;
     private green: number = 0;
 
+    private totalPicks: number;
+
     constructor(picks: Card[], pick: Card) {
+        this.totalPicks = picks.length;
         this.countCards(picks);
         this.countCard(pick);
     }
@@ -51,6 +53,12 @@ export default class ColorAnalyser {
     }
 
     private fuzz(num: number): number {
-        return num + this.fuzzAmount;
+        return num + this.getFuzzAmount();
+    }
+
+    private getFuzzAmount(): number {
+        if (this.totalPicks >= 28) return -2;
+        if (this.totalPicks >= 14) return 4;
+        return _.clamp(17 - this.totalPicks, 4, 12);
     }
 }
