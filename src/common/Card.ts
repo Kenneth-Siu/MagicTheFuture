@@ -10,7 +10,7 @@ export type Cmc = number | "X";
 
 export interface INotes {
     power: number;
-    potential: number;
+    potential?: number;
     synergies?: ITags;
     tags?: ITags;
 }

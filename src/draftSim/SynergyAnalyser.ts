@@ -26,11 +26,13 @@ export default class SynergyAnalyser {
     }
 
     getPotentialPowerOfCard(card: Card): number {
+        if (!card.notes.potential) return card.notes.power;
         const fractionOfPotential = this.getFractionOfPotential(card);
         return card.notes.power + (card.notes.potential - card.notes.power) * (fractionOfPotential + (1 - fractionOfPotential) * this.getOptimism());
     }
 
     getExistingPowerOfCard(card: Card): number {
+        if (!card.notes.potential) return card.notes.power;
         return card.notes.power + (card.notes.potential - card.notes.power) * this.getFractionOfPotential(card);
     }
 
