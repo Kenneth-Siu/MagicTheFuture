@@ -3,6 +3,7 @@ import Pack from "./Pack";
 import Card from "../common/Card";
 import { Color, SingleColor } from "../common/Card";
 import ColorAnalyser from "./ColorAnalyser";
+import SynergyAnalyser from "./SynergyAnalyser";
 
 class CardRating {
     card: Card;
@@ -31,10 +32,11 @@ export default class CardPicker {
 
     private evaluateCard(card: Card): CardRating {
         const colorAnalyser = new ColorAnalyser(this.picks, card);
+        const synergyAnalyser = new SynergyAnalyser(this.picks, card);
         const pickRatings = this.picks.map(pick => {
-            return pick.notes.power * colorAnalyser.getModifier(pick.color)
+            return synergyAnalyser.getExistingPowerOfCard(pick) * colorAnalyser.getModifier(pick.color)
         }).reduce((a, b) => a + b, 0);
-        const cardRating = card.notes.power * colorAnalyser.getModifier(card.color);
+        const cardRating = synergyAnalyser.getPotentialPowerOfCard(card) * colorAnalyser.getModifier(card.color);
         return new CardRating(card, pickRatings + cardRating);
     }
 
