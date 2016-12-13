@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import CardGrid from "./components/CardGrid";
+import VisualSpoiler from "./components/VisualSpoiler";
 
 ReactDOM.render(
-    <CardGrid />,
+    <VisualSpoiler />,
     document.getElementById("root")
 );

@@ -23,13 +23,13 @@ export default class CardGridFilters extends React.Component<CardGridFiltersProp
     render() {
         return (
             <div className="spoiler-grid-filters">
+                <CardGridFilterButton name="Colorless" onClick={() => this.handleClick("colorless")} />
                 <CardGridFilterButton name="White" onClick={() => this.handleClick("white")} />
                 <CardGridFilterButton name="Blue" onClick={() => this.handleClick("blue")} />
                 <CardGridFilterButton name="Black" onClick={() => this.handleClick("black")} />
                 <CardGridFilterButton name="Red" onClick={() => this.handleClick("red")} />
                 <CardGridFilterButton name="Green" onClick={() => this.handleClick("green")} />
                 <CardGridFilterButton name="Multicolor" onClick={() => this.handleClick("multicolor")} />
-                <CardGridFilterButton name="Colorless" onClick={() => this.handleClick("colorless")} />
             </div>
         );
     }

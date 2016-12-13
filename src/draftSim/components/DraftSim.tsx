@@ -5,6 +5,8 @@ import Pack from "../Pack";
 import Card from "../../common/Card";
 import CardPick from "./CardPick";
 import CardImage from "../../common/components/CardImage";
+import NavBar from "../../common/components/NavBar";
+import {draftSim} from "../../common/constants";
 
 export type PassDirection = "left" | "right";
 
@@ -35,31 +37,34 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
 
     render(): JSX.Element {
         return (
-            <div className="page-container">
-                {this.state.pack.cards.length > 0 &&
-                    <div className="row">
-                        <div className="col-md-12"><h2>Pack {this.state.packNumber}</h2></div>
-                        <div className="col-md-12 draft-pack">
-                            {_.map(this.state.pack.cards, card => this.getCardPickElement(card))}
-                        </div>
-                    </div>
-                }
-                <div className="row">
-                    <div className="col-md-12"><h2>Picks</h2></div>
-                    <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
-                        {_.map(this.state.picks, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
-                    </div>
-                </div>
-                {
-                    this.state.computerPicks.map((ai, index) =>
-                        <div className="row" key={index}>
-                            <div className="col-md-12"><h2>AI {index}</h2></div>
-                            <div className={`col-md-12 draft-picks picks-size-${_.max(ai.map(cmcPile => cmcPile.length))}`}>
-                                {_.map(ai, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+            <div>
+                <NavBar activePage={draftSim.uuid} />
+                <div className="page-container">
+                    {this.state.pack.cards.length > 0 &&
+                        <div className="row">
+                            <div className="col-md-12"><h2>Pack {this.state.packNumber}</h2></div>
+                            <div className="col-md-12 draft-pack">
+                                {_.map(this.state.pack.cards, card => this.getCardPickElement(card))}
                             </div>
                         </div>
-                    )
-                }
+                    }
+                    <div className="row">
+                        <div className="col-md-12"><h2>Picks</h2></div>
+                        <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
+                            {_.map(this.state.picks, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                        </div>
+                    </div>
+                    {
+                        this.state.computerPicks.map((ai, index) =>
+                            <div className="row" key={index}>
+                                <div className="col-md-12"><h2>AI {index}</h2></div>
+                                <div className={`col-md-12 draft-picks picks-size-${_.max(ai.map(cmcPile => cmcPile.length))}`}>
+                                    {_.map(ai, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                                </div>
+                            </div>
+                        )
+                    }
+                </div>
             </div>
         );
     }
