@@ -1,34 +1,46 @@
 import * as React from "react";
 import * as _ from "lodash";
 import Player from "../Player";
-import Pack from "../Pack";
 import Card from "../../common/Card";
 import CardPick from "./CardPick";
 import CardImage from "../../common/components/CardImage";
+import CardRating from "../CardRating";
+import CardPicker from "../CardPicker";
 
 export type PassDirection = "left" | "right";
 
-interface DraftSimState { pack: Pack, packNumber: number, picks: Card[][], computerPicks: Card[][][] };
+interface DraftSimState {
+    pack: CardRating[];
+    packNumber: number;
+    picks: Card[][];
+    computerPicks: Card[][][];
+    showAIRatings: boolean;
+};
 
 export interface DraftSimProps { }
 
 export default class DraftSim extends React.Component<DraftSimProps, {}> {
 
     state: DraftSimState;
+    cardPicker: CardPicker;
     humanPlayer: Player;
     computerPlayers: Player[];
     passDirection: PassDirection;
 
     constructor() {
         super();
+        this.cardPicker = new CardPicker();
         this.computerPlayers = Player.createTableOfPlayers();
         this.humanPlayer = this.computerPlayers.shift();
         this.state = {
-            pack: this.humanPlayer.nextPack,
+            pack: this.humanPlayer.nextPack.cards.map(card => {
+                return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
+            }),
             packNumber: 1,
             picks: this.splitIntoCmcPiles([]),
             computerPicks: [this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]),
-            this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([])]
+            this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([])],
+            showAIRatings: false
         };
         this.passDirection = "left";
     }
@@ -36,11 +48,14 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
     render(): JSX.Element {
         return (
             <div className="page-container">
-                {this.state.pack.cards.length > 0 &&
+                {this.state.pack.length > 0 &&
                     <div className="row">
-                        <div className="col-md-12"><h2>Pack {this.state.packNumber}</h2></div>
+                        <div className="col-md-12">
+                            <h2>Pack {this.state.packNumber}</h2>
+                            <a className="btn btn-default" onClick={() => this.toggleAIRatings()}>{this.state.showAIRatings ? "Hide AI ratings" : "Show AI ratings"}</a>
+                        </div>
                         <div className="col-md-12 draft-pack">
-                            {_.map(this.state.pack.cards, card => this.getCardPickElement(card))}
+                            {_.map(this.state.pack, card => this.getCardPickElement(card))}
                         </div>
                     </div>
                 }
@@ -92,14 +107,22 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             this.setState({ packNumber: this.state.packNumber + 1 });
         }
         this.setState({
-            pack: this.humanPlayer.nextPack,
+            pack: this.humanPlayer.nextPack.cards.map(card => {
+                return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
+            }),
             picks: this.splitIntoCmcPiles(this.humanPlayer.picks),
             computerPicks: this.computerPlayers.map(computerPlayer => this.splitIntoCmcPiles(computerPlayer.picks))
         });
     }
 
-    private getCardPickElement(card: Card): JSX.Element {
-        return <CardPick key={card.uuid} onClick={() => { this.makePick(card) } } imageUrl={card.imageUrl} />
+    private toggleAIRatings(): void {
+        this.setState({
+            showAIRatings: !this.state.showAIRatings
+        });
+    }
+
+    private getCardPickElement(card: CardRating): JSX.Element {
+        return <CardPick key={card.card.uuid} onClick={() => { this.makePick(card.card) } } imageUrl={card.card.imageUrl} showAIRatings={this.state.showAIRatings} rating={card.rating} />
     }
 
     private getCardImageElement(card: Card, index: number): JSX.Element {
