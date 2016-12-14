@@ -8,8 +8,6 @@ cp index.html ../magictheconvergence/index.html
 
 cd ../magictheconvergence
 git checkout master
-echo "Are we on master?"
-read
 git add .
 DATE=`date +%Y-%m-%d:%H:%M:%S`
 git commit -m "Deploy on $DATE"
