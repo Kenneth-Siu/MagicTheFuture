@@ -15,3 +15,5 @@ class Page {
 export const visualSpoiler = new Page("Visual Spoiler", "visualSpoiler.html");
 
 export const draftSim = new Page("Draft Simulator (WIP)", "draftSim.html");
+
+export const primer = new Page("Draft Primer (WIP)", "primer.html");

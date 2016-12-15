@@ -8,15 +8,15 @@ import CardDiv from "./CardDiv";
 import NavBar from "../../common/components/NavBar";
 import {visualSpoiler} from "../../common/constants";
 
-export interface CardGridProps { }
+export interface VisualSpoilerProps { }
 
-interface CardGridState {
+interface VisualSpoilerState {
     displayedCardElementsList: JSX.Element[];
 }
 
-export default class CardGrid extends React.Component<CardGridProps, {}> {
+export default class VisualSpoiler extends React.Component<VisualSpoilerProps, {}> {
 
-    state: CardGridState;
+    state: VisualSpoilerState;
 
     constructor() {
         super();

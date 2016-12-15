@@ -20,6 +20,7 @@ export default class NavBar extends React.Component<NavBarProps, {}> {
                     <div className="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul className="nav navbar-nav">
                             <li className={this.props.activePage === constants.visualSpoiler.uuid && "active"}><a href={constants.visualSpoiler.url}>{constants.visualSpoiler.pageName}</a></li>
+                            <li className={this.props.activePage === constants.primer.uuid && "active"}><a href={constants.primer.url}>{constants.primer.pageName}</a></li>
                             <li className={this.props.activePage === constants.draftSim.uuid && "active"}><a href={constants.draftSim.url}>{constants.draftSim.pageName}</a></li>
                         </ul>
                     </div>
