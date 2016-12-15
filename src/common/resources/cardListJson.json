@@ -422,8 +422,10 @@
 "power": 2.0,
 "potential": 3.0,
 "synergies": {
-"equipment": 6,
-"tactical": 1.0
+"equipment": 6
+},
+"tags": {
+"tactical": 20
 }
 },
 "rulesText": "Target unit gets +2/+2 until end of turn. If it’s equipped, it gains indestructible until end of turn."
@@ -1956,7 +1958,7 @@
 "lifeloss": 2.0
 }
 },
-"rulesText": "Each 3 command you pay as you issue Mortality reduces its cost by 1.\nInnervate, mutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card into the warzone and the rest on the bottom of your library in a random order.)"
+"rulesText": "Each 3 command you pay as you issue Mortality reduces its cost by 1.\nInnervate\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card into the warzone and the rest on the bottom of your library in a random order.)"
 },
 {
 "name": "Neural Devourer",
@@ -4136,7 +4138,7 @@
 "etb": 1.0
 }
 },
-"rulesText": "Whenever another unit enters the warzone under your control, put a +1/+1 on each unit you control."
+"rulesText": "Whenever another unit enters the warzone under your control, put a +1/+1 counter on each unit you control."
 },
 {
 "name": "Rooftop Misdirector",
