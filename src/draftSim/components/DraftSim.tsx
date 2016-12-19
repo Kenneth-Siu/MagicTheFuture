@@ -39,9 +39,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                 return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
             }),
             packNumber: 1,
-            picks: this.splitIntoCmcPiles([]),
-            computerPicks: [this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([]),
-            this.splitIntoCmcPiles([]), this.splitIntoCmcPiles([])],
+            picks: this.pilify([]),
+            computerPicks: [this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([])],
             showAIRatings: false
         };
         this.passDirection = "left";
@@ -82,6 +81,10 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         );
     }
 
+    private pilify(cards: Card[]): Card[][] {
+        return this.splitIntoCmcPiles(cards).map(pile => this.sortByColor(pile));
+    }
+
     private splitIntoCmcPiles(cards: Card[]): Card[][] {
         const piles: Card[][] = [[], [], [], [], [], [], [], []];
         cards.forEach(card => {
@@ -90,6 +93,23 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             else piles[card.cmc - 1].push(card);
         });
         return piles;
+    }
+
+    private sortByColor(cards: Card[]): Card[] {
+        return cards.sort((a, b) => {
+            const wubrg = "WUBRG";
+            let A: number, B: number;
+
+            if (a.color.length === 0) A = 5;
+            else if (a.color.length > 1) A = 6;
+            else A = wubrg.indexOf(a.color);
+
+            if (b.color.length === 0) B = 5;
+            else if (b.color.length > 1) B = 6;
+            else B = wubrg.indexOf(b.color);
+            
+            return A - B;
+        });
     }
 
     private makePick(card: Card): void {
@@ -113,8 +133,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             pack: this.humanPlayer.nextPack.cards.map(card => {
                 return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
             }),
-            picks: this.splitIntoCmcPiles(this.humanPlayer.picks),
-            computerPicks: this.computerPlayers.map(computerPlayer => this.splitIntoCmcPiles(computerPlayer.picks))
+            picks: this.pilify(this.humanPlayer.picks),
+            computerPicks: this.computerPlayers.map(computerPlayer => this.pilify(computerPlayer.picks))
         });
     }
 
