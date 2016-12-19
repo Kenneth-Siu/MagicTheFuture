@@ -15,6 +15,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "White-Blue — Displace",
         [
+            <p>Order must be restored! Take command over the police and domestic military, and return peace to our cities.</p>,
             <p>Why only make use of your unit triggers once when they enter?</p>,
             <p>Take advantage of the new mechanic <i>displace</i> to trigger your units' enter-the-warzone abilities over and over</p>
         ],
@@ -23,6 +24,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "White-Black — Command",
         [
+            <p>The ruling elite have more worries than just some wars on the other side of the world. The next election is coming up, and the polls aren't looking pretty. Grease some palms and change some minds and you might get a pretty reward.</p>,
             <p>Your command is a resource – take full advantage of it</p>,
             <p><i>Innervate</i> is the new name for lifelink – damage that units with innervate deal also cause you to gain that much command</p>,
             <p>Black cards power up when you spend command on them...</p>,
@@ -33,6 +35,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Blue-Black — Furtive",
         [
+            <p>The Left Hand is always looking to cut a tidy profit.</p>,
             <p>Nickel and dime your way to victory with the new mechanic <i>furtive</i></p>,
             <p>Hold up a wall of high-toughness blockers while you chip in every turn with evasive threats...</p>,
             <p>...or out-tempo your opponents with efficient disruption, bounce, and removal spells</p>
@@ -49,6 +52,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Black-Red — Plunder",
         [
+            <p>There are those who seek wealth and fortune from these turbulent times. Mercenaries are always willing to give a helping hand... for the right price.</p>,
             <p>Generate a stream of device tokens with the new mechanic <i>plunder</i></p>,
             <p>Play aggressively to keep your units hitting the opponent to keep up your supply of Credit tokens</p>,
             <p>Reap the benefits by sacrificing the Credit tokens for beneficial effects</p>
@@ -67,6 +71,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Red-Green — Monsters",
         [
+            <p>Since the collapse of the Middle East under the pressures of global climate change centuries ago, nomads have lived in the Baljurashi desert: And they are not happy the global powers have decided to claim their lands.</p>,
             <p>No frills, no tricks, nothing fancy: play this archetype if you just want your opponent to go from 20 to 0 command</p>,
             <p>Control huge monsters and bash your opponent's face in by issuing edicts that make them pack even more punch</p>
         ],
@@ -92,6 +97,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Green-Blue — Tactics",
         [
+            <p>Umida Incorporated is always looking to hire bright minds.</p>,
             <p>Tactical cards let you issue them at any time – you can also watch for the little lightning bolt in the top-left of the card</p>,
             <p>Being able to do things at the last possible moment opens up all sorts of, <i>–ahem–</i> tactical avenues</p>,
             <p>The more tactical cards you draft, the more you can wrack your opponents with indecision and misinformation</p>
