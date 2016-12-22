@@ -1,3 +1,4 @@
+rm ../magictheconvergence/dist/*
 cp -R dist/ ../magictheconvergence
 cp -R views/ ../magictheconvergence
 cp node_modules/react/dist/react.min.js ../magictheconvergence/node_modules/react/dist/react.min.js

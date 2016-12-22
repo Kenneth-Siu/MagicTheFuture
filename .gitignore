@@ -3,6 +3,9 @@
 !/MSE/data
 /MSE/data/*
 !/MSE/data/magic-json.mse-export-template/
+!/MSE/data/magic-m15.mse-style/
+/MSE/data/magic-m15.mse-style/*
+!/MSE/data/magic-m15.mse-style/style
 
 # Created by https://www.gitignore.io/api/node
 
