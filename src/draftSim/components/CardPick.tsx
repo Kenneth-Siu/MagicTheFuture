@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as _ from "lodash";
 import CardImage from "../../common/components/CardImage";
 
 export interface CardPickProps {
@@ -13,7 +14,7 @@ export default class CardPick extends React.Component<CardPickProps, {}> {
         return (
             <div onClick={this.props.onClick}>
                 <CardImage url={this.props.imageUrl} />
-                {this.props.showAIRatings && <div className="pick-rating">{this.props.rating}</div>}
+                {this.props.showAIRatings && <div className="pick-rating">{_.round(this.props.rating, 3)}</div>}
             </div>
         );
     }
