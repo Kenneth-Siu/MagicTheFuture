@@ -3129,7 +3129,7 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Flying, plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nSacrifice three devices: Warapur Company Flagship deals 4 damage to target unit or player."
+"rulesText": "Flying\nPlunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nSacrifice three devices: Warapur Company Flagship deals 4 damage to target unit or player."
 },
 {
 "name": "Warapur Company Heavy",
@@ -3151,7 +3151,7 @@
 "evasion": 0.4
 }
 },
-"rulesText": "Trample, plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Warapur Company Heavy attacks, sacrifice any number of devices. Warapur Company Heavy gets +2/+0 until end of turn for each device sacrificed this way."
+"rulesText": "Trample\nPlunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Warapur Company Heavy attacks, sacrifice any number of devices. Warapur Company Heavy gets +2/+0 until end of turn for each device sacrificed this way."
 },
 {
 "name": "Week of Hate",
