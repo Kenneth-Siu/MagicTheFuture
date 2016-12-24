@@ -1,28 +1,54 @@
 import cardList from "../common/cardList";
 import * as _ from "lodash";
 import Card from "../common/Card";
+import {SingleColor, Color} from "../common/Card";
 
 const mythics = _.filter(cardList, card => card.rarity === "M");
-const numOfMythics = mythics.length;
 const rares = _.filter(cardList, card => card.rarity === "R");
-const numOfRares = rares.length;
 const uncommons = _.filter(cardList, card => card.rarity === "U");
-const numOfUncommons = uncommons.length;
 const commons = _.filter(cardList, card => card.rarity === "C");
-const numOfCommons = commons.length;
 
 export default function generatePack(): Card[] {
     const cards: Card[] = [];
     if (_.random(0, 7) === 0) {
-        cards.push(_.cloneDeep(mythics[_.random(0, numOfMythics - 1)]).assignUuid());
+        cards.push(_.cloneDeep(_.sample(mythics)).assignUuid());
     } else {
-        cards.push(_.cloneDeep(rares[_.random(0, numOfRares - 1)]).assignUuid());
+        cards.push(_.cloneDeep(_.sample(rares)).assignUuid());
     }
+    cards.push(...generateUncommons());
+    cards.push(...generateCommons());
+    return cards;
+}
+
+function generateUncommons(): Card[] {
+    const cards: Card[] = [];
     for (let i = 0; i < 3; i++) {
-        cards.push(_.cloneDeep(uncommons[_.random(0, numOfUncommons - 1)]).assignUuid());
-    }
-    for (let i = 0; i < 10; i++) {
-        cards.push(_.cloneDeep(commons[_.random(0, numOfCommons - 1)]).assignUuid());
+        const bannedCardColors = cards.map(card => card.color);
+        const otherColorUncommons = uncommons.filter(uncommon => !bannedCardColors.some(cardColor => cardColor === uncommon.color));
+        cards.push(_.cloneDeep(_.sample(otherColorUncommons)).assignUuid());
     }
     return cards;
+}
+
+function generateCommons(): Card[] {
+    const cards: Card[] = [];
+    const singleColors: SingleColor[] = ["W", "U", "B", "R", "G"];
+    singleColors.forEach(singleColor => cards.push(generateCommonOfColor(singleColor)));
+    for (let i = 0; i < 5; i++) {
+        const bannedCardColors: Color[] = [];
+        const existingCardColors = cards.map(card => card.color)
+        existingCardColors.forEach(color => {
+            if (existingCardColors.filter(existingColor => existingColor === color).length >= 3 && !bannedCardColors.some(bannedColor => bannedColor === color)) {
+                bannedCardColors.push(color);
+            }
+        });
+        const otherColorCommons = commons.filter(common => !bannedCardColors.some(cardColor => cardColor === common.color));
+        cards.push(_.cloneDeep(_.sample(otherColorCommons)).assignUuid());
+    }
+    return cards;
+}
+
+function generateCommonOfColor(singleColor: SingleColor): Card {
+    const coloredCommons = commons.filter(common => common.color === singleColor);
+    return _.cloneDeep(coloredCommons[_.random(0, coloredCommons.length - 1)]).assignUuid();
 }
