@@ -388,7 +388,7 @@
 "devices": 1.0
 }
 },
-"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Helios Satellite.\nCoordinate — 6W, T: Dematerialise target nonland permanent. Activate this ability only if you control five or more units and only any time you could issue a strategy."
+"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Helios Satellite.\nCoordinate — 6W, T: Dematerialise target nonland permanent. Activate this ability only any time you could issue a strategy and only if you control five or more units.             "
 },
 {
 "name": "The Hemera",
@@ -1007,7 +1007,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
-"potential": 4.0,
+"potential": 3.5,
 "synergies": {
 "devices": 15,
 "deviceTokens": 15
