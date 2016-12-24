@@ -6,6 +6,7 @@ import CardPick from "./CardPick";
 import CardImage from "../../common/components/CardImage";
 import CardRating from "../CardRating";
 import CardPicker from "../CardPicker";
+import { ColorPreferences } from "../CardPicker";
 import NavBar from "../../common/components/NavBar";
 import { draftSim } from "../../common/constants";
 
@@ -15,6 +16,7 @@ interface DraftSimState {
     pack: CardRating[];
     packNumber: number;
     picks: Card[][];
+    computerColorPreferences: ColorPreferences[];
     computerPicks: Card[][][];
     showAIRatings: boolean;
 };
@@ -40,6 +42,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             }),
             packNumber: 1,
             picks: this.pilify([]),
+            computerColorPreferences: this.computerPlayers.map(player => player.getColorPreferences()),
             computerPicks: [this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([])],
             showAIRatings: false
         };
@@ -70,7 +73,13 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                     </div>
                     {this.state.computerPicks.map((ai, index) =>
                         <div className="row" key={index}>
-                            <div className="col-md-12"><h2>AI {index}</h2></div>
+                            <div className="col-md-12"><h2>AI {index}&nbsp;—&nbsp;
+                            W:{_.round(this.state.computerColorPreferences[index].white, 3)}&nbsp;
+                            U:{_.round(this.state.computerColorPreferences[index].blue, 3)}&nbsp;
+                            B:{_.round(this.state.computerColorPreferences[index].black, 3)}&nbsp;
+                            R:{_.round(this.state.computerColorPreferences[index].red, 3)}&nbsp;
+                            G:{_.round(this.state.computerColorPreferences[index].green, 3)}&nbsp;
+                            </h2></div>
                             <div className={`col-md-12 draft-picks picks-size-${_.max(ai.map(cmcPile => cmcPile.length))}`}>
                                 {_.map(ai, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
                             </div>
@@ -134,6 +143,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                 return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
             }),
             picks: this.pilify(this.humanPlayer.picks),
+            computerColorPreferences: this.computerPlayers.map(computerPlayer => computerPlayer.getColorPreferences()),
             computerPicks: this.computerPlayers.map(computerPlayer => this.pilify(computerPlayer.picks))
         });
     }

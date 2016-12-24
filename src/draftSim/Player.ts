@@ -1,6 +1,7 @@
 import * as _ from "lodash";
 import Pack from "./Pack";
 import CardPicker from "./CardPicker";
+import {ColorPreferences} from "./CardPicker";
 import Card from "../common/Card";
 import { PassDirection } from "./components/DraftSim";
 
@@ -70,6 +71,10 @@ export default class Player {
 
     openPack(): void {
         this.nextPack = new Pack();
+    }
+
+    getColorPreferences(): ColorPreferences {
+        return this.cardPicker.getColorPreferences(this.picks);
     }
 
     static createTableOfPlayers(): Player[] {

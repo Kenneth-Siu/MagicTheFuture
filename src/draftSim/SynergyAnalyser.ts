@@ -19,10 +19,12 @@ export default class SynergyAnalyser {
 
     private totalPicks: number;
 
-    constructor(picks: Card[], pick: Card) {
+    constructor(picks: Card[], pick?: Card) {
         this.totalPicks = picks.length;
         this.countCards(picks);
-        this.countCard(pick);
+        if (pick) {
+            this.countCard(pick);
+        }
     }
 
     getPotentialPowerOfCard(card: Card): number {

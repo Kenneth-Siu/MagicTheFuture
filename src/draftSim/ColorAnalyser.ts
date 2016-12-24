@@ -27,10 +27,12 @@ export default class ColorAnalyser {
 
     [key: string]: number | any;
 
-    constructor(existingPickRatings: CardRating[], potentialPickRating: CardRating) {
+    constructor(existingPickRatings: CardRating[], potentialPickRating?: CardRating) {
         this.totalPicks = existingPickRatings.length;
         this.countRatings(existingPickRatings);
-        this.countRating(potentialPickRating);
+        if (potentialPickRating) {
+            this.countRating(potentialPickRating);
+        }
         this.generateFuzz();
     }
 
