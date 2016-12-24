@@ -423,9 +423,6 @@
 "potential": 3.0,
 "synergies": {
 "equipment": 6
-},
-"tags": {
-"tactical": 20
 }
 },
 "rulesText": "Target unit gets +2/+2 until end of turn. If it’s equipped, it gains indestructible until end of turn."
@@ -438,7 +435,7 @@
 "id": 25,
 "rarity": "C",
 "notes": {
-"power": 0.5,
+"power": 0,
 "potential": 3.0,
 "synergies": {
 "etb": 10
@@ -1068,7 +1065,7 @@
 "rarity": "U",
 "notes": {
 "power": 3.5,
-"potential": 4.0,
+"potential": 3.7,
 "synergies": {
 "tactical": 20
 },
