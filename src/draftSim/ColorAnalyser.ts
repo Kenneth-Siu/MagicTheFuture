@@ -76,7 +76,7 @@ export default class ColorAnalyser {
             case 2:
                 return _.clamp(216 - this.totalPicks * 12, 0, 45);
             default:
-                return 45;
+                return Math.max(this.totalPicks * 8 - 67, 45);
         }
     }
 
