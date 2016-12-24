@@ -1,4 +1,10 @@
 {
     "typescript.check.workspaceVersion": false,
-    "python.linting.pylintEnabled": false
+    "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/dist": true
+  }
 }
