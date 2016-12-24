@@ -16,6 +16,7 @@ interface DraftSimState {
     pack: CardRating[];
     packNumber: number;
     picks: Card[][];
+    sideboard: Card[][];
     computerColorPreferences: ColorPreferences[];
     computerPicks: Card[][][];
     showAIRatings: boolean;
@@ -42,6 +43,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             }),
             packNumber: 1,
             picks: this.pilify([]),
+            sideboard: this.pilify([]),
             computerColorPreferences: this.computerPlayers.map(player => player.getColorPreferences()),
             computerPicks: [this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([])],
             showAIRatings: false
@@ -62,16 +64,20 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                                 <a className="btn btn-default" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Show suggestion"}</a>
                             </div>
                             <div className="col-md-12 draft-pack">
-                                {
-                                    _.map(this.state.pack, card => this.getCardPickElement(card, card === suggestedPick))
-                                }
+                                {_.map(this.state.pack, card => this.getCardPickElement(card, card === suggestedPick))}
                             </div>
                         </div>
                     }
                     <div className="row">
                         <div className="col-md-12"><h2>Picks</h2></div>
                         <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
-                            {_.map(this.state.picks, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                            {_.map(this.state.picks, (cmcPile, index) => this.getPicksCmcPileElement(cmcPile, index))}
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12"><h2>Sideboard</h2></div>
+                        <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.sideboard.map(cmcPile => cmcPile.length))}`}>
+                            {_.map(this.state.sideboard, (cmcPile, index) => this.getSideboardCmcPileElement(cmcPile, index))}
                         </div>
                     </div>
                     {this.state.computerPicks.map((ai, index) =>
@@ -142,11 +148,9 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             this.passDirection = this.passDirection === "left" ? "right" : "left";
             this.setState({ packNumber: this.state.packNumber + 1 });
         }
+        this.updatePackState();
+        this.updatePicksState();
         this.setState({
-            pack: this.humanPlayer.nextPack.cards.map(card => {
-                return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
-            }),
-            picks: this.pilify(this.humanPlayer.picks),
             computerColorPreferences: this.computerPlayers.map(computerPlayer => computerPlayer.getColorPreferences()),
             computerPicks: this.computerPlayers.map(computerPlayer => this.pilify(computerPlayer.picks))
         });
@@ -161,6 +165,40 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
     private hideSuggestions(): void {
         this.setState({
             showAIRatings: false
+        });
+    }
+
+    private moveFromPicksToSideboard(card: Card): void {
+        this.humanPlayer.moveFromPicksToSideboard(card);
+        this.updatePackState();
+        this.updatePicksState();
+        this.updateSideboardState();
+    }
+
+    private moveFromSideboardToPicks(card: Card): void {
+        this.humanPlayer.moveFromSideboardToPicks(card);
+        this.updatePackState();
+        this.updatePicksState();
+        this.updateSideboardState();
+    }
+
+    private updatePackState() {
+        this.setState({
+            pack: this.humanPlayer.nextPack.cards.map(card => {
+                return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
+            })
+        });
+    }
+
+    private updatePicksState() {
+        this.setState({
+            picks: this.pilify(this.humanPlayer.picks)
+        });
+    }
+
+    private updateSideboardState() {
+        this.setState({
+            sideboard: this.pilify(this.humanPlayer.sideboard)
         });
     }
 
@@ -182,6 +220,38 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         return (
             <div className={`cmc pile-size-${pile.length}`} key={index}>
                 {_.map(pile, (card, index) => this.getCardImageElement(card, index))}
+            </div>
+        );
+    }
+
+    private getPicksCardImageElement(card: Card, index: number): JSX.Element {
+        return (
+            <div onClick={() => this.moveFromPicksToSideboard(card)}>
+                <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
+            </div>
+        );
+    }
+
+    private getPicksCmcPileElement(pile: Card[], index: number): JSX.Element {
+        return (
+            <div className={`cmc pile-size-${pile.length}`} key={index}>
+                {_.map(pile, (card, index) => this.getPicksCardImageElement(card, index))}
+            </div>
+        );
+    }
+
+    private getSideboardCardImageElement(card: Card, index: number): JSX.Element {
+        return (
+            <div onClick={() => this.moveFromSideboardToPicks(card)}>
+                <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
+            </div>
+        );
+    }
+
+    private getSideboardCmcPileElement(pile: Card[], index: number): JSX.Element {
+        return (
+            <div className={`cmc pile-size-${pile.length}`} key={index}>
+                {_.map(pile, (card, index) => this.getSideboardCardImageElement(card, index))}
             </div>
         );
     }

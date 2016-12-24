@@ -4,6 +4,7 @@ import CardPicker from "./CardPicker";
 import {ColorPreferences} from "./CardPicker";
 import Card from "../common/Card";
 import { PassDirection } from "./components/DraftSim";
+import {SingleColor} from "../common/Card";
 
 export default class Player {
 
@@ -13,28 +14,16 @@ export default class Player {
     rightHandPlayer: Player;
     cardPicker: CardPicker;
     picks: Card[];
+    sideboard: Card[];
 
     constructor(leftHandPlayer?: Player) {
         this.nextPack = new Pack();
         this.picks = [];
+        this.sideboard = [];
         this.cardPicker = new CardPicker();
         if (leftHandPlayer) {
             this.leftHandPlayer = leftHandPlayer;
             this.leftHandPlayer.setRightHandPlayer(this);
-        }
-    }
-
-    setLeftHandPlayer(leftHandPlayer: Player): void {
-        this.leftHandPlayer = leftHandPlayer;
-        if (!leftHandPlayer.rightHandPlayer) {
-            leftHandPlayer.setRightHandPlayer(this);
-        }
-    }
-
-    setRightHandPlayer(rightHandPlayer: Player): void {
-        this.rightHandPlayer = rightHandPlayer;
-        if (!rightHandPlayer.leftHandPlayer) {
-            rightHandPlayer.setLeftHandPlayer(this);
         }
     }
 
@@ -60,13 +49,10 @@ export default class Player {
         }
     }
 
-    receivePack(pack: Pack): void {
-        this.nextPack = pack;
-    }
-
     computerPick(): void {
         const pick = this.cardPicker.decidePick(this.nextPack, this.picks);
         this.makePick(pick);
+        this.sideboardUnwantedCards();
     }
 
     openPack(): void {
@@ -75,6 +61,50 @@ export default class Player {
 
     getColorPreferences(): ColorPreferences {
         return this.cardPicker.getColorPreferences(this.picks);
+    }
+
+    moveFromPicksToSideboard(card: Card): void {
+        const removedCard = _.remove(this.picks, pick => pick === card);
+        this.sideboard.push(...removedCard);
+    }
+
+    moveFromSideboardToPicks(card: Card): void {
+        const removedCard = _.remove(this.sideboard, pick => pick === card);
+        this.picks.push(...removedCard);
+    }
+
+    private setLeftHandPlayer(leftHandPlayer: Player): void {
+        this.leftHandPlayer = leftHandPlayer;
+        if (!leftHandPlayer.rightHandPlayer) {
+            leftHandPlayer.setRightHandPlayer(this);
+        }
+    }
+
+    private setRightHandPlayer(rightHandPlayer: Player): void {
+        this.rightHandPlayer = rightHandPlayer;
+        if (!rightHandPlayer.leftHandPlayer) {
+            rightHandPlayer.setLeftHandPlayer(this);
+        }
+    }
+
+    private receivePack(pack: Pack): void {
+        this.nextPack = pack;
+    }
+
+    private sideboardUnwantedCards(): void {
+        const colorPreferences = this.getColorPreferences();
+        const removedCards = _.remove(this.picks, pick => {
+            const colorsOfCard = pick.color.split("") as SingleColor[];
+            return colorsOfCard.some(color => {
+                if (color === "W") return colorPreferences.white < 0.1;
+                if (color === "U") return colorPreferences.blue < 0.1;
+                if (color === "B") return colorPreferences.black < 0.1;
+                if (color === "R") return colorPreferences.red < 0.1;
+                if (color === "G") return colorPreferences.green < 0.1;
+                return false;
+            })
+        });
+        this.sideboard.push(...removedCards);
     }
 
     static createTableOfPlayers(): Player[] {
