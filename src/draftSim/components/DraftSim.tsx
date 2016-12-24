@@ -50,6 +50,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
     }
 
     render(): JSX.Element {
+        const suggestedPick = _.maxBy(this.state.pack, card => card.rating);
         return (
             <div>
                 <NavBar activePage={draftSim.uuid} />
@@ -58,10 +59,12 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                         <div className="row">
                             <div className="col-md-12">
                                 <h2>Pack {this.state.packNumber}</h2>
-                                <a className="btn btn-default" onClick={() => this.toggleAIRatings()}>{this.state.showAIRatings ? "Hide AI ratings" : "Show AI ratings"}</a>
+                                <a className="btn btn-default" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Show suggestion"}</a>
                             </div>
                             <div className="col-md-12 draft-pack">
-                                {_.map(this.state.pack, card => this.getCardPickElement(card))}
+                                {
+                                    _.map(this.state.pack, card => this.getCardPickElement(card, card === suggestedPick))
+                                }
                             </div>
                         </div>
                     }
@@ -116,7 +119,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             if (b.color.length === 0) B = 5;
             else if (b.color.length > 1) B = 6;
             else B = wubrg.indexOf(b.color);
-            
+
             return A - B;
         });
     }
@@ -126,6 +129,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         for (const computerPlayer of this.computerPlayers) {
             computerPlayer.computerPick();
         }
+        this.hideSuggestions();
         this.humanPlayer.passPack(this.passDirection);
         for (const computerPlayer of this.computerPlayers) {
             computerPlayer.passPack(this.passDirection);
@@ -148,14 +152,26 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         });
     }
 
-    private toggleAIRatings(): void {
+    private toggleSuggestions(): void {
         this.setState({
             showAIRatings: !this.state.showAIRatings
         });
     }
 
-    private getCardPickElement(card: CardRating): JSX.Element {
-        return <CardPick key={card.card.uuid} onClick={() => { this.makePick(card.card) } } imageUrl={card.card.imageUrl} showAIRatings={this.state.showAIRatings} rating={card.rating} />
+    private hideSuggestions(): void {
+        this.setState({
+            showAIRatings: false
+        });
+    }
+
+    private getCardPickElement(card: CardRating, isSuggested: boolean): JSX.Element {
+        return <CardPick
+            key={card.card.uuid}
+            onClick={() => { this.makePick(card.card) } }
+            imageUrl={card.card.imageUrl}
+            showAIRatings={this.state.showAIRatings}
+            rating={card.rating}
+            isSuggestedPick={isSuggested} />
     }
 
     private getCardImageElement(card: Card, index: number): JSX.Element {

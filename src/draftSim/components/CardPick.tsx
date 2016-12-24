@@ -7,12 +7,13 @@ export interface CardPickProps {
     imageUrl: string;
     showAIRatings: boolean;
     rating: number;
+    isSuggestedPick: boolean;
 }
 
 export default class CardPick extends React.Component<CardPickProps, {}> {
     render() {
         return (
-            <div onClick={this.props.onClick}>
+            <div onClick={this.props.onClick} className={this.props.isSuggestedPick && this.props.showAIRatings && "suggested-pick"}>
                 <CardImage url={this.props.imageUrl} />
                 {this.props.showAIRatings && <div className="pick-rating">{_.round(this.props.rating, 3)}</div>}
             </div>
