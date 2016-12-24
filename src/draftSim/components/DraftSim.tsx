@@ -20,6 +20,7 @@ interface DraftSimState {
     computerColorPreferences: ColorPreferences[];
     computerPicks: Card[][][];
     showAIRatings: boolean;
+    showAIPicks: boolean;
 };
 
 export interface DraftSimProps { }
@@ -46,7 +47,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             sideboard: this.pilify([]),
             computerColorPreferences: this.computerPlayers.map(player => player.getColorPreferences()),
             computerPicks: [this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([])],
-            showAIRatings: false
+            showAIRatings: false,
+            showAIPicks: false
         };
         this.passDirection = "left";
     }
@@ -61,13 +63,17 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                         <div className="row">
                             <div className="col-md-12">
                                 <h2>Pack {this.state.packNumber}</h2>
-                                <a className="btn btn-default" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Show suggestion"}</a>
                             </div>
                             <div className="col-md-12 draft-pack">
                                 {_.map(this.state.pack, card => this.getCardPickElement(card, card === suggestedPick))}
                             </div>
                         </div>
                     }
+                    <div className="row">
+                        <div className="col-md-12 suggest-pick">
+                            <h2><a className="btn btn-default btn-lg" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Suggest Pick"}</a></h2>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-md-12"><h2>Picks</h2></div>
                         <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
@@ -80,7 +86,12 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                             {_.map(this.state.sideboard, (cmcPile, index) => this.getSideboardCmcPileElement(cmcPile, index))}
                         </div>
                     </div>
-                    {this.state.computerPicks.map((ai, index) =>
+                    <div className="row">
+                        <div className="col-md-12 toggle-ai-picks">
+                            <h2><a className="btn btn-default btn-lg" onClick={() => this.toggleAIPicks()}>{this.state.showAIPicks ? "Hide AI Picks" : "Show AI Picks"}</a></h2>
+                        </div>
+                    </div>
+                    {this.state.showAIPicks && this.state.computerPicks.map((ai, index) =>
                         <div className="row" key={index}>
                             <div className="col-md-12"><h2>AI {index}&nbsp;—&nbsp;
                             W:{_.round(this.state.computerColorPreferences[index].white, 3)}&nbsp;
@@ -199,6 +210,12 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
     private updateSideboardState() {
         this.setState({
             sideboard: this.pilify(this.humanPlayer.sideboard)
+        });
+    }
+
+    private toggleAIPicks() {
+        this.setState({
+            showAIPicks: !this.state.showAIPicks
         });
     }
 

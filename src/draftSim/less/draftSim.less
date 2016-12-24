@@ -2,6 +2,10 @@
 
 @maxNumberOfPicks: 45;
 
+.text-align-center {
+    text-align: center;
+}
+
 div.draft-pack {
     display: flex;
     flex-wrap: wrap;
@@ -15,18 +19,26 @@ div.draft-pack {
 
         &.suggested-pick {
             background-color: red;
+
+            .pick-rating {
+                color: red;
+            }
         }
 
         .pick-rating {
             position: absolute;
             top: 100px;
+            left: 24px;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             font-weight: bold;
             font-size: 2em;
         }
     }
+}
 
+div.suggest-pick {
+    .text-align-center;
 }
 
 div.draft-picks {
@@ -61,4 +73,8 @@ div.draft-picks {
             .pile-index-loop(0);
         }
     }
+}
+
+div.toggle-ai-picks {
+    .text-align-center;
 }
