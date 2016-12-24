@@ -18,13 +18,14 @@ export default class CardPicker {
     }
 
     evaluateCard(picks: Card[], card: Card): CardRating {
-        const colorAnalyser = new ColorAnalyser(picks, card);
         const synergyAnalyser = new SynergyAnalyser(picks, card);
-        const pickRatings = picks.map(pick => {
-            return synergyAnalyser.getExistingPowerOfCard(pick) * colorAnalyser.getModifier(pick.color)
-        }).reduce((a, b) => a + b, 0);
-        const cardRating = synergyAnalyser.getPotentialPowerOfCard(card) * colorAnalyser.getModifier(card.color);
-        return new CardRating(card, pickRatings + cardRating);
+        const uncoloredPickRatings = picks.map(pick => new CardRating(pick, synergyAnalyser.getExistingPowerOfCard(pick)));
+        const uncoloredCardRating = new CardRating(card, synergyAnalyser.getPotentialPowerOfCard(card));
+        const colorAnalyser = new ColorAnalyser(uncoloredPickRatings, uncoloredCardRating);
+        const coloredPickRatings = uncoloredPickRatings.map(pickRating => pickRating.rating * colorAnalyser.getModifier(pickRating.card.color));
+        const aggregateColoredPickRatings = coloredPickRatings.reduce((a, b) => a + b, 0);
+        const coloredCardRating = uncoloredCardRating.rating * colorAnalyser.getModifier(card.color);
+        return new CardRating(card, aggregateColoredPickRatings + coloredCardRating);
     }
 
     private evaluatePack(picks: Card[], pack: Pack): void {
