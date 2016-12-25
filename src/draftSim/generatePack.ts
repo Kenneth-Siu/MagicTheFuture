@@ -43,9 +43,10 @@ function generateCommons(): Card[] {
             }
         });
         const otherColorCommons = commons.filter(common => !bannedCardColors.some(cardColor => cardColor === common.color));
-        cards.push(_.cloneDeep(_.sample(otherColorCommons)).assignUuid());
+        const nonRepeatedCommons = otherColorCommons.filter(common => !cards.some(card => card.id === common.id));
+        cards.push(_.cloneDeep(_.sample(nonRepeatedCommons)).assignUuid());
     }
-    return cards;
+    return _.shuffle(cards);
 }
 
 function generateCommonOfColor(singleColor: SingleColor): Card {
