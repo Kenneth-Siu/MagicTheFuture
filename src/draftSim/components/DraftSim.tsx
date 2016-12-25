@@ -69,11 +69,13 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                             </div>
                         </div>
                     }
-                    <div className="row">
-                        <div className="col-md-12 suggest-pick">
-                            <h2><a className="btn btn-default btn-lg" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Suggest Pick"}</a></h2>
+                    {this.state.pack.length > 0 &&
+                        <div className="row">
+                            <div className="col-md-12 suggest-pick">
+                                <h2><a className="btn btn-default btn-lg" onClick={() => this.toggleSuggestions()}>{this.state.showAIRatings ? "Hide suggestion" : "Suggest Pick"}</a></h2>
+                            </div>
                         </div>
-                    </div>
+                    }
                     <div className="row">
                         <div className="col-md-12"><h2>Picks</h2></div>
                         <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
@@ -111,7 +113,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
     }
 
     private pilify(cards: Card[]): Card[][] {
-        return this.splitIntoCmcPiles(cards).map(pile => this.sortByColor(pile));
+        const alphetisedCards = _.sortBy(cards, card => card.name);
+        return this.splitIntoCmcPiles(alphetisedCards).map(pile => this.sortByColor(pile));
     }
 
     private splitIntoCmcPiles(cards: Card[]): Card[][] {
