@@ -199,12 +199,9 @@
 "potential": 3.0,
 "synergies": {
 "unitTokens": 8
-},
-"tags": {
-"lifegain": 0.2
 }
 },
-"rulesText": "Units you control get +2/+1 until end of turn.\nIf you have less life than an opponent, units you control gain lifelink until end of turn."
+"rulesText": "Units you control get +2/+1 until end of turn.\nCoordinate — If you control five or more units, units you control also gain lifelink until end of turn."
 },
 {
 "name": "Crash Landing",
@@ -341,27 +338,11 @@
 "rulesText": "Whenever another unit enters the battlefield under your control, you gain 2 life."
 },
 {
-"name": "Forcefield Device",
-"imageName": "Forcefield Device",
-"color": "W",
-"castingCost": "1W",
-"id": 20,
-"rarity": "C",
-"notes": {
-"power": 2.0,
-"tags": {
-"devices": 1.0,
-"equipment": 1.0
-}
-},
-"rulesText": "Equipped unit gets +1/+2 and has vigilance.\nEquip 2"
-},
-{
 "name": "Head Detective",
 "imageName": "Head Detective",
 "color": "W",
 "castingCost": "2WW",
-"id": 21,
+"id": 20,
 "rarity": "U",
 "notes": {
 "power": 4.0,
@@ -376,7 +357,7 @@
 "imageName": "Helios Satellite",
 "color": "W",
 "castingCost": "1W",
-"id": 22,
+"id": 21,
 "rarity": "R",
 "notes": {
 "power": 2.0,
@@ -395,7 +376,7 @@
 "imageName": "The Hemera",
 "color": "W",
 "castingCost": "6WW",
-"id": 23,
+"id": 22,
 "rarity": "M",
 "notes": {
 "power": 1.0,
@@ -416,7 +397,7 @@
 "imageName": "Heroic Act",
 "color": "W",
 "castingCost": "W",
-"id": 24,
+"id": 23,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -432,7 +413,7 @@
 "imageName": "Keep the Peace",
 "color": "W",
 "castingCost": "1W",
-"id": 25,
+"id": 24,
 "rarity": "C",
 "notes": {
 "power": 0,
@@ -448,7 +429,7 @@
 "imageName": "Mesosphere Dancer",
 "color": "W",
 "castingCost": "3W",
-"id": 26,
+"id": 25,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -469,7 +450,7 @@
 "imageName": "Mongrel Companion",
 "color": "W",
 "castingCost": "W",
-"id": 27,
+"id": 26,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -485,7 +466,7 @@
 "imageName": "Observation Blimp",
 "color": "W",
 "castingCost": "3W",
-"id": 28,
+"id": 27,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -496,6 +477,22 @@
 }
 },
 "rulesText": "Flying\nWhen Observation Blimp enters the battlefield, draw a card."
+},
+{
+"name": "Personal Forcefield",
+"imageName": "Personal Forcefield",
+"color": "W",
+"castingCost": "1W",
+"id": 28,
+"rarity": "C",
+"notes": {
+"power": 2.0,
+"tags": {
+"devices": 1.0,
+"equipment": 1.0
+}
+},
+"rulesText": "Equipped unit gets +1/+2 and has vigilance.\nEquip 2"
 },
 {
 "name": "Police Badge",
@@ -1268,11 +1265,33 @@
 "rulesText": "Modify unit\nModified unit has “1U, T: Displace target unit you control.” (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
+"name": "Neutron Flow",
+"imageName": "Neutron Flow",
+"color": "U",
+"castingCost": "2U",
+"id": 72,
+"rarity": "C",
+"notes": {
+"power": 1.5,
+"potential": 3.5,
+"synergies": {
+"devices": 12,
+"deviceTokens": 12,
+"tactical": 40
+},
+"tags": {
+"deviceTokens": 1.0,
+"tactical": 1.0
+}
+},
+"rulesText": "Choose target device unit. Create a 1/1 colorless Mech device unit token, then untap the chosen unit and it gets +1/+1 until end of turn for each device you control."
+},
+{
 "name": "Overwhelm Psyche",
 "imageName": "Overwhelm Psyche",
 "color": "U",
 "castingCost": "1U",
-"id": 72,
+"id": 73,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -1291,7 +1310,7 @@
 "imageName": "Plasma Reclaimer",
 "color": "U",
 "castingCost": "3U",
-"id": 73,
+"id": 74,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -1311,7 +1330,7 @@
 "imageName": "React",
 "color": "U",
 "castingCost": "2UU",
-"id": 74,
+"id": 75,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -1331,7 +1350,7 @@
 "imageName": "Reconstruction Specialist",
 "color": "U",
 "castingCost": "3UU",
-"id": 75,
+"id": 76,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -1346,7 +1365,7 @@
 "imageName": "Refractive Skysoarer",
 "color": "U",
 "castingCost": "1U",
-"id": 76,
+"id": 77,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -1362,7 +1381,7 @@
 "imageName": "Riptide Illuminator",
 "color": "U",
 "castingCost": "3U",
-"id": 77,
+"id": 78,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -1383,7 +1402,7 @@
 "imageName": "Scorned Researcher",
 "color": "U",
 "castingCost": "2U",
-"id": 78,
+"id": 79,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -1398,7 +1417,7 @@
 "imageName": "Slipstream Distorter",
 "color": "U",
 "castingCost": "3U",
-"id": 79,
+"id": 80,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -1414,28 +1433,6 @@
 }
 },
 "rulesText": "Flash\nYou may issue devices as though they had flash.\nTap two untapped devices you control: Target device gains cloaking until end of turn."
-},
-{
-"name": "Supercharge",
-"imageName": "Supercharge",
-"color": "U",
-"castingCost": "2U",
-"id": 80,
-"rarity": "C",
-"notes": {
-"power": 1.5,
-"potential": 3.5,
-"synergies": {
-"devices": 12,
-"deviceTokens": 12,
-"tactical": 40
-},
-"tags": {
-"deviceTokens": 1.0,
-"tactical": 1.0
-}
-},
-"rulesText": "Choose target device unit. Create a 1/1 colorless Mech device unit token, then untap the chosen unit and it gets +1/+1 until end of turn for each device you control."
 },
 {
 "name": "Supercoolant Technician",
@@ -3189,32 +3186,11 @@
 "rulesText": "Haste\nWhen Wild Game Huntmaster enters the battlefield, for each Equipment on the battlefield, create a 1/1 colorless Mech Hound device unit token with haste and you may attach that Equipment to it."
 },
 {
-"name": "Badawi Trooper",
-"imageName": "Badawi Trooper",
-"color": "G",
-"castingCost": "3GG",
-"id": 173,
-"rarity": "U",
-"notes": {
-"power": 3.5,
-"potential": 3.7,
-"synergies": {
-"atarka": 17
-},
-"tags": {
-"devices": 1.0,
-"etb": 0.8,
-"atarka": 1.0
-}
-},
-"rulesText": "Badawi Trooper enters the battlefield with three +1/+1 counters on it.\nWhenever Badawi Trooper deals combat damage to a player, remove a +1/+1 counter from it."
-},
-{
 "name": "Beast of Burden",
 "imageName": "Beast of Burden",
 "color": "G",
-"castingCost": "2GG",
-"id": 174,
+"castingCost": "3GG",
+"id": 173,
 "rarity": "C",
 "notes": {
 "power": 3.0,
@@ -3235,7 +3211,7 @@
 "imageName": "Bioarchitect",
 "color": "G",
 "castingCost": "1G",
-"id": 175,
+"id": 174,
 "rarity": "R",
 "notes": {
 "power": 2.0
@@ -3247,7 +3223,7 @@
 "imageName": "Biosample Courier",
 "color": "G",
 "castingCost": "3G",
-"id": 176,
+"id": 175,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -3263,7 +3239,7 @@
 "imageName": "Brood Ambush",
 "color": "G",
 "castingCost": "2G",
-"id": 177,
+"id": 176,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3284,7 +3260,7 @@
 "imageName": "Chase Down",
 "color": "G",
 "castingCost": "G",
-"id": 178,
+"id": 177,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3304,7 +3280,7 @@
 "imageName": "Deep into the Subconscious",
 "color": "G",
 "castingCost": "1G",
-"id": 179,
+"id": 178,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -3320,14 +3296,14 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Target unit you control gets +X/+X until end of turn, where X is the number of units you control. Return it to its owner’s hand at the beginning of the next end step."
+"rulesText": "Target unit you control gets +X/+X until end of turn, where X is the number of units you control. \nCoordinate — Return it to its owner’s hand at the beginning of the next end step unless you control five or more units."
 },
 {
 "name": "Defense Protocols",
 "imageName": "Defense Protocols",
 "color": "G",
 "castingCost": "3G",
-"id": 180,
+"id": 179,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -3347,7 +3323,7 @@
 "imageName": "Dominate",
 "color": "G",
 "castingCost": "2GG",
-"id": 181,
+"id": 180,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -3368,7 +3344,7 @@
 "imageName": "Ecosystem Collapse",
 "color": "G",
 "castingCost": "1GGG",
-"id": 182,
+"id": 181,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -3387,7 +3363,7 @@
 "imageName": "Escaped Test Subject",
 "color": "G",
 "castingCost": "G",
-"id": 183,
+"id": 182,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -3403,7 +3379,7 @@
 "imageName": "Experiment T.I.T.A.N.",
 "color": "G",
 "castingCost": "3GG",
-"id": 184,
+"id": 183,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -3423,7 +3399,7 @@
 "imageName": "Extraterrestrial Exploration",
 "color": "G",
 "castingCost": "2G",
-"id": 185,
+"id": 184,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -3432,6 +3408,27 @@
 }
 },
 "rulesText": "Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped and the other into your hand. Then shuffle your library."
+},
+{
+"name": "Failed Kushak Subject",
+"imageName": "Failed Kushak Subject",
+"color": "G",
+"castingCost": "5GG",
+"id": 185,
+"rarity": "U",
+"notes": {
+"power": 3.5,
+"potential": 3.7,
+"synergies": {
+"atarka": 17
+},
+"tags": {
+"devices": 1.0,
+"etb": 0.8,
+"atarka": 1.0
+}
+},
+"rulesText": "Trample, cloaking\nFailed Kushak Subject enters the battlefield with three +1/+1 counters on it.\nWhenever Failed Kushak Subject deals combat damage to a player, remove a +1/+1 counter from it."
 },
 {
 "name": "Frontier Anatomist",
@@ -3491,7 +3488,7 @@
 "name": "Growth Genetics",
 "imageName": "Growth Genetics",
 "color": "G",
-"castingCost": "2GG",
+"castingCost": "4GG",
 "id": 189,
 "rarity": "C",
 "notes": {
@@ -3501,7 +3498,7 @@
 "atarka": 1.0
 }
 },
-"rulesText": "Modify unit\nModified unit gets +3/+3 and has mutate. (When it falls, its controller reveals cards from the top of his or her library until he or she reveals a unit card that costs less. That player puts that card onto the battlefield and the rest on the bottom of his or her library in a random order.)"
+"rulesText": "Modify unit\nModified unit gets +5/+5 and has mutate. (When it falls, its controller reveals cards from the top of his or her library until he or she reveals a unit card that costs less. That player puts that card onto the battlefield and the rest on the bottom of his or her library in a random order.)"
 },
 {
 "name": "Incubation Hulk",
@@ -3765,14 +3762,15 @@
 "name": "Screeching Terror",
 "imageName": "Screeching Terror",
 "color": "G",
-"castingCost": "3GG",
+"castingCost": "4GG",
 "id": 204,
 "rarity": "C",
 "notes": {
-"power": 2.5,
+"power": 2.0,
 "potential": 3.0,
 "synergies": {
-"atarka": 17
+"atarka": 17,
+"ramp": 5
 },
 "tags": {
 "atarka": 1.0
@@ -3847,7 +3845,7 @@
 "name": "Supply Scavengers",
 "imageName": "Supply Scavengers",
 "color": "G",
-"castingCost": "2G",
+"castingCost": "3G",
 "id": 208,
 "rarity": "C",
 "notes": {
