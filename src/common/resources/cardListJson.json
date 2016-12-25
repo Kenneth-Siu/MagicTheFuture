@@ -222,7 +222,7 @@
 "name": "Cryonics Facility",
 "imageName": "Cryonics Facility",
 "color": "W",
-"castingCost": "4W",
+"castingCost": "1W",
 "id": 13,
 "rarity": "U",
 "notes": {
@@ -235,7 +235,7 @@
 "devices": 1.0
 }
 },
-"rulesText": "At the beginning of your upkeep, you may displace target unit you control. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "At the beginning of your upkeep, you may pay 2W. If you do, displace target unit you control. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Cultural Renaissance",
@@ -443,7 +443,7 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Flying\nWhenever you gain life, you may create a 0/1 colorless Hologram device unit token."
+"rulesText": "Flying\nWhenever you gain life, you may pay 1. If you do, create a 0/1 colorless Hologram device unit token."
 },
 {
 "name": "Mongrel Companion",
@@ -806,7 +806,11 @@
 "id": 47,
 "rarity": "R",
 "notes": {
-"power": 4.0
+"power": 4.0,
+"potential": 5.0,
+"synergies": {
+"evasion": 12
+}
 },
 "rulesText": "Modify unit\nYou control modified unit.\nAt the beginning of your upkeep, modified unit’s owner draws a card."
 },
@@ -1194,7 +1198,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Counter target order unless its controller pays 2. Defragment 1. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Counter target order unless its controller pays 2."
 },
 {
 "name": "Migratory City",
@@ -1214,7 +1218,7 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Technician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)\nWhenever Migratory City becomes intercepted, it gets +0/+4 until end of turn."
+"rulesText": "Technician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)\n1U: Migratory City gets +0/+2 until end of turn."
 },
 {
 "name": "Mindmelded Sysadmin",
@@ -1369,6 +1373,10 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 3.0,
+"synergies": {
+"evasion": 12
+},
 "tags": {
 "devices": 1.0,
 "evasion": 0.8
@@ -2280,7 +2288,7 @@
 "lifegain": 1.2
 }
 },
-"rulesText": "At the beginning of each end step, if a player lost life this turn, create a colorless Credit device token.\nSacrifice three other nonland permanents: Each opponent loses 2 life and you gain 2 lifelink."
+"rulesText": "At the beginning of each end step, if a player lost life this turn, create a colorless Credit device token.\nSacrifice three other nonland permanents: Each opponent loses 2 life and you gain 2 life."
 },
 {
 "name": "Urban Revenant",
@@ -2522,7 +2530,7 @@
 "atarka": 0.5
 }
 },
-"rulesText": "As long as Charge Captain is attacking, it has double strike."
+"rulesText": "3R: Charge Captain gains double strike until end of turn."
 },
 {
 "name": "Combined Effort",
@@ -2658,7 +2666,7 @@
 "equipment": 1.0
 }
 },
-"rulesText": "Equipped unit gets +1/+0 and has first strike.\nEquip 1"
+"rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 1"
 },
 {
 "name": "Induce Psychopathy",
@@ -3372,7 +3380,7 @@
 "atarka": 17
 }
 },
-"rulesText": "All units able to intercept Escaped Test Subject do so."
+"rulesText": "5G: All units able to intercept Escaped Test Subject this turn do so."
 },
 {
 "name": "Experiment T.I.T.A.N.",
@@ -3880,7 +3888,7 @@
 "name": "Terraforming Works",
 "imageName": "Terraforming Works",
 "color": "G",
-"castingCost": "4GG",
+"castingCost": "2GG",
 "id": 210,
 "rarity": "R",
 "notes": {
@@ -3890,7 +3898,7 @@
 "ramp": 5
 }
 },
-"rulesText": "Discard a card: Put six +1/+1 counters on target land you control and it becomes a 0/0 Mutant unit with haste. It’s still a land. Activate this ability only any time you could issue a strategy."
+"rulesText": "4GG, Sacrifice a land: Create a 6/6 green Mutant unit token."
 },
 {
 "name": "Ultramagnetic Interference",
