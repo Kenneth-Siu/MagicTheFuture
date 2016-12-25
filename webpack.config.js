@@ -19,6 +19,7 @@ module.exports = {
         loaders: [
             { test: /\.tsx?$/, loader: "ts-loader" },
             { test: /\.jpg?$/, loader: "file-loader" },
+            { test: /\.png?$/, loader: "file-loader" },
             { test: /\.json$/, loader: "json" }
         ],
 
