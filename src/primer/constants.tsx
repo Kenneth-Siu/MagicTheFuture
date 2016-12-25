@@ -40,7 +40,7 @@ export const colorPairPrimers = [
 
             previewCards("Skysnare Squad", "Reconstruction Specialist"),
 
-            <p><i>Value.</i></p>
+            <p>Oh, what's that? That's right. <i>Value.</i></p>
         ]
     ),
     new ColorPairPrimer(
@@ -90,7 +90,7 @@ export const colorPairPrimers = [
 
             previewCards("Refractive Skysoarer", "Corporate Spy"),
 
-            <p>Both <u>Refractive Skysoarer</u> and <u>Corporate Spy</u> look innocuous enough, but they can spell some real trouble for an opponent when they hit the table on turn two and just keep attacking. As you might be able to tell, the new mechanic <i>furtive</i> plays very well with both other units that are hard to block and also itself. Take note, though, that it can also work well with units that, though they might be blocked easily, don't die easily in combat.</p>,
+            <p>Both <u>Refractive Skysoarer</u> and <u>Corporate Spy</u> look innocuous enough, but they can spell some real trouble for an opponent when they hit the table on turn two and just keep attacking. As you might be able to tell, the new mechanic <i>furtive</i> plays very well with both other units that are hard to block and also other units with <i>furtive</i>. Take note, though, that it can also work well with units that, though they might be blocked easily, don't die easily in combat.</p>,
 
             <p>And of course, the counterpart to dealing damage in a tempo deck is throwing a spanner into the opponent's works, with high-toughness interceptors and timely tricks:</p>,
             
@@ -158,9 +158,9 @@ export const colorPairPrimers = [
 
             <p><i>Mutate</i> is obviously going to be helpful to a game plan that involves units dying a lot, so let's take a closer look: What it does is that when the unit falls, you get a fresh new one from your library, randomly chosen from units that cost less. There are a couple of things to remember with it as well. <ul><li>The new unit comes out untapped, which can be useful if you attack first, then sacrifice the unit with mutate.</li><li>Take care during deck construction! You don't get anything if nothing is left in your library that costs less.</li></ul></p>,
 
-            <p>Toss in token makers, sprinkle some units with mutate, add some rewards for sacrificing things (to taste), out of the melting pot comes straight value.</p>,
+            previewCards("Sewer Unit", "Sewer Slitherer", "Sink into the Oceans"),
 
-            previewCards("Sewer Unit", "Sewer Slitherer", "Sink into the Oceans")
+            <p>Toss in token makers, sprinkle some units with mutate, add some rewards for sacrificing things (to taste), out of the melting pot comes straight value.</p>
         ]
     ),
     new ColorPairPrimer(
@@ -188,11 +188,12 @@ export const colorPairPrimers = [
 
             previewCards("Rip Space-Time", "Supervolcanic Fallout", "Escaped Test Subject"),
 
-            <p>And finally, there are a few cards that you might find useful since you target your units so much: these "nomad" cards reward you whenever you target a unit you control. Target two units with the same order, and you get two triggers! Neat.</p>,
+            <p>And finally, there are a few cards that you might find useful since you target your units so much:</p>,
 
-            previewCards("Gauss Scrapgunner", "Wanderer Caravans")
-        ],
-        // [card("canyon skitterer"), card("induce psychopathy"), card("wanderer caravans"), card("neural suppressor")]
+            previewCards("Gauss Scrapgunner", "Wanderer Caravans"),
+
+            <p>These "nomad" cards reward you whenever you target a unit you control. Target two units with the same order, and you get two triggers! Neat.</p>,
+        ]
     ),
     new ColorPairPrimer(
         "Red-White — Equipment",
@@ -201,7 +202,7 @@ export const colorPairPrimers = [
 
             <p>In red-white, you want to pick up equipment for your units. Although there are equipment in specifically white and red, you might also want to supplement them with the colorless equipment. You might end up fighting the others over them, though.</p>,
 
-            previewCards("Forcefield Device", "Homeostimulation Suit", "Jetpack"),
+            previewCards("Personal Forcefield", "Homeostimulation Suit", "Jetpack"),
 
             <p>But there are other ways to generate equipment too. In fact, these will probably be some of the more important cards in your deck:</p>,
 
