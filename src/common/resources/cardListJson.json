@@ -171,7 +171,7 @@
 "name": "Community Officer",
 "imageName": "Community Officer",
 "color": "W",
-"castingCost": "2W",
+"castingCost": "3W",
 "id": 10,
 "rarity": "C",
 "notes": {
@@ -1116,6 +1116,10 @@
 "rarity": "C",
 "notes": {
 "power": 1.0,
+"potential": 2.5,
+"synergies": {
+"evasion": 12
+},
 "tags": {
 "devices": 1.0,
 "evasion": 0.8
@@ -1989,7 +1993,7 @@
 "rarity": "R",
 "notes": {
 "power": 2.5,
-"potential": 2.8,
+"potential": 3.5,
 "synergies": {
 "lifeloss": 15,
 "evasion": 12
