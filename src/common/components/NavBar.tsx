@@ -1,5 +1,6 @@
 import * as React from "react";
-import * as constants from "../constants";
+import * as _ from "lodash";
+import { siteMapArray } from "../siteMap";
 
 export interface NavBarProps { activePage: string }
 
@@ -19,9 +20,7 @@ export default class NavBar extends React.Component<NavBarProps, {}> {
 
                     <div className="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul className="nav navbar-nav">
-                            <li className={this.props.activePage === constants.visualSpoiler.uuid && "active"}><a href={constants.visualSpoiler.url}>{constants.visualSpoiler.pageName}</a></li>
-                            <li className={this.props.activePage === constants.primer.uuid && "active"}><a href={constants.primer.url}>{constants.primer.pageName}</a></li>
-                            <li className={this.props.activePage === constants.draftSim.uuid && "active"}><a href={constants.draftSim.url}>{constants.draftSim.pageName}</a></li>
+                            {_.map(siteMapArray, page => (<li className={this.props.activePage === page.uuid && "active"}><a href={page.url}>{page.pageName}</a></li>))}
                         </ul>
                     </div>
                 </div>

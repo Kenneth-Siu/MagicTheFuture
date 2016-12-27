@@ -8,7 +8,7 @@ import CardRating from "../CardRating";
 import CardPicker from "../CardPicker";
 import { ColorPreferences } from "../CardPicker";
 import NavBar from "../../common/components/NavBar";
-import { draftSim } from "../../common/constants";
+import { siteMapDictionary } from "../../common/siteMap";
 
 export type PassDirection = "left" | "right";
 
@@ -57,7 +57,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
         const suggestedPick = _.maxBy(this.state.pack, card => card.rating);
         return (
             <div>
-                <NavBar activePage={draftSim.uuid} />
+                <NavBar activePage={siteMapDictionary.draftSim.uuid} />
                 <div className="page-container">
                     {this.state.pack.length > 0 &&
                         <div className="row">

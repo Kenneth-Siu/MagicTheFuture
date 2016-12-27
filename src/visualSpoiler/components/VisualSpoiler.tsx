@@ -6,7 +6,7 @@ import { ColorFilter } from "../ColorFilter";
 import Card from "../../common/Card";
 import CardDiv from "./CardDiv";
 import NavBar from "../../common/components/NavBar";
-import {visualSpoiler} from "../../common/constants";
+import {siteMapDictionary} from "../../common/siteMap";
 
 export interface VisualSpoilerProps { }
 
@@ -37,7 +37,7 @@ export default class VisualSpoiler extends React.Component<VisualSpoilerProps, {
     render() {
         return (
             <div>
-                <NavBar activePage={visualSpoiler.uuid} />
+                <NavBar activePage={siteMapDictionary.visualSpoiler.uuid} />
                 <div className="page-container">
                     <div className="row">
                         <div className="col-md-12">

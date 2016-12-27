@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as _ from "lodash";
 import NavBar from "../../common/components/NavBar";
-import { primer, draftSim } from "../../common/constants";
+import { siteMapDictionary } from "../../common/siteMap";
 import CardImage from "../../common/components/CardImage";
 import ColorPairPrimer from "../ColorPairPrimer";
 import { colorPairPrimers } from "../constants";
@@ -20,7 +20,7 @@ export default class Primer extends React.Component<PrimerProps, {}> {
     render() {
         return (
             <div>
-                <NavBar activePage={primer.uuid} />
+                <NavBar activePage={siteMapDictionary.primer.uuid} />
                 <div className="page-container">
                     {this.colorPairPrimers.map(colorPairPrimer => (
                         <div className="row" key={colorPairPrimer.title}>
@@ -32,7 +32,7 @@ export default class Primer extends React.Component<PrimerProps, {}> {
                     ))}
                     <div className="row try-a-draft">
                         <div className="col-md-12 text-center">
-                            <a href={draftSim.url} className="btn btn-default btn-lg">Why not try a draft?</a>
+                            <a href={siteMapDictionary.draftSim.url} className="btn btn-default btn-lg">Why not try a draft?</a>
                         </div>
                     </div>
                 </div>
