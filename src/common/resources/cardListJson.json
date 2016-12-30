@@ -42,6 +42,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "evasion": 0.8,
@@ -80,6 +81,7 @@
 "rarity": "R",
 "notes": {
 "power": 0.0,
+"potential": 3.0,
 "tags": {
 "devices": 1.0
 }
@@ -95,7 +97,7 @@
 "rarity": "C",
 "notes": {
 "power": 1.5,
-"potential": 3.2,
+"potential": 3.0,
 "synergies": {
 "equipment": 6
 }
@@ -142,7 +144,8 @@
 "id": 8,
 "rarity": "C",
 "notes": {
-"power": 2.0,
+"power": 2.5,
+"potential": 3.0,
 "tags": {
 "deviceTokens": 1.0,
 "etb": 0.8,
@@ -175,7 +178,7 @@
 "id": 10,
 "rarity": "C",
 "notes": {
-"power": 2.5,
+"power": 2.0,
 "potential": 3.0,
 "synergies": {
 "etb": 6
@@ -212,6 +215,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "unitTokens": 1.0
 }
@@ -302,20 +306,16 @@
 "rulesText": "Flying\nWhenever Dropship attacks and isn’t intercepted, you may tap an untapped unit you control that isn’t attacking. It becomes attacking."
 },
 {
-"name": "Eviction Order",
-"imageName": "Eviction Order",
+"name": "Evict",
+"imageName": "Evict",
 "color": "W",
-"castingCost": "2W",
+"castingCost": "1W",
 "id": 18,
 "rarity": "C",
 "notes": {
-"power": 3.5,
-"tags": {
-"lifegain": 0.6,
-"tactical": 1.0
-}
+"power": 2.5
 },
-"rulesText": "Dematerialise target unit that dealt damage to you this turn. You gain life equal to its power."
+"rulesText": "Dematerialise target tapped unit at the beginning of your next upkeep."
 },
 {
 "name": "Fleet Overseer",
@@ -454,6 +454,7 @@
 "rarity": "C",
 "notes": {
 "power": 0.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "lifegain": 1.4
@@ -470,6 +471,7 @@
 "rarity": "U",
 "notes": {
 "power": 3.0,
+"potential": 3.5,
 "tags": {
 "devices": 1.0,
 "etb": 1.0,
@@ -487,6 +489,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "equipment": 1.0
@@ -503,6 +506,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "evasion": 1.2,
@@ -573,6 +577,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 3.0,
 "tags": {
 "unitTokens": 1.0,
 "tactical": 1.0
@@ -589,6 +594,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.5,
 "tags": {
 "lifegain": 2.2
 }
@@ -655,6 +661,7 @@
 "rarity": "U",
 "notes": {
 "power": 1.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "unitTokens": 1.5
@@ -671,6 +678,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "devices": 1.0,
 "etb": 0.8,
@@ -688,6 +696,7 @@
 "rarity": "U",
 "notes": {
 "power": 3.0,
+"potential": 3.5,
 "tags": {
 "devices": 1.0,
 "deviceTokens": 1.0,
@@ -775,7 +784,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.5,
-"potential": 4.2,
+"potential": 4.0,
 "synergies": {
 "unitTokens": 10
 }
@@ -791,6 +800,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "etb": 1.0,
 "unitTokens": 1.0
@@ -1085,11 +1095,12 @@
 "rarity": "U",
 "notes": {
 "power": 0.0,
+"potential": 2.5,
 "tags": {
 "tactical": 1.0
 }
 },
-"rulesText": "Sacrifice a unit. If you do, search your library for a unit card, reveal that card, shuffle your library, then put the card on top of it."
+"rulesText": "You may sacrifice a unit. If you do, search your library for a unit card, reveal that card, shuffle your library, then put the card on top of it."
 },
 {
 "name": "Glitch in Space-Time",
@@ -1219,7 +1230,7 @@
 },
 "tags": {
 "devices": 1.0,
-"evasion": 0.8
+"evasion": 0.6
 }
 },
 "rulesText": "Technician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)\n1U: Migratory City gets +0/+2 until end of turn."
@@ -1233,6 +1244,7 @@
 "rarity": "C",
 "notes": {
 "power": 0.5,
+"potential": 3.0,
 "tags": {
 "deviceTokens": 2.0,
 "evasion": 1.0
@@ -1292,7 +1304,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Choose target device unit. Create a 1/1 colorless Mech device unit token, then untap the chosen unit and it gets +1/+1 until end of turn for each device you control."
+"rulesText": "Choose target device unit. Create a 1/1 colorless Mech device unit token, then the chosen unit gets +1/+1 until end of turn for each device you control. Untap the chosen unit."
 },
 {
 "name": "Overwhelm Psyche",
@@ -1362,6 +1374,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.5,
 "tags": {
 "etb": 1.5
 }
@@ -1418,6 +1431,7 @@
 "rarity": "U",
 "notes": {
 "power": 3.0,
+"potential": 4.0,
 "tags": {
 "etb": 2.0
 }
@@ -1567,6 +1581,7 @@
 "rarity": "U",
 "notes": {
 "power": 0.5,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "evasion": 1.0
@@ -1603,6 +1618,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.5,
+"potential": 3.5,
 "tags": {
 "deviceTokens": 0.8,
 "unitTokens": 0.8,
@@ -1707,8 +1723,13 @@
 "rarity": "C",
 "notes": {
 "power": 1.0,
+"potential": 3.0,
+"synergies": {
+"evasion": 14
+},
 "tags": {
-"evasion": 0.6
+"evasion": 0.6,
+"deathTrigger": 1.0
 }
 },
 "rulesText": "Vigilance\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
@@ -1782,6 +1803,7 @@
 "rarity": "R",
 "notes": {
 "power": 3.0,
+"potential": 3.2,
 "tags": {
 "devices": 1.0,
 "unitTokens": 1.0
@@ -1896,6 +1918,7 @@
 "rarity": "C",
 "notes": {
 "power": 1.0,
+"potential": 2.5,
 "tags": {
 "deathTrigger": 2.0,
 "tactical": 1.0
@@ -2049,7 +2072,7 @@
 "id": 113,
 "rarity": "C",
 "notes": {
-"power": 2.0,
+"power": 2.5,
 "tags": {
 "etb": 0.6,
 "lifegain": 0.5,
@@ -2068,6 +2091,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "lifegain": 0.9,
@@ -2130,6 +2154,7 @@
 "rarity": "C",
 "notes": {
 "power": 1.0,
+"potential": 2.5,
 "tags": {
 "deathTrigger": 1.0
 }
@@ -2490,6 +2515,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "deviceTokens": 1.2
 }
@@ -2597,6 +2623,7 @@
 "rarity": "U",
 "notes": {
 "power": 1.5,
+"potential": 3.0,
 "tags": {
 "deviceTokens": 1.2,
 "equipment": 2.0
@@ -2665,6 +2692,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.0,
+"potential": 2.5,
 "tags": {
 "devices": 1.0,
 "equipment": 1.0
@@ -3011,6 +3039,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "devices": 1.0,
 "deviceTokens": 0.8,
@@ -3226,7 +3255,11 @@
 "id": 174,
 "rarity": "R",
 "notes": {
-"power": 2.0
+"power": 2.0,
+"potential": 3.0,
+"tags": {
+"ramp": 1.0
+}
 },
 "rulesText": "Sacrifice Bioarchitect: Activate an activated ability of target permanent you control up to two times without paying its costs."
 },
@@ -3410,16 +3443,17 @@
 "name": "Extraterrestrial Exploration",
 "imageName": "Extraterrestrial Exploration",
 "color": "G",
-"castingCost": "2G",
+"castingCost": "1G",
 "id": 184,
 "rarity": "C",
 "notes": {
-"power": 2.0,
+"power": 2.5,
+"potential": 3.0,
 "tags": {
 "ramp": 1.0
 }
 },
-"rulesText": "Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped and the other into your hand. Then shuffle your library."
+"rulesText": "Search your library for up to two basic land cards, reveal those cards, and put one onto the battlefield tapped. Shuffle your library, then put the other on top of it."
 },
 {
 "name": "Failed Kushak Subject",
@@ -3429,14 +3463,15 @@
 "id": 185,
 "rarity": "U",
 "notes": {
-"power": 3.5,
-"potential": 3.7,
+"power": 1.5,
+"potential": 3.5,
 "synergies": {
-"atarka": 17
+"atarka": 17,
+"ramp": 4
 },
 "tags": {
 "devices": 1.0,
-"etb": 0.8,
+"etb": 0.2,
 "atarka": 1.0
 }
 },
@@ -3471,10 +3506,10 @@
 "rarity": "R",
 "notes": {
 "power": 2.5,
-"potential": 3.3,
+"potential": 4.0,
 "synergies": {
-"unitTokens": 8,
-"deathTrigger": 8,
+"unitTokens": 16,
+"deathTrigger": 16,
 "ramp": 7
 }
 },
@@ -3489,6 +3524,7 @@
 "rarity": "C",
 "notes": {
 "power": 1.5,
+"potential": 2.5,
 "tags": {
 "unitTokens": 1.2,
 "deathTrigger": 1.0
@@ -3504,10 +3540,12 @@
 "id": 189,
 "rarity": "C",
 "notes": {
-"power": 3.0,
+"power": 1.5,
+"potential": 2.5,
 "tags": {
-"deathTrigger": 1.0,
-"atarka": 1.0
+"deathTrigger": 0.7,
+"atarka": 1.0,
+"ramp": 3
 }
 },
 "rulesText": "Modify unit\nModified unit gets +5/+5 and has mutate. (When it falls, its controller reveals cards from the top of his or her library until he or she reveals a unit card that costs less. That player puts that card onto the battlefield and the rest on the bottom of his or her library in a random order.)"
@@ -3521,10 +3559,13 @@
 "rarity": "R",
 "notes": {
 "power": 3.5,
+"potential": 4.0,
+"synergies": {
+"ramp": 7
+},
 "tags": {
 "unitTokens": 1.2,
-"deathTrigger": 1.2,
-"ramp": 8
+"deathTrigger": 1.2
 }
 },
 "rulesText": "When Incubation Hulk falls, create three 2/2 green Mutant unit tokens with “When this unit falls, create three 1/1 green Mutant unit tokens.”"
@@ -3601,6 +3642,7 @@
 "rarity": "R",
 "notes": {
 "power": 2.5,
+"potential": 3.5,
 "tags": {
 "deathTrigger": 1.2
 }
@@ -3631,6 +3673,7 @@
 "rarity": "C",
 "notes": {
 "power": 2.5,
+"potential": 3.5,
 "tags": {
 "deathTrigger": 1.0,
 "ramp": 1.0
@@ -3686,6 +3729,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.5,
+"potential": 3.0,
 "tags": {
 "etb": 0.9,
 "deathTrigger": 1.0,
@@ -3896,13 +3940,13 @@
 "id": 210,
 "rarity": "R",
 "notes": {
-"power": 4.3,
+"power": 4.5,
 "potential": 5.0,
 "synergies": {
 "ramp": 5
 }
 },
-"rulesText": "4GG, Sacrifice a land: Create a 6/6 green Mutant unit token."
+"rulesText": "2GG, Sacrifice a land: Create a 6/6 green Mutant unit token."
 },
 {
 "name": "Ultramagnetic Interference",
@@ -4001,6 +4045,7 @@
 "rarity": "U",
 "notes": {
 "power": 2.0,
+"potential": 4.0,
 "tags": {
 "devices": 1.0,
 "etb": 1.8,
@@ -4193,6 +4238,7 @@
 "rarity": "R",
 "notes": {
 "power": 4.0,
+"potential": 4.5,
 "tags": {
 "lifegain": 2.0,
 "lifeloss": 2.0
@@ -4204,16 +4250,16 @@
 "name": "Gravitic Collector Alpha",
 "imageName": "Gravitic Collector Alpha",
 "color": "UR",
-"castingCost": "2UR",
+"castingCost": "1UR",
 "id": 227,
 "rarity": "R",
 "notes": {
-"power": 4.5,
+"power": 4.0,
 "tags": {
 "devices": 1.0
 }
 },
-"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Gravitic Collector Alpha.\nAt the beginning of your upkeep, target unit you control gets +2/+0 and gains flying until end of turn.     "
+"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Gravitic Collector Alpha.\nAt the beginning of each upkeep, target unit you control gets +2/+0 and gains flying until end of turn.     "
 },
 {
 "name": "Scrap Ferries",
@@ -4349,7 +4395,7 @@
 "id": 235,
 "rarity": "C",
 "notes": {
-"power": 2.4
+"power": 2.5
 },
 "rulesText": "T, Sacrifice Biodome: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your libary."
 }]
