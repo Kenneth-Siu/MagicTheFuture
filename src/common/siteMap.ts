@@ -15,16 +15,16 @@ class Page {
 
 export const siteMapDictionary = {
     home: new Page("Magic: the Convergence", "home.html"),
-    visualSpoiler: new Page("Visual Spoiler", "visualSpoiler.html"),
     primer: new Page("Draft Primer", "primer.html"),
     draftSim: new Page("Draft Simulator (WIP)", "draftSim.html"),
+    visualSpoiler: new Page("Visual Spoiler", "visualSpoiler.html"),
     powerRankings: new Page("Power Rankings", "powerRankings.html")
 };
 
 export const siteMapArray = [
     siteMapDictionary.home,
-    siteMapDictionary.visualSpoiler,
     siteMapDictionary.primer,
     siteMapDictionary.draftSim,
+    siteMapDictionary.visualSpoiler,
     siteMapDictionary.powerRankings
 ];
