@@ -185,7 +185,7 @@
 "etb": 0.4
 }
 },
-"rulesText": "When Community Officer enters the battlefield, you may displace another target nontoken unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "When Community Officer enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Covering Fire",
@@ -422,7 +422,7 @@
 "etb": 10
 }
 },
-"rulesText": "Displace up to two target nontoken units. (Dematerialise those units. Return them to the battlefield under their owners’ control at the beginning of the next end step.)"
+"rulesText": "Displace up to two target units. (Dematerialise those units. Return them to the battlefield under their owners’ control at the beginning of the next end step.)"
 },
 {
 "name": "Mesosphere Dancer",
@@ -836,7 +836,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nFlying\nWhen Arrester Drone enters the battlefield, you may displace another target nontoken unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)   "
+"rulesText": "Flash\nFlying\nWhen Arrester Drone enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Atmospheric Survey Net",
@@ -974,7 +974,7 @@
 "evasion": 16
 }
 },
-"rulesText": "Displace target nontoken unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)\nDraw a card."
+"rulesText": "Displace target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)\nDraw a card."
 },
 {
 "name": "Echo Bomber",
@@ -1963,7 +1963,7 @@
 "lifeloss": 2.0
 }
 },
-"rulesText": "Each 3 life you pay as you issue Mortality reduces its cost by 1.\nLifelink\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
+"rulesText": "Each 3 life you pay while issuing Mortality reduces its cost by 1.\nLifelink\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
 },
 {
 "name": "Neural Devourer",
@@ -3809,7 +3809,7 @@
 "atarka": 0.5
 }
 },
-"rulesText": "Each unit you sacrifice as you issue Sewer Monster reduces its cost by 2.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)    "
+"rulesText": "Each unit you sacrifice while issuing Sewer Monster reduces its cost by 2.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)    "
 },
 {
 "name": "Sewer Unit",
