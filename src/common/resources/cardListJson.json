@@ -846,7 +846,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nFlying\nWhen Arrester Drone enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nFlying\nWhen Arrester Drone enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Atmospheric Survey Net",
@@ -866,7 +866,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nX, Sacrifice Atmospheric Survey Net: Defragment X, then draw two cards. (To defragment X, look at the top X cards of your library. Put any number of them on the bottom of your library in any order and the rest on top in any order.)"
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nX, Sacrifice Atmospheric Survey Net: Defragment 1 X times, then draw two cards. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "The Chronos",
@@ -1420,7 +1420,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nFurtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nFurtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
 },
 {
 "name": "Scorned Researcher",
@@ -1458,7 +1458,7 @@
 "tactical": 1.2
 }
 },
-"rulesText": "Flash\nYou may issue devices as though they had flash.\nTap two untapped devices you control: Target device gains cloaking until end of turn."
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nYou may issue devices as though they had flash.\nTap two untapped devices you control: Target device gains cloaking until end of turn."
 },
 {
 "name": "Supercoolant Technician",
@@ -1700,7 +1700,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nModify unit\nModified unit gets +0/+3 and has lifelink."
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nModify unit\nModified unit gets +0/+3 and has lifelink."
 },
 {
 "name": "Engineered Endemic",
@@ -3812,7 +3812,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nReach"
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nReach"
 },
 {
 "name": "Screeching Terror",
@@ -3930,7 +3930,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
 },
 {
 "name": "Terraforming Works",
@@ -4003,7 +4003,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nAs Urban Ravager enters the battlefield, sacrifice any number of units. Urban Ravager enters the battlefield with that many +1/+1 counters on it."
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nAs Urban Ravager enters the battlefield, sacrifice any number of units. Urban Ravager enters the battlefield with that many +1/+1 counters on it."
 },
 {
 "name": "Wanderer Caravans",
@@ -4173,7 +4173,7 @@
 "name": "Ingolf, the Catalyst",
 "imageName": "Ingolf the Catalyst",
 "color": "GW",
-"castingCost": "4GW",
+"castingCost": "3GW",
 "id": 223,
 "rarity": "R",
 "notes": {
@@ -4365,7 +4365,7 @@
 "tactical": 2.0
 }
 },
-"rulesText": "Untap all lands you control during each other player’s untap step.\nYou may issue orders as though they had flash."
+"rulesText": "Untap all lands you control during each other player’s untap step.\nYou may issue orders as though they had flash. (You can issue them any time you could issue a tactic.)"
 },
 {
 "name": "Troposphere Drifter",
@@ -4385,7 +4385,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nFlying\nWhenever you issue an order, Troposphere Drifter gets +X/+X until end of turn, where X is that order’s converted psi cost."
+"rulesText": "Flash (You can issue this order any time you could issue a tactic.)\nFlying\nWhenever you issue an order, Troposphere Drifter gets +X/+X until end of turn, where X is that order’s converted psi cost."
 },
 {
 "name": "Biodome",
