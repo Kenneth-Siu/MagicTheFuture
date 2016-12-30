@@ -1,0 +1,35 @@
+@maxPileSize: 236;
+
+div.card-piles {
+    display: flex;
+    padding-right: 0;
+    padding-left: 0;
+
+    .size-of-largest-pile-loop(@index) when (@index < @maxPileSize) {
+        &.size-of-largest-pile-@{index} {
+            padding-bottom: 5.81% + @index * 5.81% + 2em;
+        }
+        .size-of-largest-pile-loop(@index + 1);
+    }
+    .size-of-largest-pile-loop(0);
+
+    .pile {
+        flex-grow: 1;
+        position: relative;
+        padding-bottom: 5.81%;
+
+        .card {
+            width: 100%;
+            height: auto;
+            position: absolute;
+
+            .pile-index-loop (@index) when (@index < @maxPileSize) {
+                &.pile-index-@{index} {
+                    top: unit(@index * 100, ~"%");
+                }
+                .pile-index-loop(@index + 1);
+            }
+            .pile-index-loop(0);
+        }
+    }
+}

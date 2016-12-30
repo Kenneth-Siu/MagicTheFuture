@@ -1,6 +1,5 @@
 @import "../../common/less/shared";
-
-@maxNumberOfPicks: 45;
+@import "../../common/less/piles";
 
 .text-align-center {
     text-align: center;
@@ -39,40 +38,6 @@ div.draft-pack {
 
 div.suggest-pick {
     .text-align-center;
-}
-
-div.draft-picks {
-    display: flex;
-    padding-right: 0;
-    padding-left: 0;
-
-    .picks-size-loop(@index) when (@index < @maxNumberOfPicks) {
-        &.picks-size-@{index} {
-            padding-bottom: 5.81% + @index * 5.81% + 2em;
-        }
-        .picks-size-loop(@index + 1);
-    }
-    .picks-size-loop(0);
-
-    .cmc {
-        flex-grow: 1;
-        position: relative;
-        padding-bottom: 5.81%;
-
-        .card {
-            width: 100%;
-            height: auto;
-            position: absolute;
-
-            .pile-index-loop (@index) when (@index < @maxNumberOfPicks) {
-                &.pile-index-@{index} {
-                    top: unit(@index * 100, ~"%");
-                }
-                .pile-index-loop(@index + 1);
-            }
-            .pile-index-loop(0);
-        }
-    }
 }
 
 div.toggle-ai-picks {

@@ -9,6 +9,7 @@ import CardPicker from "../CardPicker";
 import { ColorPreferences } from "../CardPicker";
 import NavBar from "../../common/components/NavBar";
 import { siteMapDictionary } from "../../common/siteMap";
+import CardPiles from "../../common/components/CardPiles";
 
 export type PassDirection = "left" | "right";
 
@@ -78,14 +79,14 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                     }
                     <div className="row">
                         <div className="col-md-12"><h2>Picks</h2></div>
-                        <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.picks.map(cmcPile => cmcPile.length))}`}>
-                            {_.map(this.state.picks, (cmcPile, index) => this.getPicksCmcPileElement(cmcPile, index))}
+                        <div className="col-md-12">
+                            <CardPiles piles={this.state.picks} onClick={(card) => this.moveFromPicksToSideboard(card)} />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-12"><h2>Sideboard</h2></div>
-                        <div className={`col-md-12 draft-picks picks-size-${_.max(this.state.sideboard.map(cmcPile => cmcPile.length))}`}>
-                            {_.map(this.state.sideboard, (cmcPile, index) => this.getSideboardCmcPileElement(cmcPile, index))}
+                        <div className="col-md-12">
+                            <CardPiles piles={this.state.sideboard} onClick={(card) => this.moveFromSideboardToPicks(card)} />
                         </div>
                     </div>
                     <div className="row">
@@ -93,7 +94,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                             <h2><a className="btn btn-default btn-lg" onClick={() => this.toggleAIPicks()}>{this.state.showAIPicks ? "Hide AI Picks" : "Show AI Picks"}</a></h2>
                         </div>
                     </div>
-                    {this.state.showAIPicks && this.state.computerPicks.map((ai, index) =>
+                    {this.state.showAIPicks && this.state.computerPicks.map((aiPicks, index) =>
                         <div className="row" key={index}>
                             <div className="col-md-12"><h2>AI {index}&nbsp;—&nbsp;
                             W:{_.round(this.state.computerColorPreferences[index].white, 3)}&nbsp;
@@ -102,8 +103,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                             R:{_.round(this.state.computerColorPreferences[index].red, 3)}&nbsp;
                             G:{_.round(this.state.computerColorPreferences[index].green, 3)}&nbsp;
                             </h2></div>
-                            <div className={`col-md-12 draft-picks picks-size-${_.max(ai.map(cmcPile => cmcPile.length))}`}>
-                                {_.map(ai, (cmcPile, index) => this.getCmcPileElement(cmcPile, index))}
+                            <div className="col-md-12">
+                                <CardPiles piles={aiPicks} />
                             </div>
                         </div>
                     )}
@@ -230,49 +231,5 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             showAIRatings={this.state.showAIRatings}
             rating={card.rating}
             isSuggestedPick={isSuggested} />
-    }
-
-    private getCardImageElement(card: Card, index: number): JSX.Element {
-        return <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
-    }
-
-    private getCmcPileElement(pile: Card[], index: number): JSX.Element {
-        return (
-            <div className={`cmc pile-size-${pile.length}`} key={index}>
-                {_.map(pile, (card, index) => this.getCardImageElement(card, index))}
-            </div>
-        );
-    }
-
-    private getPicksCardImageElement(card: Card, index: number): JSX.Element {
-        return (
-            <div onClick={() => this.moveFromPicksToSideboard(card)}>
-                <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
-            </div>
-        );
-    }
-
-    private getPicksCmcPileElement(pile: Card[], index: number): JSX.Element {
-        return (
-            <div className={`cmc pile-size-${pile.length}`} key={index}>
-                {_.map(pile, (card, index) => this.getPicksCardImageElement(card, index))}
-            </div>
-        );
-    }
-
-    private getSideboardCardImageElement(card: Card, index: number): JSX.Element {
-        return (
-            <div onClick={() => this.moveFromSideboardToPicks(card)}>
-                <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
-            </div>
-        );
-    }
-
-    private getSideboardCmcPileElement(pile: Card[], index: number): JSX.Element {
-        return (
-            <div className={`cmc pile-size-${pile.length}`} key={index}>
-                {_.map(pile, (card, index) => this.getSideboardCardImageElement(card, index))}
-            </div>
-        );
     }
 }
