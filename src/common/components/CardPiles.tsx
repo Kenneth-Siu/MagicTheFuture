@@ -3,7 +3,12 @@ import * as _ from "lodash";
 import Card from "../Card";
 import CardImage from "./CardImage";
 
-export interface CardPilesProps { piles: Card[][], onClick?: (card: Card) => void }
+export interface CardPilesProps {
+    piles: Card[][],
+    onClick?: (card: Card) => void,
+    onMouseEnter?: (card: Card) => void,
+    onMouseLeave?: () => void
+}
 
 export default class CardPiles extends React.Component<CardPilesProps, {}> {
 
@@ -17,7 +22,7 @@ export default class CardPiles extends React.Component<CardPilesProps, {}> {
 
     private getPileElement(pile: Card[], index: number): JSX.Element {
         return (
-            <div className={`pile`} key={index}>
+            <div className="pile" key={index}>
                 {_.map(pile, (card, index) => this.getPileCardImageElement(card, index))}
             </div>
         );
@@ -25,7 +30,10 @@ export default class CardPiles extends React.Component<CardPilesProps, {}> {
 
     private getPileCardImageElement(card: Card, index: number): JSX.Element {
         return (
-            <div onClick={() => { if (this.props.onClick) this.props.onClick(card); } }>
+            <div onClick={() => { if (this.props.onClick) this.props.onClick(card); } }
+                onMouseEnter={() => this.props.onMouseEnter(card)}
+                onMouseLeave={() => this.props.onMouseLeave()}>
+
                 <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
             </div>
         );

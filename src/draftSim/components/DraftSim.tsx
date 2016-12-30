@@ -10,6 +10,7 @@ import { ColorPreferences } from "../CardPicker";
 import NavBar from "../../common/components/NavBar";
 import { siteMapDictionary } from "../../common/siteMap";
 import CardPiles from "../../common/components/CardPiles";
+import CardPreview from "../../common/components/CardPreview";
 
 export type PassDirection = "left" | "right";
 
@@ -22,6 +23,7 @@ interface DraftSimState {
     computerPicks: Card[][][];
     showAIRatings: boolean;
     showAIPicks: boolean;
+    hoveredCardUrl: string;
 };
 
 export interface DraftSimProps { }
@@ -49,7 +51,8 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             computerColorPreferences: this.computerPlayers.map(player => player.getColorPreferences()),
             computerPicks: [this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([]), this.pilify([])],
             showAIRatings: false,
-            showAIPicks: false
+            showAIPicks: false,
+            hoveredCardUrl: null
         };
         this.passDirection = "left";
     }
@@ -80,13 +83,19 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                     <div className="row">
                         <div className="col-md-12"><h2>Picks</h2></div>
                         <div className="col-md-12">
-                            <CardPiles piles={this.state.picks} onClick={(card) => this.moveFromPicksToSideboard(card)} />
+                            <CardPiles piles={this.state.picks}
+                                onClick={(card) => this.moveFromPicksToSideboard(card)}
+                                onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
+                                onMouseLeave={() => this.handleMouseLeavePileCard()} />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-12"><h2>Sideboard</h2></div>
                         <div className="col-md-12">
-                            <CardPiles piles={this.state.sideboard} onClick={(card) => this.moveFromSideboardToPicks(card)} />
+                            <CardPiles piles={this.state.sideboard}
+                                onClick={(card) => this.moveFromSideboardToPicks(card)}
+                                onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
+                                onMouseLeave={() => this.handleMouseLeavePileCard()} />
                         </div>
                     </div>
                     <div className="row">
@@ -104,11 +113,14 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                             G:{_.round(this.state.computerColorPreferences[index].green, 3)}&nbsp;
                             </h2></div>
                             <div className="col-md-12">
-                                <CardPiles piles={aiPicks} />
+                                <CardPiles piles={aiPicks}
+                                    onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
+                                    onMouseLeave={() => this.handleMouseLeavePileCard()} />
                             </div>
                         </div>
                     )}
                 </div>
+                <CardPreview url={this.state.hoveredCardUrl} />
             </div>
         );
     }
@@ -231,5 +243,13 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
             showAIRatings={this.state.showAIRatings}
             rating={card.rating}
             isSuggestedPick={isSuggested} />
+    }
+
+    private handleMouseEnterPileCard(card: Card) {
+        this.setState({ hoveredCardUrl: card.imageUrl });
+    }
+
+    private handleMouseLeavePileCard() {
+        this.setState({ hoveredCardUrl: null });
     }
 }
