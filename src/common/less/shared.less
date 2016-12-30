@@ -1,8 +1,36 @@
-nav > div.container-fluid {
-    padding: 0;
+#root {
+    nav {
+        border-radius: 0;
+        background-color: #444;
 
-    > div.navbar-collapse {
-        padding: 0 5%;
+        .navbar-nav > li > a {
+            color: #ccc;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .navbar-nav > .active > a {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .navbar-collapse {
+            border-color: #444;
+        }
+
+        > div.container-fluid {
+            padding: 0;
+
+            > div.navbar-collapse {
+                padding: 0 5%;
+            }
+        }
+        
+        .home-icon {
+            width: 1em;
+        }
     }
 }
 

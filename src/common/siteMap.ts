@@ -1,4 +1,5 @@
 import * as uuid from "uuid";
+import * as React from "react";
 
 class Page {
     uuid: string;
@@ -13,6 +14,7 @@ class Page {
 }
 
 export const siteMapDictionary = {
+    home: new Page("Magic: the Convergence", "home.html"),
     visualSpoiler: new Page("Visual Spoiler", "visualSpoiler.html"),
     primer: new Page("Draft Primer", "primer.html"),
     draftSim: new Page("Draft Simulator (WIP)", "draftSim.html"),
@@ -20,6 +22,7 @@ export const siteMapDictionary = {
 };
 
 export const siteMapArray = [
+    siteMapDictionary.home,
     siteMapDictionary.visualSpoiler,
     siteMapDictionary.primer,
     siteMapDictionary.draftSim,

@@ -3,7 +3,8 @@ module.exports = {
         visualSpoiler: "./src/visualSpoiler/visualSpoiler.tsx",
         draftSim: "./src/draftSim/draftSim.tsx",
         primer: "./src/primer/primer.tsx",
-        powerRankings: "./src/powerRankings/powerRankings.tsx"
+        powerRankings: "./src/powerRankings/powerRankings.tsx",
+        home: "./src/home/home.tsx"
     },
     output: {
         filename: "[name].bundle.js",
