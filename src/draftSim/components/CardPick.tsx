@@ -15,7 +15,7 @@ export default class CardPick extends React.Component<CardPickProps, {}> {
         return (
             <div onClick={this.props.onClick} className={this.props.isSuggestedPick && this.props.showAIRatings && "suggested-pick"}>
                 <CardImage url={this.props.imageUrl} />
-                {this.props.showAIRatings && <div className="pick-rating">{_.round(this.props.rating, 3)}</div>}
+                {this.props.showAIRatings && <div className="pick-rating">{this.props.rating.toFixed(3)}</div>}
             </div>
         );
     }

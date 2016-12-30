@@ -16,7 +16,7 @@ export const siteMapDictionary = {
     visualSpoiler: new Page("Visual Spoiler", "visualSpoiler.html"),
     primer: new Page("Draft Primer", "primer.html"),
     draftSim: new Page("Draft Simulator (WIP)", "draftSim.html"),
-    powerRankings: new Page("Power Rankings (WIP)", "powerRankings.html")
+    powerRankings: new Page("Power Rankings", "powerRankings.html")
 };
 
 export const siteMapArray = [

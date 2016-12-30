@@ -11,7 +11,8 @@ export interface PowerRankingsProps { }
 
 interface PowerRankingsState {
     hoveredCardUrl: string;
-    piles: Card[][];
+    cardPotentialPiles: Card[][];
+    cardPowerPiles: Card[][];
 };
 
 export default class PowerRankings extends React.Component<PowerRankingsProps, {}> {
@@ -21,17 +22,27 @@ export default class PowerRankings extends React.Component<PowerRankingsProps, {
     constructor() {
         super();
 
-        const piles: Card[][] = [[], [], [], [], [], [], [], [], [], [], []];
+        const cardPotentialPiles: Card[][] = [];
+        const cardPowerPiles: Card[][] = [];
+
+        for (let i = 0; i <= 5; i += 0.5) {
+            cardPotentialPiles.push([]);
+            cardPowerPiles.push([]);
+        }
 
         cardList.forEach(card => {
             const cardPotential = _.clamp(card.notes.potential || card.notes.power, 0, 5);
-            const cardPile = Math.floor(cardPotential * 2);
-            piles[cardPile].push(card);
+            const cardPower = _.clamp(card.notes.power, 0, 5);
+            const cardPotentialPileNumber = Math.floor(cardPotential * 2);
+            cardPotentialPiles[cardPotentialPileNumber].push(card);
+            const cardPowerPileNumber = Math.floor(cardPower * 2);
+            cardPowerPiles[cardPowerPileNumber].push(card);
         });
 
         this.state = {
             hoveredCardUrl: null,
-            piles: piles
+            cardPotentialPiles: cardPotentialPiles,
+            cardPowerPiles: cardPowerPiles
         };
     }
 
@@ -40,9 +51,28 @@ export default class PowerRankings extends React.Component<PowerRankingsProps, {
             <div>
                 <NavBar activePage={siteMapDictionary.powerRankings.uuid} />
                 <div className="page-container">
-                    <CardPiles piles={this.state.piles}
-                        onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
-                        onMouseLeave={() => this.handleMouseLeavePileCard()} />
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h3>Card rating in fully synergistic deck</h3>
+                            <div className="pile-labels">
+                                {this.state.cardPotentialPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
+                            </div>
+                            <CardPiles piles={this.state.cardPotentialPiles}
+                                onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
+                                onMouseLeave={() => this.handleMouseLeavePileCard()} />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h3>Card rating in completely <u>un</u>synergistic deck</h3>
+                            <div className="pile-labels">
+                                {this.state.cardPowerPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
+                            </div>
+                            <CardPiles piles={this.state.cardPowerPiles}
+                                onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
+                                onMouseLeave={() => this.handleMouseLeavePileCard()} />
+                        </div>
+                    </div>
                 </div>
                 <CardPreview url={this.state.hoveredCardUrl} />
             </div>
