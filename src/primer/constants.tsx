@@ -20,9 +20,60 @@ function previewCards(...names: string[]): JSX.Element {
 
 export const colorPairPrimers = [
     new ColorPairPrimer(
+        "blue-black",
+        "Blue-Black — Furtive",
+        [
+            <div className="bg-info info-box"><img src={mtgM} className="mtg-m" /> The card types are:<ul>
+            <li>Unit <span className="text-muted"><i>(Creature)</i></span></li>
+            <li>Device <span className="text-muted"><i>(Artifact)</i></span></li>
+            <li>Development <span className="text-muted"><i>(Enchantment)</i></span></li>
+            <li>Strategy <span className="text-muted"><i>(Sorcery)</i></span></li>
+            <li>Tactic <span className="text-muted"><i>(Instant)</i></span></li>
+            <li>Land</li>
+            <li>Organization <span className="text-muted"><i>(Planeswalker)</i></span></li>
+            </ul></div>,
+
+            <p>The Left Hand is the everpresent shadow emanating from the undercity. Very little gets done without them being involved some way or other, and as such any motion to try and clamp down on their activities somehow... peters out along the command chain.</p>,
+
+            <blockquote><p>Furtive <i>(Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)</i></p></blockquote>,
+
+            <p>Blue-black comes to play with less of a control shell, and much more of a tempo strategy. The deck should (hopefully) have a lot of cheap evasive units, as well as ways to stall out the board on the ground. This usually means high-toughness interceptors, removal orders, or tempo plays to buy you enough time to attack for lethal.</p>,
+
+            <p>Cards like these get the job done very nicely:</p>,
+
+            previewCards("Refractive Skysoarer", "Corporate Spy"),
+
+            <p>Both <u>Refractive Skysoarer</u> and <u>Corporate Spy</u> look innocuous enough, but they can spell some real trouble for an opponent when they hit the table on turn two and just keep attacking. As you might be able to tell, the new mechanic <i>furtive</i> plays very well with both other units that are hard to block and also other units with <i>furtive</i>. Take note, though, that it can also work well with units that, though they might be blocked easily, don't die easily in combat.</p>,
+
+            <p>And of course, the counterpart to dealing damage in a tempo deck is throwing a spanner into the opponent's works, with high-toughness interceptors and timely tricks:</p>,
+
+            previewCards("Plasma Reclaimer", "Double Agent", "Undercroft Winder"),
+
+            <p>Your opponents will never figure out how they somehow lost.</p>
+        ]
+    ),
+    new ColorPairPrimer(
+        "blue-red",
+        "Blue-Red — Devices",
+        [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Much as you spend <u>mana</u> to <u>cast spells</u>, you spend <u>psi</u> to <u>issue orders</u>.</p>,
+
+            <p>Start your engines and assemble your contraptions, the Free Thinkers are accepting of any promising intellectuals. A loosely connected group of inventors, engineers, scientists, entrepreneurs, the Free Thinkers exist as a way to promote technological progress without interference from self-interested parties, whether they be governments or... less scrupulous organisations.</p>,
+
+            <p>Blue-red wants you to collect as many devices as you can, and then watch it go: There's really not much more than that. Let's look at some reasons for collecting devices at common:</p>,
+
+            previewCards("Engine Welder", "Rocket Salvo"),
+
+            <p>As you can see, <u>Engine Welder</u> and <u>Rocket Salvo</u> are distinctly medicore without the help of devices, but when most every permanent in your deck is a device, they really power up.</p>,
+
+            <p>Also of note is that red also enjoys <i>sacrificing</i> devices, and there are plenty of cards that care about the number of devices you have (not necessarily device cards!), so generating oodles of device tokens might help your cause too. How? Maybe have a look at Black-Red and Red-White...</p>
+        ]
+    ),
+    new ColorPairPrimer(
+        "white-blue",
         "White-Blue — Displace",
         [
-            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> <i>Dematerialising</i> is the same as <i>exiling</i>.</p>,
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> <u>Dematerialising</u> a permanent is the same as <u>exiling</u> it.</p>,
 
             <p>Order must be restored! Take command over the police and domestic military, and return peace to the cities. They provide you with the new keyword, <i>displace</i>:</p>,
 
@@ -44,10 +95,9 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "white-black",
         "White-Black — Lifegain/lifeloss",
         [
-            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Much as you spend <i>mana</i> to <i>cast spells</i>, you spend <i>psi</i> to <i>issue orders</i>.</p>,
-
             <p>The ruling elite have more worries than just some petty wars on the other side of the world. The next election is coming up, and the polls aren't looking pretty. Maybe you can grease some palms to keep ahold of your position of power?</p>,
 
             <p>White-black is back as the lifegain archetype — gain life, get rewarded. This time around, though, your life total does a bit more heavy lifting, with a plethora ways both to gain life and to <i>spend</i> it.</p>,
@@ -68,54 +118,11 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
-        "Blue-Black — Furtive",
-        [
-            <div className="bg-info info-box"><img src={mtgM} className="mtg-m" /> The card types are:<ul>
-            <li>Unit <i>(Creature)</i></li>
-            <li>Device <i>(Artifact)</i></li>
-            <li>Development <i>(Enchantment)</i></li>
-            <li>Strategy <i>(Sorcery)</i></li>
-            <li>Tactic <i>(Instant)</i></li>
-            <li>Land</li>
-            <li>Organization <i>(Planeswalker)</i></li>
-            </ul></div>,
-
-            <p>The Left Hand is the everpresent shadow emanating from the undercity. Very little gets done without them being involved some way or other, and as such any motion to try and clamp down on their activities somehow... peters out along the command chain.</p>,
-
-            <blockquote><p>Furtive <i>(Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)</i></p></blockquote>,
-
-            <p>Blue-black comes to play with less of a control shell, and much more of a tempo strategy. The deck should (hopefully) have a lot of cheap evasive units, as well as ways to stall out the board on the ground. This usually means high-toughness interceptors, removal orders, or tempo plays to buy you enough time to attack for lethal.</p>,
-
-            <p>Cards like these get the job done very nicely:</p>,
-
-            previewCards("Refractive Skysoarer", "Corporate Spy"),
-
-            <p>Both <u>Refractive Skysoarer</u> and <u>Corporate Spy</u> look innocuous enough, but they can spell some real trouble for an opponent when they hit the table on turn two and just keep attacking. As you might be able to tell, the new mechanic <i>furtive</i> plays very well with both other units that are hard to block and also other units with <i>furtive</i>. Take note, though, that it can also work well with units that, though they might be blocked easily, don't die easily in combat.</p>,
-
-            <p>And of course, the counterpart to dealing damage in a tempo deck is throwing a spanner into the opponent's works, with high-toughness interceptors and timely tricks:</p>,
-            
-            previewCards("Plasma Reclaimer", "Double Agent", "Undercroft Winder"),
-
-            <p>Your opponents will never figure out how they somehow lost.</p>
-        ]
-    ),
-    new ColorPairPrimer(
-        "Blue-Red — Devices",
-        [
-            <p>Start your engines and assemble your contraptions, the Free Thinkers are accepting of any promising intellectuals. A loosely connected group of inventors, engineers, scientists, entrepreneurs, the Free Thinkers exist as a way to promote technological progress without interference from self-interested parties, whether they be governments or... less scrupulous organisations.</p>,
-
-            <p>Blue-red wants you to collect as many devices as you can, and then watch it go: There's really not much more than that. Let's look at some reasons for collecting devices at common:</p>,
-
-            previewCards("Engine Welder", "Rocket Salvo"),
-
-            <p>As you can see, <u>Engine Welder</u> and <u>Rocket Salvo</u> are distinctly medicore without the help of devices, but when most every permanent in your deck is a device, they really power up.</p>,
-
-            <p>Also of note is that red also enjoys <i>sacrificing</i> devices, and there are plenty of cards that care about the number of devices you have (not necessarily device cards!), so generating oodles of device tokens might help your cause too. How? Maybe have a look at Black-Red and Red-White...</p>
-        ]
-    ),
-    new ColorPairPrimer(
+        "black-red",
         "Black-Red — Plunder",
         [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> A unit that <u>falls</u> is the same as a unit that <u>dies</u>.</p>,
+
             <p>There are those who seek wealth and fortune from these turbulent times. Mercenaries are always willing to give a helping hand... for the right price; and the Warapur Company always offers the best prices.</p>,
 
             <blockquote><p>Plunder <i>(Whenever this unit deals combat damage to a player, create a colorless Credit device token.)</i></p></blockquote>,
@@ -146,8 +153,11 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "black-green",
         "Black-Green — Mutate",
         [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Your <u>trashpile</u> is the same zone as your <u>graveyard</u>.</p>,
+
             <p>Reduce, reuse, recycle. Right? Well, reuse and recycle in any case...</p>,
 
             <blockquote><p>Mutate <i>(When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</i></p></blockquote>,
@@ -164,6 +174,7 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "red-green",
         "Red-Green — Ramp",
         [
             <p>Since OPEC (the Organization of Petroleum Exporting Companies) finally felt the effects of peak oil and collapsed, the inhabitants who didn't have the resources to relocate have lived a nomadic life in the Baljurashi desert.</p>,
@@ -196,6 +207,7 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "red-white",
         "Red-White — Equipment",
         [
             <p>With the re-outbreak of war in Central Eurasia, restlessness had been on the rise again, which blossomed into nation-state rebellions throughout the various power blocs.</p>,
@@ -218,6 +230,7 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "green-white",
         "Green-White — Tokens",
         [
             <p>Armies work better when they're logistically organised, and green-white is no different, introducing the new mechanic <i>coordinate</i>.</p>,
@@ -238,11 +251,16 @@ export const colorPairPrimers = [
         ]
     ),
     new ColorPairPrimer(
+        "green-blue",
         "Green-Blue — Tactics",
         [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Remember that <u>tactics</u> can be issued at any time, just like <u>instants</u> can be cast at any time.</p>,
+
             <p>Umida Incorporated is the megacorp always on the cutting edge and always looking to hire bright minds.</p>,
 
-            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many tactics and units with flash as you can. In most decks, counters are a risk to include: leave the psi up, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be done at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
+            <blockquote><p>Flash <i>(You can issue this order any time you could issue a tactic.)</i></p></blockquote>,
+
+            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many tactics and units with flash as you can. In most decks, counters are a risk to include: leave the psi up, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be issued at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
 
             <p>Let's take a look at a whole bunch of them. After all, the more you have, the better.</p>,
 
