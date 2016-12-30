@@ -1,9 +1,15 @@
 rm ../magictheconvergence/dist/*
 cp -R dist/ ../magictheconvergence
+
+rm ../magictheconvergence/views/*
 cp -R views/ ../magictheconvergence
+
 cp node_modules/react/dist/react.min.js ../magictheconvergence/node_modules/react/dist/react.min.js
 cp node_modules/react-dom/dist/react-dom.min.js ../magictheconvergence/node_modules/react-dom/dist/react-dom.min.js
-cp favicon.ico ../magictheconvergence/favicon.ico
+
+rm ../magictheconvergence/favicon.png
+cp favicon.png ../magictheconvergence/favicon.png
+
 cp index.html ../magictheconvergence/index.html
 
 cd ../magictheconvergence
