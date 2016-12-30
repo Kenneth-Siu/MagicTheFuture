@@ -166,9 +166,9 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Red-Green — Ramp",
         [
-            <p>Since the collapse of the Middle East under the pressures of global climate change centuries ago, nomads have lived in the Baljurashi desert. And they are not happy the global powers have decided their lands are available for the taking.</p>,
+            <p>Since OPEC (the Organization of Petroleum Exporting Companies) finally felt the effects of peak oil and collapsed, the inhabitants who didn't have the resources to relocate have lived a nomadic life in the Baljurashi desert.</p>,
 
-            <p>Red-green has often had the strategy of using green's "ramp" spells (cards which increase the amount of psi you have available faster than the one per turn you're allowed to play via lands) in order to play units that are disproportionately large compared to what turn it is and overpower an opponent who might still be playing smaller units. Here, the core of that strategy still holds true... but with a twist.</p>,
+            <p>Contrary to the color pair's philosophy, this is probably the most delicate archetype with many moving parts, playing more like a combo deck with many interchangeable cogs than anything ordinary. Red-green has often had the strategy of using green's "ramp" spells (cards which increase the amount of psi you have available faster than the one per turn you're allowed to play via lands) in order to play units that are disproportionately large compared to what turn it is and overpower an opponent who might still be playing smaller units. Here, the core of that strategy still holds true... but with a twist.</p>,
 
             <p>Let's start with the ramp spells first: (<u>Biodome</u> is an exception)</p>,
 
@@ -198,7 +198,7 @@ export const colorPairPrimers = [
     new ColorPairPrimer(
         "Red-White — Equipment",
         [
-            <p>With the re-outbreak of war in the Middle East, restlessness had been on the rise again, blossoming into nation-state rebellions throughout the various power blocs.</p>,
+            <p>With the re-outbreak of war in Central Eurasia, restlessness had been on the rise again, which blossomed into nation-state rebellions throughout the various power blocs.</p>,
 
             <p>In red-white, you want to pick up equipment for your units. Although there are equipment in specifically white and red, you might also want to supplement them with the colorless equipment. You might end up fighting the others over them, though.</p>,
 
