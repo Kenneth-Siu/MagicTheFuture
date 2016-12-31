@@ -42,7 +42,9 @@ export default class Primer extends React.Component<PrimerProps, {}> {
                     {this.colorPairPrimers.map(colorPairPrimer => (
                         <div className="row" key={colorPairPrimer.title}>
                             <div className="col-md-12">
-                                <h2 id={colorPairPrimer.id}>{colorPairPrimer.title}</h2>
+                                <div>
+                                    <h2 id={colorPairPrimer.id}>{colorPairPrimer.title}</h2>
+                                </div>
                                 {colorPairPrimer.descriptionParagraphs}
                             </div>
                         </div>
