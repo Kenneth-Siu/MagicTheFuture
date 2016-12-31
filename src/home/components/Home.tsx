@@ -3,6 +3,7 @@ import NavBar from "../../common/components/NavBar";
 import { siteMapDictionary } from "../../common/siteMap";
 import Card from "../../common/Card";
 import HighlightBox from "./HighlightBox";
+import LinkBanner from "./LinkBanner";
 import getCard from "../../common/getCard";
 
 export interface HomeProps { }
@@ -19,6 +20,10 @@ export default class Home extends React.Component<HomeProps, {}> {
 
     state: HomeState;
     cards: Card[];
+    primerBannerImageUrl: string;
+    draftSimBannerImageUrl: string;
+    visualSpoilerBannerImageUrl: string;
+    powerRankingsBannerImageUrl: string;
 
     constructor() {
         super();
@@ -35,6 +40,11 @@ export default class Home extends React.Component<HomeProps, {}> {
             getCard("Radiation Strike"),
             getCard("Umida Incorporated")
         ];
+
+        this.primerBannerImageUrl = `../dist/${require(`../resources/images/adam_burn.jpg`) as string}`;
+        this.draftSimBannerImageUrl = `../dist/${require(`../resources/images/dave_melvin.jpg`) as string}`;
+        this.visualSpoilerBannerImageUrl = `../dist/${require(`../resources/images/robert_kim.jpg`) as string}`;
+        this.powerRankingsBannerImageUrl = `../dist/${require(`../resources/images/sandeep_karunakaran.jpg`) as string}`;
     }
 
     render() {
@@ -55,6 +65,10 @@ export default class Home extends React.Component<HomeProps, {}> {
                             <p>There's also a <a href="./draftSim.html">draft simulator</a> that you might enjoy. It's still a bit work-in-progress — the AI could always improve — but it's pretty much there and should give you a good feel for the draft format.</p>
                             <p>Though it might be a bit overwhelming if you immediately jump to it, the <a href="./visualSpoiler.html">visual spoiler</a> contains all the cards in the set, and is filterable by color and rarity(WIP), for those who are interested.</p>
                             <p>And for those curious, the <a href="./powerRankings.html">power rankings</a> contains how the AI rate each card's power level. Go have a look and shout at me if you disagree! As the designer, it's difficult to truly get a feel for the power level of the cards without more playtesting, so expect this page to change a lot!</p>
+                            <LinkBanner imageUrl={this.primerBannerImageUrl} linkText="Draft Primer" linkUrl="./primer.html" />
+                            <LinkBanner imageUrl={this.draftSimBannerImageUrl} linkText="Draft Simulator" linkUrl="./draftSim.html" />
+                            <LinkBanner imageUrl={this.visualSpoilerBannerImageUrl} linkText="Visual Spoiler" linkUrl="./visualSpoiler.html" />
+                            <LinkBanner imageUrl={this.powerRankingsBannerImageUrl} linkText="Power Rankings" linkUrl="./powerRankings.html" />
 
                             <h2>Designer's Notes</h2>
 
