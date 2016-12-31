@@ -1,15 +1,15 @@
 import * as React from "react";
 import ColorPairPrimer from "./ColorPairPrimer";
 import Card from "../common/Card";
-import cardList from "../common/cardList";
+import getCard from "../common/getCard";
 import CardImage from "../common/components/CardImage";
 
 const mtgM = `../dist/${require(`./resources/images/mtgM.png`) as string}`;
 
 function card(name: string): JSX.Element {
-    const cards = cardList.filter(card => card.name.toLowerCase() === name.toLowerCase());
-    if (cards.length > 0) {
-        return <CardImage url={cards[0].imageUrl} key={cards[0].id} />;
+    const card = getCard(name);
+    if (card) {
+        return <CardImage url={card.imageUrl} key={card.id} />;
     }
     return null;
 }

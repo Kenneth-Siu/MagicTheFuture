@@ -31,8 +31,8 @@ export default class CardPiles extends React.Component<CardPilesProps, {}> {
     private getPileCardImageElement(card: Card, index: number): JSX.Element {
         return (
             <div onClick={() => { if (this.props.onClick) this.props.onClick(card); } }
-                onMouseEnter={() => this.props.onMouseEnter(card)}
-                onMouseLeave={() => this.props.onMouseLeave()}>
+                onMouseEnter={() => { if (this.props.onMouseEnter) this.props.onMouseEnter(card) } }
+                onMouseLeave={() => { if (this.props.onMouseLeave) this.props.onMouseLeave() } }>
 
                 <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={`pile-index-${index}`} />
             </div>
