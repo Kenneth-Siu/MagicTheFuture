@@ -1549,7 +1549,7 @@
 "tactical": 1.0
 }
 },
-        "rulesText": "+2: Search your library for up to three cards and dematerialise them. Then shuffle your library.\n0: Until your next turn, the next unit you issue can be issued as though it had flash.\n-5: Target opponent gets a tag with “Units you control get -1/-0.”"
+        "rulesText": "+2: Search your library for up to three cards and dematerialise them. Then shuffle your library.\n0: Until your next turn, the next unit you issue can be issued as though it had flash.\n-6: Target opponent gets a tag with “Units you control get -1/-0.”"
 },
 {
 "name": "Undercroft Winder",
@@ -2701,8 +2701,8 @@
 "rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 1"
 },
 {
-"name": "Induce Psychopathy",
-"imageName": "Induce Psychopathy",
+"name": "Hyperadrenaline",
+"imageName": "Hyperadrenaline",
 "color": "R",
 "castingCost": "1R",
 "id": 146,
@@ -2816,8 +2816,8 @@
 "rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhen Octopus Squad falls, you may sacrifice a device. If you do, Octopus Squad deals 2 damage to target unit or player."
 },
 {
-"name": "Ohm Wrecker",
-"imageName": "Ohm Wrecker",
+"name": "Ohmwrecker",
+"imageName": "Ohmwrecker",
 "color": "R",
 "castingCost": "3R",
 "id": 152,
@@ -2834,7 +2834,7 @@
 "atarka": 0.5
 }
 },
-"rulesText": "As long as Ohm Wrecker isn’t equipped, it can’t attack or intercept unless you pay 2."
+"rulesText": "As long as Ohmwrecker isn’t equipped, it can’t attack or intercept unless you pay 2."
 },
 {
 "name": "Psionics Augmentation",
@@ -3264,8 +3264,8 @@
 "rulesText": "Sacrifice Bioarchitect: Activate an activated ability of target permanent you control up to two times without paying its costs."
 },
 {
-"name": "Biosample Courier",
-"imageName": "Biosample Courier",
+"name": "Biocourier",
+"imageName": "Biocourier",
 "color": "G",
 "castingCost": "3G",
 "id": 175,
@@ -3277,7 +3277,7 @@
 "deathTrigger": 1.5
 }
 },
-"rulesText": "Whenever another unit falls, put a +1/+1 counter on Biosample Courier and Biosample Courier gains cloaking until end of turn. (It can’t be the target of orders or protocols your opponents control.)"
+"rulesText": "Whenever another unit falls, put a +1/+1 counter on Biocourier and Biocourier gains cloaking until end of turn. (It can’t be the target of orders or abilities your opponents control.)"
 },
 {
 "name": "Brood Ambush",
@@ -4365,7 +4365,7 @@
 "tactical": 2.0
 }
 },
-"rulesText": "Untap all lands you control during each other player’s untap step.\nYou may issue orders as though they had flash. (You can issue them any time you could issue a tactic.)"
+"rulesText": "Untap all lands you control during each other player’s untap step.\nYou can issue orders as though they had flash. (You can issue them any time you could issue a tactic.)"
 },
 {
 "name": "Troposphere Drifter",

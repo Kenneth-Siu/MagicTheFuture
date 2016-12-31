@@ -223,7 +223,7 @@ card style:
 			color: black
 			separator color: red
 	rarity:
-		right: 344
+		right: 349
 		top: 297
 		width: 44
 		height: 22
