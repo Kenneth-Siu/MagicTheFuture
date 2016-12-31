@@ -64,7 +64,7 @@ export default class Home extends React.Component<HomeProps, {}> {
                             <p>However, this isn't just a plain old cube that's gone through a retheming. Magic: the Convergence is an entire custom set, with all new cards (and a few choice reprints), designed with only draft in mind, and as such, I would suggest the best place to start would be the <a href="./primer.html">draft primer</a>. It goes through the mechanics of the set, small chunks at a time, and delves into the different color pairs and how you might maximise your deck in each.</p>
                             <p>There's also a <a href="./draftSim.html">draft simulator</a> that you might enjoy. It's still a bit work-in-progress — the AI could always improve — but it's pretty much there and should give you a good feel for the draft format.</p>
                             <p>Though it might be a bit overwhelming if you immediately jump to it, the <a href="./visualSpoiler.html">visual spoiler</a> contains all the cards in the set, and is filterable by color and rarity(WIP), for those who are interested.</p>
-                            <p>And for those curious, the <a href="./powerRankings.html">power rankings</a> contains how the AI rate each card's power level. Go have a look and shout at me if you disagree! As the designer, it's difficult to truly get a feel for the power level of the cards without more playtesting, so expect this page to change a lot!</p>
+                            <p>And for those curious, the <a href="./powerRankings.html">power rankings</a> contains how the AI rate each card's power level. Go have a look and shout at me if you disagree! It's difficult to truly get a feel for the power level of the cards without playtesting, so expect this page to change a lot!</p>
                             <LinkBanner imageUrl={this.primerBannerImageUrl} linkText="Draft Primer" linkUrl="./primer.html" />
                             <LinkBanner imageUrl={this.draftSimBannerImageUrl} linkText="Draft Simulator" linkUrl="./draftSim.html" />
                             <LinkBanner imageUrl={this.visualSpoilerBannerImageUrl} linkText="Visual Spoiler" linkUrl="./visualSpoiler.html" />
@@ -77,7 +77,7 @@ export default class Home extends React.Component<HomeProps, {}> {
 
                             <h3>Furtive</h3>
                             <blockquote><p>Furtive <i>(Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)</i></p></blockquote>
-                            <p><i>Furtive</i> was my take on the missing blue-black mechanic. If you played during the M:tG set <i>Shadows over Innistrad</i>, you'll remember the mechanic <i>skulk</i>, which was their attempt at the same thing, which in the end didn't play well enough to warrant keeping. I think furtive will probably go the same way, but it is interesting enough for it to be explored in one set. <a onClick={(e) => { this.toggleShowFurtiveNotes(); e.preventDefault(); } } href="#">Designer's notes...</a></p>
+                            <p><i>Furtive</i> was my take on the missing blue-black mechanic. If you played during the M:tG set <i>Shadows over Innistrad</i>, you'll remember the mechanic <i>skulk</i>, which was their attempt at the same thing, which in the end didn't play well enough to warrant keeping. I think furtive will probably go the same way, but it is interesting enough for it to be explored in one set. <a onClick={(e) => { this.toggleShowFurtiveNotes(); e.preventDefault(); } } href="#"><i>Designer's notes...</i></a></p>
                             {this.state.showFurtiveNotes && (
                                 <div className="designers-notes text-muted">
                                     <p>It actually stayed the same pretty much the entire way through the set's design. One of the first design goals was a way to make blue-black not the control color but a tempo-oriented beatdown color, and out popped <i>furtive</i>. It originally had an intervening "if" clause, though, and read:</p>
@@ -88,7 +88,7 @@ export default class Home extends React.Component<HomeProps, {}> {
 
                             <h3>Displace</h3>
                             <blockquote><p>Displace target unit. <i>(Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)</i></p></blockquote>
-                            <p><i>Displace</i> is something that already exists in Magic: the Gathering and appears every so often: for example, on <a target="_blank" href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=389521">Flickerwisp</a> and <a target="_blank" href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=158752">Turn to Mist</a>. Magic: the Convergence takes it and shortens it into its own action word. <a onClick={(e) => { this.toggleShowDisplaceNotes(); e.preventDefault(); } } href="#">Designer's notes...</a></p>
+                            <p><i>Displace</i> is something that already exists in Magic: the Gathering and appears every so often: for example, on <a target="_blank" href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=389521">Flickerwisp</a> and <a target="_blank" href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=158752">Turn to Mist</a>. Magic: the Convergence takes it and shortens it into its own action word. <a onClick={(e) => { this.toggleShowDisplaceNotes(); e.preventDefault(); } } href="#"><i>Designer's notes...</i></a></p>
 
                             {this.state.showDisplaceNotes && (
                                 <div className="designers-notes text-muted">
@@ -100,7 +100,7 @@ export default class Home extends React.Component<HomeProps, {}> {
 
                             <h3>Plunder</h3>
                             <blockquote><p>Plunder <i>(Whenever this unit deals combat damage to a player, create a colorless Credit device token.)</i></p></blockquote>
-                            <p>It gives black-red its home as both an aggressive deck and a "sacrifice for fun and profit" deck. It fuels red's "sacrifice devices" theme, black's "sacrifice nonland permanents" theme, and blue-red's "devices matter" theme, and is generally a pretty flexible enabler. <a onClick={(e) => { this.toggleShowPlunderNotes(); e.preventDefault(); } } href="#">Designer's notes...</a></p>
+                            <p>It gives black-red its home as both an aggressive deck and a "sacrifice for fun and profit" deck. It fuels red's "sacrifice devices" theme, black's "sacrifice nonland permanents" theme, and blue-red's "devices matter" theme, and is generally a pretty flexible enabler. <a onClick={(e) => { this.toggleShowPlunderNotes(); e.preventDefault(); } } href="#"><i>Designer's notes...</i></a></p>
 
                             {this.state.showPlunderNotes && (
                                 <div className="designers-notes text-muted">
@@ -110,7 +110,7 @@ export default class Home extends React.Component<HomeProps, {}> {
 
                             <h3>Mutate</h3>
                             <blockquote><p>Mutate <i>(When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)</i></p></blockquote>
-                            <p>A top-down mechanic designed to evoke the sense of uncertainty that mutations in sci-fi works tend to exhibit. What will the unit turn into? <a onClick={(e) => { this.toggleShowMutateNotes(); e.preventDefault(); } } href="#">Designer's notes...</a></p>
+                            <p>A top-down mechanic designed to evoke the sense of uncertainty that mutations in sci-fi works tend to exhibit. What will the unit turn into? <a onClick={(e) => { this.toggleShowMutateNotes(); e.preventDefault(); } } href="#"><i>Designer's notes...</i></a></p>
 
                             {this.state.showMutateNotes && (
                                 <div className="designers-notes text-muted">
@@ -125,7 +125,7 @@ export default class Home extends React.Component<HomeProps, {}> {
 
                             <h3>Coordinate</h3>
                             <blockquote><p>Coordinate —<i> Some effect that is only true when you control five or more units.</i></p></blockquote>
-                            <p><i>Coordinate</i> is meant to make you really feel the logistical pressures of large armies. Overall, it's not a particularly interesting mechanic, but it's one that does its job as a way to help make green-white not feel like "just another tokens deck". <a onClick={(e) => { this.toggleShowCoordinateNotes(); e.preventDefault(); } } href="#">Designer's notes...</a></p>
+                            <p><i>Coordinate</i> is meant to make you really feel the logistical pressures of large armies. Overall, it's not a particularly interesting mechanic, but it's one that does its job as a way to help make green-white not feel like "just another tokens deck". <a onClick={(e) => { this.toggleShowCoordinateNotes(); e.preventDefault(); } } href="#"><i>Designer's notes...</i></a></p>
 
                             {this.state.showCoordinateNotes && (
                                 <div className="designers-notes text-muted">

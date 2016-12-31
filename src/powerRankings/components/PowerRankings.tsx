@@ -53,22 +53,22 @@ export default class PowerRankings extends React.Component<PowerRankingsProps, {
                 <div className="page-container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h3>Card rating in fully synergistic deck</h3>
+                            <h3>Card rating in your average <u>un</u>synergistic deck</h3>
                             <div className="pile-labels">
-                                {this.state.cardPotentialPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
+                                {this.state.cardPowerPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
                             </div>
-                            <CardPiles piles={this.state.cardPotentialPiles}
+                            <CardPiles piles={this.state.cardPowerPiles}
                                 onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
                                 onMouseLeave={() => this.handleMouseLeavePileCard()} />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <h3>Card rating in completely <u>un</u>synergistic deck</h3>
+                            <h3>Card rating in fully synergistic deck</h3>
                             <div className="pile-labels">
-                                {this.state.cardPowerPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
+                                {this.state.cardPotentialPiles.map((pile, index) => <div><h4>{(index / 2).toFixed(1)}</h4></div>)}
                             </div>
-                            <CardPiles piles={this.state.cardPowerPiles}
+                            <CardPiles piles={this.state.cardPotentialPiles}
                                 onMouseEnter={(card) => this.handleMouseEnterPileCard(card)}
                                 onMouseLeave={() => this.handleMouseLeavePileCard()} />
                         </div>

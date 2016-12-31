@@ -66,7 +66,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                     {this.state.pack.length > 0 &&
                         <div className="row">
                             <div className="col-md-12">
-                                <h2>Pack {this.state.packNumber}</h2>
+                                <h2>Pack {this.state.packNumber} ({this.state.pack.length} cards) <small>Click a card to add it to your deck</small></h2>
                             </div>
                             <div className="col-md-12 draft-pack">
                                 {_.map(this.state.pack, card => this.getCardPickElement(card, card === suggestedPick))}
@@ -81,7 +81,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                         </div>
                     }
                     <div className="row">
-                        <div className="col-md-12"><h2>Picks</h2></div>
+                        <div className="col-md-12"><h2>Deck ({this.state.picks.reduce((total, pile) => total + pile.length, 0)}) <small>Click a card to move it to your sideboard</small></h2></div>
                         <div className="col-md-12">
                             <CardPiles piles={this.state.picks}
                                 onClick={(card) => this.moveFromPicksToSideboard(card)}
@@ -90,7 +90,7 @@ export default class DraftSim extends React.Component<DraftSimProps, {}> {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-12"><h2>Sideboard</h2></div>
+                        <div className="col-md-12"><h2>Sideboard ({this.state.sideboard.reduce((total, pile) => total + pile.length, 0)}) <small>Click a card to move it to your deck</small></h2></div>
                         <div className="col-md-12">
                             <CardPiles piles={this.state.sideboard}
                                 onClick={(card) => this.moveFromSideboardToPicks(card)}
