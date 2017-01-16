@@ -28,7 +28,7 @@ export const colorPairPrimers = [
             <li>Device <span className="text-muted"><i>(Artifact)</i></span></li>
             <li>Development <span className="text-muted"><i>(Enchantment)</i></span></li>
             <li>Strategy <span className="text-muted"><i>(Sorcery)</i></span></li>
-            <li>Tactic <span className="text-muted"><i>(Instant)</i></span></li>
+            <li>Response <span className="text-muted"><i>(Instant)</i></span></li>
             <li>Land</li>
             <li>Organization <span className="text-muted"><i>(Planeswalker)</i></span></li>
             </ul></div>,
@@ -37,7 +37,7 @@ export const colorPairPrimers = [
 
             <blockquote><p>Furtive <i>(Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)</i></p></blockquote>,
 
-            <p>Blue-black comes to play with less of a control shell, and much more of a tempo strategy. The deck should (hopefully) have a lot of cheap evasive units, as well as ways to stall out the board on the ground. This usually means high-toughness interceptors, removal orders, or tempo plays to buy you enough time to attack for lethal.</p>,
+            <p>Blue-black comes to play with less of a control shell, and much more of a tempo strategy. The deck should (hopefully) have a lot of cheap evasive units, as well as ways to stall out the board on the ground. This usually means high-toughness interceptors, removal, or tempo plays to buy you enough time to attack for lethal.</p>,
 
             <p>Cards like these get the job done very nicely:</p>,
 
@@ -75,7 +75,7 @@ export const colorPairPrimers = [
         [
             <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> <u>Dematerialising</u> a permanent is the same as <u>exiling</u> it.</p>,
 
-            <p>Order must be restored! Take command over the police and domestic military, and return peace to the cities. They provide you with the new keyword, <i>displace</i>:</p>,
+            <p>Order must be restored! Take command over the police and domestic military, and return peace to the cities.</p>,
 
             <blockquote><p>Displace target unit. <i>(Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)</i></p></blockquote>,
 
@@ -98,6 +98,8 @@ export const colorPairPrimers = [
         "white-black",
         "White-Black — Lifegain/lifeloss",
         [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> <u>Life</u> was at some point called <u>command</u> but it was the biggest source of confusion and got reverted back to <i>Magic</i> terminology. Much sadness.</p>,
+
             <p>The ruling elite have more worries than just some petty wars on the other side of the world. The next election is coming up, and the polls aren't looking pretty. Maybe you can grease some palms to keep ahold of your position of power?</p>,
 
             <p>White-black is back as the lifegain archetype — gain life, get rewarded. This time around, though, your life total does a bit more heavy lifting, with a plethora ways both to gain life and to <i>spend</i> it.</p>,
@@ -106,7 +108,7 @@ export const colorPairPrimers = [
 
             previewCards("Surprise Round"),
 
-            <p><u>Surprise Round</u> is extremely efficient for its cost: -2/-2 for only one psi! Given how efficient it is, it will be a high pick for other black drafters too, so you'll want to snap these up early. However, the more cards like these that you pick up, the more the lifeloss becomes a strain on your life total.</p>,
+            <p><u>Surprise Round</u> is very efficient for its cost: -2/-2 for only one psi! Given how efficient it is, it might be a high pick for other black drafters too, so you'll want to snap these up early. However, the more cards like these that you pick up, the more the lifeloss becomes a strain on your life total...</p>,
 
             <p>That's where white steps in and brings with it ways to buoy your life total, so you can fit in more of those efficient black cards into your deck.</p>,
 
@@ -121,7 +123,7 @@ export const colorPairPrimers = [
         "black-red",
         "Black-Red — Plunder",
         [
-            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> A unit that <u>falls</u> is the same as a unit that <u>dies</u>.</p>,
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> A unit that <u>falls</u> is the parlance for a creature that <u>dies</u>.</p>,
 
             <p>There are those who seek wealth and fortune from these turbulent times. Mercenaries are always willing to give a helping hand... for the right price; and the Warapur Company always offers the best prices.</p>,
 
@@ -135,9 +137,9 @@ export const colorPairPrimers = [
 
             <p>Most cards with plunder also give you a way to make use of the Credit tokens it makes. But plunder by itself doesn't make the tokens, you also need to connect with the units! This is why you need to keep the pressure on in order to keep your stream of Credits steady, with combat tricks and ways to get blockers out of the way.</p>,
 
-            previewCards("Blitz Agent", "Induce Psychopathy"),
+            previewCards("Blitz Agent", "Hyperadrenaline"),
 
-            <p><u>Blitz Agent</u> turns <i>displace</i> around, affecting only your opponent's units... and getting it out of the way for the turn to let your attackers hit through for damage. <u>Induce Psychopathy</u> is not only a combat trick that only works when you're on the offensive, but can also smack the opponent for really quite large chunks of damage and double your plunder triggers.</p>,
+            <p><u>Blitz Agent</u> turns <i>displace</i> around, affecting only your opponent's units... and getting it out of the way for the turn to let your attackers hit through for damage. <u>Hyperadrenaline</u> is not only a combat trick that only works when you're on the offensive, but can also smack the opponent for really quite large chunks of damage and double your plunder triggers.</p>,
 
             <p>And if you ever find you have too many tokens lying around, there are ways of sacrificing them for profit too:</p>,
 
@@ -177,6 +179,8 @@ export const colorPairPrimers = [
         "red-green",
         "Red-Green — Ramp",
         [
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Units with <u>cloaking</u> can't be targeted by its controller's opponents, just like creatures with <u>hexproof</u>.</p>,
+
             <p>Since OPEC (the Organization of Petroleum Exporting Companies) finally felt the effects of peak oil and collapsed, the inhabitants who didn't have the resources to relocate have lived a nomadic life in the Baljurashi desert.</p>,
 
             <p>Contrary to the color pair's philosophy, this is probably the most delicate archetype with many moving parts, playing more like a combo deck with many interchangeable cogs than anything ordinary. Red-green has often had the strategy of using green's "ramp" spells (cards which increase the amount of psi you have available faster than the one per turn you're allowed to play via lands) in order to play units that are disproportionately large compared to what turn it is and overpower an opponent who might still be playing smaller units. Here, the core of that strategy still holds true... but with a twist.</p>,
@@ -233,11 +237,7 @@ export const colorPairPrimers = [
         "green-white",
         "Green-White — Tokens",
         [
-            <p>Armies work better when they're logistically organised, and green-white is no different, introducing the new mechanic <i>coordinate</i>.</p>,
-
-            <blockquote><p>Coordinate —<i> Some effect that is only true when you control five or more units.</i></p></blockquote>,
-
-            <p>Green-white is back again as the token-making color pair, though it's not the super-aggressive type but more along the lines of a mid-range tokens strategy. It has the potential to be very powerful, but the baseline of just being able to play units is pretty reasonable too, even in the case of a drafting disaster.</p>,
+            <p>Armies work better when they're logistically organised, and green-white is no different, back again as the token-making color pair. It's not the super-aggressive type but more along the lines of a mid-range tokens strategy. It has the potential to be very powerful, but the baseline of just being able to play units is pretty reasonable too, even in the case of a drafting disaster.</p>,
 
             <p>There are plenty of token-makers to get your board state online in a hurry:</p>,
 
@@ -245,28 +245,28 @@ export const colorPairPrimers = [
 
             <p>They're pretty reasonable on their own, but when you pair them with the big payoff cards, things get out of hand pretty quickly.</p>,
 
-            previewCards("Draco Guardian", "Supply Scavengers", "Covering Fire"),
+            previewCards("Draco Guardian", "Supply Scavengers", "Deep into the Subconscious"),
 
-            <p>Spot removal tends to be at a premium in limited environments, but being able to produce multiple units from one card can make this deck much more resilient and difficult to deal with than other decks. And on that note, one thing to beware with <i>coordinate</i> is how easy it is to turn on and off at any moment: ways to make units and to kill units will mean units with coordinate have in-built combat tricks that you should keep in mind.</p>
+            <p>Spot removal tends to be at a premium in limited environments, but being able to produce multiple units from one card can make this deck much more resilient and difficult to deal with than other decks. And on that note, one thing to beware with these cards is how easy it is to reach and fall away from the magic number of five units: ways to make units and to kill units will mean they have in-built combat tricks that you should keep in mind.</p>
         ]
     ),
     new ColorPairPrimer(
         "green-blue",
-        "Green-Blue — Tactics",
+        "Green-Blue — Flash",
         [
-            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Remember that <u>tactics</u> can be issued at any time, just like <u>instants</u> can be cast at any time.</p>,
+            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Remember that <u>responses</u> can be issued at any time, just like <u>instants</u> can be cast at any time.</p>,
 
             <p>Umida Incorporated is the megacorp always on the cutting edge and always looking to hire bright minds.</p>,
 
-            <blockquote><p>Flash <i>(You can issue this order any time you could issue a tactic.)</i></p></blockquote>,
+            <blockquote><p>Flash <i>(You can issue this order any time you could issue a response.)</i></p></blockquote>,
 
-            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many tactics and units with flash as you can. In most decks, counters are a risk to include: leave the psi up, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be issued at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
+            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many responses and units with flash as you can. In most decks, counter-orders are a risk to include: leave the psi up, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be issued at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
 
             <p>Let's take a look at a whole bunch of them. After all, the more you have, the better.</p>,
 
             previewCards("Atmospheric Survey Net", "Collapse Consciousness", "Manipulative Negotiation", "Riptide Illuminator", "SAM Team", "Support Team"),
 
-            <p>Just imagine: From turn three on, you can just leave your lands untapped, and pass the turn. What does your opponent do? Play their cards and risk them being countered? Risk attacking into a unit flashed in? And if they don't do anything, you can just play a card-draw order. With this many ways to interact on the opponent's turn, you get a real tactical advantage.</p>
+            <p>Just imagine: From turn two on, you can just leave your lands untapped, and pass the turn. What does your opponent do? Play their cards and risk them being countered? Risk attacking into a unit flashed in? And if they don't do anything, you can just draw some cards. With this many ways to interact on the opponent's turn, you get a real tactical advantage.</p>
         ]
     )
 ]
