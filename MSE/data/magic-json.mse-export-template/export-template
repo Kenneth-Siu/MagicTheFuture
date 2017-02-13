@@ -26,7 +26,7 @@ script:
 		replace@(match:"[)]", replace: ")[/i]")
 	paragraph_count := replace@(match:"\n", replace:"•")+
 		filter_text@(match:"•")
-	imageNameFilter := replace@(match:"’|,", replace:"")
+	imageNameFilter := replace@(match:"[’,&]", replace:"")
 	colorIdentityFilter := replace@(match:"[0-9|X]", replace:"")+
 		replace@(match:"(.)(\\1)+", replace: "\\1")
 	rarityFilter := {

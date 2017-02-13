@@ -47,7 +47,7 @@ export const colorPairPrimers = [
 
             <p>And of course, the counterpart to dealing damage in a tempo deck is throwing a spanner into the opponent's works, with high-toughness interceptors and timely tricks:</p>,
 
-            previewCards("Plasma Reclaimer", "Double Agent", "Undercroft Winder"),
+            previewCards("Plasma Reclaimer", "Awaken Sleeper Agent", "Undercroft Entangler"),
 
             <p>Your opponents will never figure out how they somehow lost.</p>
         ]
@@ -83,13 +83,13 @@ export const colorPairPrimers = [
 
             <p>Take a gander at this pair of commons:</p>,
 
-            previewCards("Community Officer", "Arrester Drone"),
+            previewCards("Community Officer", "Arrester Droid"),
 
             <p>Cards like <u>Community Officer</u> and <u>Arrester Drone</u> are the bread and butter of the white-blue flicker deck as they both develop your board and also displace something. (Remember, on your turn, displacing something is also a way to get an interceptor out of the way, and on your opponent's turn, can stop an opponent's unit from attacking)</p>,
 
             <p>And here are some juicy targets to trigger over and over:</p>,
 
-            previewCards("Skysnare Squad", "Reconstruction Specialist"),
+            previewCards("Suppression Patrol", "Reconstruction Specialist"),
 
             <p>Oh, what's that? That's right. <i>Value.</i></p>
         ]
@@ -133,7 +133,7 @@ export const colorPairPrimers = [
 
             <p>Let's take a look at a couple of units with plunder now:</p>,
 
-            previewCards("Warapur Security Detail", "Octopus Squad"),
+            previewCards("Warapur Company Enforcer", "Hired Artillery"),
 
             <p>Most cards with plunder also give you a way to make use of the Credit tokens it makes. But plunder by itself doesn't make the tokens, you also need to connect with the units! This is why you need to keep the pressure on in order to keep your stream of Credits steady, with combat tricks and ways to get blockers out of the way.</p>,
 
@@ -149,9 +149,9 @@ export const colorPairPrimers = [
 
             <p>There's one final card in this archetype that's quite interesting:</p>,
 
-            previewCards("Threaten"),
+            previewCards("Hijack"),
 
-            <p><u>Threaten</u> does three things for you in a black-red deck: it takes an interceptor out of the equation for a turn to let you hit through for a Credit token, it gives you a temporary attacker for even more damage, and then you can sacrifice the unit you just "borrowed" to top off the beating!</p>
+            <p><u>Hijack</u> does three things for you in a black-red deck: it takes an interceptor out of the equation for a turn to let you hit through for a Credit token, it gives you a temporary attacker for even more damage, and then you can sacrifice the unit you just "borrowed" to top off the beating!</p>
         ]
     ),
     new ColorPairPrimer(
@@ -216,7 +216,7 @@ export const colorPairPrimers = [
         [
             <p>With the re-outbreak of war in Central Eurasia, restlessness had been on the rise again, which blossomed into nation-state rebellions throughout the various power blocs.</p>,
 
-            <p>In red-white, you want to pick up equipment for your units. Although there are equipment in specifically white and red, you might also want to supplement them with the colorless equipment. You might end up fighting the others over them, though.</p>,
+            <p>In red-white, you want to pick up equipment for your units. Although there are equipment in specifically white and red, you can also supplement them with the colorless equipment. You might end up fighting the others over them, though.</p>,
 
             previewCards("Personal Forcefield", "Homeostimulation Suit", "Jetpack"),
 
@@ -247,7 +247,7 @@ export const colorPairPrimers = [
 
             previewCards("Draco Guardian", "Supply Scavengers", "Deep into the Subconscious"),
 
-            <p>Spot removal tends to be at a premium in limited environments, but being able to produce multiple units from one card can make this deck much more resilient and difficult to deal with than other decks. And on that note, one thing to beware with these cards is how easy it is to reach and fall away from the magic number of five units: ways to make units and to kill units will mean they have in-built combat tricks that you should keep in mind.</p>
+            <p>Spot removal tends to be at a premium in limited environments, but being able to produce multiple units from one card can make this deck much more resilient and difficult to deal with than other decks.</p>
         ]
     ),
     new ColorPairPrimer(

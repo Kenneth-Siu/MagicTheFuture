@@ -120,6 +120,13 @@ styling field:
 	description: Should there be an overlay applied, such as foil?
 	match: magic-overlay-*.mse-include
 	required: false
+styling field:
+	type: choice
+	name: text box height
+	choice: 142
+	choice: 145
+	choice: 150
+	initial: 150
 styling style:
 	use guild mana symbols:
 		choice images:
@@ -249,7 +256,7 @@ card style:
 		left: 29
 		top: 330
 		width: 314
-		height: 150
+		height: { styling.text_box_height }
 		font:
 			name: MPlantin
 			italic name: MPlantin-Italic

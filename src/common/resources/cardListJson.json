@@ -105,11 +105,26 @@
 "rulesText": "As long as Baljurashi Watchmen is equipped, it gets +1/+1 and first strike."
 },
 {
+"name": "Bergstadt Justice",
+"imageName": "Bergstadt Justice",
+"color": "W",
+"castingCost": "2WW",
+"id": 6,
+"rarity": "R",
+"notes": {
+"power": 2.5,
+"tags": {
+"tactical": 1.0
+}
+},
+"rulesText": "You may dematerialise Bergstadt Justice as you draw it if you control a Plains.\nAs long as Bergstadt Justice is dematerialised, when a unit attacks you or an organization you control, issue Bergstadt Justice without paying its psi cost.\nDestroy target attacking unit."
+},
+{
 "name": "Bergstadt Police Department ",
 "imageName": "Bergstadt Police Department ",
 "color": "W",
 "castingCost": "4W",
-"id": 6,
+"id": 7,
 "rarity": "M",
 "notes": {
 "power": 3.5,
@@ -125,7 +140,7 @@
 "imageName": "Biomech Corps",
 "color": "W",
 "castingCost": "1W",
-"id": 7,
+"id": 8,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -141,7 +156,7 @@
 "imageName": "Cache Mapper",
 "color": "W",
 "castingCost": "2W",
-"id": 8,
+"id": 9,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -152,14 +167,14 @@
 "equipment": 1.0
 }
 },
-"rulesText": "When Cache Mapper enters the battlefield, create a colorless Equipment device token attached to Cache Mapper. It has “Equipped unit gets +1/+1,” and equip 1."
+"rulesText": "When Cache Mapper enters the battlefield, arm it. (Create a colorless Equipment device token attached to this unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "Comms Disruptor",
 "imageName": "Comms Disruptor",
 "color": "W",
 "castingCost": "1W",
-"id": 9,
+"id": 10,
 "rarity": "R",
 "notes": {
 "power": 3.0,
@@ -175,7 +190,7 @@
 "imageName": "Community Officer",
 "color": "W",
 "castingCost": "3W",
-"id": 10,
+"id": 11,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -195,7 +210,7 @@
 "imageName": "Covering Fire",
 "color": "W",
 "castingCost": "2W",
-"id": 11,
+"id": 12,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -211,7 +226,7 @@
 "imageName": "Crash Landing",
 "color": "W",
 "castingCost": "4W",
-"id": 12,
+"id": 13,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -227,7 +242,7 @@
 "imageName": "Cryonics Facility",
 "color": "W",
 "castingCost": "1W",
-"id": 13,
+"id": 14,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -246,7 +261,7 @@
 "imageName": "Cultural Renaissance",
 "color": "W",
 "castingCost": "1WW",
-"id": 14,
+"id": 15,
 "rarity": "R",
 "notes": {
 "power": 4.0,
@@ -255,14 +270,14 @@
 "unitTokens": 10
 }
 },
-"rulesText": "When Cultural Renaissance enters the battlefield, put a +1/+1 counter on each unit you control.\n4WW, T: Put a +1/+1 counter on each unit you control."
+"rulesText": "When Cultural Renaissance enters the battlefield, put a +1/+1 counter on each unit you control.\n4WW: Put a +1/+1 counter on each unit you control."
 },
 {
 "name": "Diplomat’s Prerogative",
 "imageName": "Diplomats Prerogative",
 "color": "W",
 "castingCost": "2W",
-"id": 15,
+"id": 16,
 "rarity": "U",
 "notes": {
 "power": 4.0
@@ -274,11 +289,11 @@
 "imageName": "Draco Guardian",
 "color": "W",
 "castingCost": "4W",
-"id": 16,
+"id": 17,
 "rarity": "C",
 "notes": {
 "power": 2.0,
-"potential": 3.5,
+"potential": 3.0,
 "synergies": {
 "unitTokens": 10
 },
@@ -287,14 +302,14 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Flying\nDraco Guardian gets +2/+2 as long as you control five or more units."
+"rulesText": "Flying\nDraco Guardian gets +1/+1 as long as you control five or more units."
 },
 {
 "name": "Dropship",
 "imageName": "Dropship",
 "color": "W",
 "castingCost": "1WW",
-"id": 17,
+"id": 18,
 "rarity": "R",
 "notes": {
 "power": 3.0,
@@ -306,11 +321,11 @@
 "rulesText": "Flying\nWhenever Dropship attacks and isn’t intercepted, you may tap an untapped unit you control that isn’t attacking. It becomes attacking."
 },
 {
-"name": "Evict",
-"imageName": "Evict",
+"name": "Eviction Notice",
+"imageName": "Eviction Notice",
 "color": "W",
 "castingCost": "1W",
-"id": 18,
+"id": 19,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -325,7 +340,7 @@
 "imageName": "Fleet Overseer",
 "color": "W",
 "castingCost": "1W",
-"id": 19,
+"id": 20,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -345,7 +360,7 @@
 "imageName": "Head Detective",
 "color": "W",
 "castingCost": "2WW",
-"id": 20,
+"id": 21,
 "rarity": "U",
 "notes": {
 "power": 4.0,
@@ -353,29 +368,32 @@
 "etb": 1.0
 }
 },
-"rulesText": "When Head Detective enters the battlefield, you may dematerialise another target unit until Head Detective leaves the battlefield.\nWhen Head Detective enters the battlefield, put a +1/+1 counter on another target unit you control."
+"rulesText": "When Head Detective enters the battlefield, you may dematerialise another target unit until Head Detective leaves the battlefield.\nWhen Head Detective enters the battlefield, put a +1/+1 counter on target unit you control."
 },
 {
-"name": "Helios Satellite",
-"imageName": "Helios Satellite",
+"name": "Helios Comms Satellite",
+"imageName": "Helios Comms Satellite",
 "color": "W",
-"castingCost": "1W",
-"id": 21,
+"castingCost": "2W",
+"id": 22,
 "rarity": "R",
 "notes": {
 "power": 3.0,
+"potential": 4.0,
 "tags": {
-"devices": 1.0
+"devices": 1.0,
+"deviceTokens": 1.4,
+"equipment": 0.6
 }
 },
-"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Helios Satellite.\nT: Put a charge counter on Helios Satellite.\nT, Remove four charge counters from Helios Satellite: Dematerialise target permanent. Activate this ability only any time you could issue a strategy."
+"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Helios Comms Satellite.\n3W: Arm another target unit. (Create a colorless Equipment device token attached to that unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "The Hemera",
 "imageName": "The Hemera",
 "color": "W",
 "castingCost": "6WW",
-"id": 22,
+"id": 23,
 "rarity": "M",
 "notes": {
 "power": 1.0,
@@ -396,7 +414,7 @@
 "imageName": "Heroic Act",
 "color": "W",
 "castingCost": "W",
-"id": 23,
+"id": 24,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -405,14 +423,14 @@
 "equipment": 6
 }
 },
-"rulesText": "Target unit gets +2/+2 until end of turn. If it’s equipped, it gains indestructible until end of turn."
+"rulesText": "Choose target unit. If it’s equipped, it gets +2/+2 and gains indestructible until end of turn. Otherwise, arm it. (Create a colorless Equipment device token attached to that unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "Keep the Peace",
 "imageName": "Keep the Peace",
 "color": "W",
 "castingCost": "1W",
-"id": 24,
+"id": 25,
 "rarity": "C",
 "notes": {
 "power": 0,
@@ -428,7 +446,7 @@
 "imageName": "Mesosphere Dancer",
 "color": "W",
 "castingCost": "3W",
-"id": 25,
+"id": 26,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -449,7 +467,7 @@
 "imageName": "Mongrel Companion",
 "color": "W",
 "castingCost": "W",
-"id": 26,
+"id": 27,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -466,7 +484,7 @@
 "imageName": "Observation Blimp",
 "color": "W",
 "castingCost": "3W",
-"id": 27,
+"id": 28,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -483,8 +501,8 @@
 "name": "Personal Forcefield",
 "imageName": "Personal Forcefield",
 "color": "W",
-"castingCost": "1W",
-"id": 28,
+"castingCost": "2W",
+"id": 29,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -494,14 +512,14 @@
 "equipment": 1.0
 }
 },
-"rulesText": "Equipped unit gets +1/+2 and has vigilance.\nEquip 2"
+"rulesText": "Equipped unit gets +2/+2 and has vigilance.\nEquip 3"
 },
 {
 "name": "Police Badge",
 "imageName": "Police Badge",
 "color": "W",
 "castingCost": "2W",
-"id": 29,
+"id": 30,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -519,7 +537,7 @@
 "imageName": "Provision Supplier",
 "color": "W",
 "castingCost": "5W",
-"id": 30,
+"id": 31,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -529,21 +547,6 @@
 }
 },
 "rulesText": "Vigilance, lifelink"
-},
-{
-"name": "Punish",
-"imageName": "Punish",
-"color": "W",
-"castingCost": "2WW",
-"id": 31,
-"rarity": "R",
-"notes": {
-"power": 2.5,
-"tags": {
-"tactical": 1.0
-}
-},
-"rulesText": "You may dematerialise Punish as you draw it if you control a Plains.\nAs long as Punish is dematerialised, when a unit attacks you or an organization you control, issue Punish without paying its psi cost.\nDestroy target attacking unit."
 },
 {
 "name": "Quartec Class Carrier",
@@ -636,46 +639,11 @@
 "rulesText": "As long as Sand Sappers is equipped, it gets +1/+1 and has vigilance."
 },
 {
-"name": "Situation Room",
-"imageName": "Situation Room",
-"color": "W",
-"castingCost": "1W",
-"id": 37,
-"rarity": "U",
-"notes": {
-"power": 1.0,
-"potential": 2.5,
-"tags": {
-"devices": 1.0,
-"unitTokens": 1.5
-}
-},
-"rulesText": "Whenever you attack with one or more units, create a 1/1 white Military unit token tapped and attacking.\nWhenever you intercept with one or more units, create a 1/1 white Military unit token intercepting an intercepted unit."
-},
-{
-"name": "Skysnare Squad",
-"imageName": "Skysnare Squad",
-"color": "W",
-"castingCost": "1WW",
-"id": 38,
-"rarity": "C",
-"notes": {
-"power": 2.5,
-"potential": 3.0,
-"tags": {
-"devices": 1.0,
-"etb": 0.8,
-"evasion": 0.8
-}
-},
-"rulesText": "Flying\nWhen Skysnare Squad enters the battlefield, you may pay 2. If you do, tap target unit. That unit doesn’t untap during its controller’s next untap step."
-},
-{
 "name": "Special Circumstances",
 "imageName": "Special Circumstances",
 "color": "W",
 "castingCost": "3WW",
-"id": 39,
+"id": 37,
 "rarity": "R",
 "notes": {
 "power": 3.5,
@@ -690,7 +658,7 @@
 "imageName": "Supply-Line Jet",
 "color": "W",
 "castingCost": "1WW",
-"id": 40,
+"id": 38,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -703,14 +671,32 @@
 "equipment": 1.0
 }
 },
-"rulesText": "Flying\nWhen Supply-Line Jet enters the battlefield, create a colorless Equipment device token attached to Supply-Line Jet. It has “Equipped unit gets +1/+1,” and equip 1."
+"rulesText": "Flying\nWhen Supply-Line Jet enters the battlefield, arm it. (Create a colorless Equipment device token attached to this unit. It has “Equipped unit gets +1/+1” and equip 1.)"
+},
+{
+"name": "Suppression Patrol",
+"imageName": "Suppression Patrol",
+"color": "W",
+"castingCost": "1WW",
+"id": 39,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 3.0,
+"tags": {
+"devices": 1.0,
+"etb": 0.8,
+"evasion": 0.8
+}
+},
+"rulesText": "Flying\nWhen Suppression Patrol enters the battlefield, you may pay 1. If you do, tap target unit. That unit doesn’t untap during its controller’s next untap step."
 },
 {
 "name": "Suspension Squad",
 "imageName": "Suspension Squad",
 "color": "W",
 "castingCost": "1WW",
-"id": 41,
+"id": 40,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -726,7 +712,7 @@
 "imageName": "Time Traveller",
 "color": "W",
 "castingCost": "3WW",
-"id": 42,
+"id": 41,
 "rarity": "R",
 "notes": {
 "power": 4.0,
@@ -741,7 +727,7 @@
 "imageName": "Turn the Tide of Battle",
 "color": "W",
 "castingCost": "1WWW",
-"id": 43,
+"id": 42,
 "rarity": "U",
 "notes": {
 "power": 3.4,
@@ -762,7 +748,7 @@
 "imageName": "Undercover Agent",
 "color": "W",
 "castingCost": "W",
-"id": 44,
+"id": 43,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -778,7 +764,7 @@
 "imageName": "Voice of the Congregation",
 "color": "W",
 "castingCost": "3W",
-"id": 45,
+"id": 44,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -788,6 +774,22 @@
 }
 },
 "rulesText": "Voice of the Congregation’s power and toughness are each equal to the number of units you control.\nOther units you control get +1/+1 as long as you control five or more units."
+},
+{
+"name": "Wartime Conscription",
+"imageName": "Wartime Conscription",
+"color": "W",
+"castingCost": "1W",
+"id": 45,
+"rarity": "U",
+"notes": {
+"power": 1.0,
+"potential": 2.5,
+"tags": {
+"unitTokens": 1.5
+}
+},
+"rulesText": "Whenever you attack with one or more units, create a 1/1 white Military unit token tapped and attacking.\nWhenever you intercept with one or more units, create a 1/1 white Military unit token intercepting an intercepted unit."
 },
 {
 "name": "Warzone Reinforcements",
@@ -823,8 +825,8 @@
 "rulesText": "Modify unit\nYou control modified unit.\nAt the beginning of your upkeep, modified unit’s owner draws a card."
 },
 {
-"name": "Arrester Drone",
-"imageName": "Arrester Drone",
+"name": "Arrester Droid",
+"imageName": "Arrester Droid",
 "color": "U",
 "castingCost": "2U",
 "id": 48,
@@ -840,11 +842,10 @@
 "tags": {
 "devices": 1.0,
 "etb": 0.4,
-"evasion": 1.0,
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nFlying\nWhen Arrester Drone enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "Flash (You can issue this order any time you could issue a response.)\nWhen Arrester Droid enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Atmospheric Survey Net",
@@ -890,7 +891,7 @@
 "name": "Cloud Darter",
 "imageName": "Cloud Darter",
 "color": "U",
-"castingCost": "2U",
+"castingCost": "1UU",
 "id": 51,
 "rarity": "R",
 "notes": {
@@ -905,7 +906,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash\nFlying\nU: Displace Cloud Darter. (Dematerialise it. Return it to the battlefield under its owner’s control at the beginning of the next end step.)\n1: Cloud Darter gets +0/+1 until end of turn."
+"rulesText": "Flash\nFlying\nWhenever a player issues an order, you may return Cloud Darter to its owner’s hand."
 },
 {
 "name": "Collapse Consciousness",
@@ -982,7 +983,7 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Flying, cloaking\nWhenever Echo Bomber attacks and isn’t intercepted, it gets +4/+0 until end of turn."
+"rulesText": "Flying, cloaking\nWhenever Echo Bomber attacks and isn’t intercepted, switch Echo Bomber’s power and toughness until end of turn."
 },
 {
 "name": "Engine Welder",
@@ -992,18 +993,17 @@
 "id": 56,
 "rarity": "C",
 "notes": {
-"power": 2.5,
-"potential": 3.5,
+"power": 1.0,
+"potential": 3.0,
 "synergies": {
 "devices": 15,
 "deviceTokens": 15
 },
 "tags": {
-"devices": 1.0,
-"evasion": 0.6
+"devices": 1.0
 }
 },
-"rulesText": "Dematerialise another device you control: Put a +1/+1 counter on Engine Welder.\nDematerialise a device card from your trashpile: Put a +1/+1 counter on Engine Welder.\nEngine Welder has flying as long as it has a +1/+1 counter on it."
+"rulesText": "1, Tap an untapped device you control: Engine Welder gets +1/+1 and gains flying until end of turn."
 },
 {
 "name": "Escape Velocity",
@@ -1026,59 +1026,57 @@
 "rulesText": "1, Return a unit you control to its owner’s hand: Target unit gets +1/+1 and gains flying until end of turn. Activate this ability only once each turn."
 },
 {
+"name": "Eternal Return",
+"imageName": "Eternal Return",
+"color": "U",
+"castingCost": "2UU",
+"id": 58,
+"rarity": "R",
+"notes": {
+"power": 0.0,
+"potential": 4.0,
+"synergies": {
+"etb": 10,
+"tactical": 20
+}
+},
+"rulesText": "At the beginning of each player’s upkeep, that player returns a unit he or she controls to its owner’s hand."
+},
+{
 "name": "Exiled Xenologist",
 "imageName": "Exiled Xenologist",
 "color": "U",
 "castingCost": "1U",
-"id": 58,
+"id": 59,
 "rarity": "U",
 "notes": {
-"power": 2.5,
+"power": 2.0,
 "potential": 3.5,
 "synergies": {
-"tactical": 15,
-"unitTokens": 10
-},
-"tags": {
-"etb": 0.4
+"tactical": 15
 }
 },
-"rulesText": "Whenever another unit enters the battlefield under your control, that unit gets +0/+3 until end of turn, then defragment 1. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Whenever you issue an order during an opponent’s turn, defragment 2. (To defragment 2, look at the top two cards of your library. Put any number of them on the bottom of your library in any order and the rest on top in any order.)"
 },
 {
 "name": "Fragment Firewall",
 "imageName": "Fragment Firewall",
 "color": "U",
 "castingCost": "1UUU",
-"id": 59,
+"id": 60,
 "rarity": "U",
 "notes": {
 "power": 3.5,
 "potential": 3.7,
 "synergies": {
+"evasion": 24,
 "tactical": 20
 },
 "tags": {
 "tactical": 1.0
 }
 },
-"rulesText": "Choose one or more —\n• Counter target order.\n• Counter target activated ability.\n• Counter target triggered ability.\n• Draw a card."
-},
-{
-"name": "Genetic Contortion",
-"imageName": "Genetic Contortion",
-"color": "U",
-"castingCost": "U",
-"id": 60,
-"rarity": "U",
-"notes": {
-"power": 0.0,
-"potential": 2.5,
-"tags": {
-"tactical": 1.0
-}
-},
-"rulesText": "You may sacrifice a unit. If you do, search your library for a unit card, reveal that card, shuffle your library, then put the card on top of it."
+"rulesText": "Target player returns three units he or she controls to their owners’ hands."
 },
 {
 "name": "Glitch in Space-Time",
@@ -1142,7 +1140,7 @@
 "name": "Kushak Exile",
 "imageName": "Kushak Exile",
 "color": "U",
-"castingCost": "7UU",
+"castingCost": "5UU",
 "id": 64,
 "rarity": "C",
 "notes": {
@@ -1155,7 +1153,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Kushak Exile costs 5 less to issue if you had a unit enter the battlefield under your control this turn or last turn.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
+"rulesText": "Kushak Exile costs 3 less to issue if you issued an order last turn.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)    "
 },
 {
 "name": "Lost in Space",
@@ -1172,7 +1170,7 @@
 "evasion": 12
 }
 },
-"rulesText": "Put target nonland permanent into its owner’s library just beneath the top X cards of that library, where X is the amount of life all players have lost this turn. (Gaining life doesn’t count against losing life.)"
+"rulesText": "Put target nonland permanent into its owner’s library just beneath the top X cards of that library, where X is the number of tapped units on the battlefield."
 },
 {
 "name": "Manipulative Negotiation",
@@ -1211,14 +1209,30 @@
 "evasion": 0.6
 }
 },
-"rulesText": "(Migratory City doesn’t have defender.)\nTechnician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)\n1U: Migratory City gets +0/+2 until end of turn."
+"rulesText": "Technician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)\n1U: Migratory City gets +0/+2 until end of turn."
+},
+{
+"name": "Military Intelligence",
+"imageName": "Military Intelligence",
+"color": "U",
+"castingCost": "1U",
+"id": 68,
+"rarity": "U",
+"notes": {
+"power": 2.5,
+"potential": 4.0,
+"synergies": {
+"evasion": 14
+}
+},
+"rulesText": "Whenever you attack with two or more units, draw a card."
 },
 {
 "name": "Mindmelded Sysadmin",
 "imageName": "Mindmelded Sysadmin",
 "color": "U",
 "castingCost": "1U",
-"id": 68,
+"id": 69,
 "rarity": "C",
 "notes": {
 "power": 0.5,
@@ -1235,7 +1249,7 @@
 "imageName": "Nanoreplicator Zero",
 "color": "U",
 "castingCost": "3UU",
-"id": 69,
+"id": 70,
 "rarity": "R",
 "notes": {
 "power": 4.0,
@@ -1251,7 +1265,7 @@
 "imageName": "Neural Implants",
 "color": "U",
 "castingCost": "U",
-"id": 70,
+"id": 71,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -1267,7 +1281,7 @@
 "imageName": "Neutron Flow",
 "color": "U",
 "castingCost": "2U",
-"id": 71,
+"id": 72,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -1289,7 +1303,7 @@
 "imageName": "Overwhelm Psyche",
 "color": "U",
 "castingCost": "1U",
-"id": 72,
+"id": 73,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -1298,17 +1312,18 @@
 "evasion": 12
 },
 "tags": {
+"deviceTokens": 1.0,
 "tactical": 1.0
 }
 },
-"rulesText": "Target unit gets -4/-0 until end of turn. Tap it and it doesn’t untap during its controller’s next untap step.\nDefragment 1. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Target unit gets -4/-0 until end of turn. Tap it and it doesn’t untap during its controller’s next untap step.\nCreate a 1/1 colorless Mech device unit token."
 },
 {
 "name": "Peel from Reality",
 "imageName": "Peel from Reality",
 "color": "U",
 "castingCost": "1U",
-"id": 73,
+"id": 74,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -1328,11 +1343,11 @@
 "imageName": "Plasma Reclaimer",
 "color": "U",
 "castingCost": "3U",
-"id": 74,
+"id": 75,
 "rarity": "C",
 "notes": {
-"power": 2.5,
-"potential": 3.5,
+"power": 2.0,
+"potential": 3.0,
 "synergies": {
 "evasion": 12
 },
@@ -1342,26 +1357,6 @@
 }
 },
 "rulesText": "When Plasma Reclaimer enters the battlefield, if an opponent was dealt combat damage by exactly two units this turn, draw a card."
-},
-{
-"name": "React",
-"imageName": "React",
-"color": "U",
-"castingCost": "1UU",
-"id": 75,
-"rarity": "R",
-"notes": {
-"power": 2.5,
-"potential": 2.8,
-"synergies": {
-"evasion": 12,
-"tactical": 20
-},
-"tags": {
-"tactical": 1.0
-}
-},
-"rulesText": "You may dematerialise React as you draw it if you control an Island.\nAs long as React is dematerialised, when an opponent issues a nonunit order, issue React without paying its psi cost.\nCounter target nonunit order."
 },
 {
 "name": "Reconstruction Specialist",
@@ -1435,7 +1430,7 @@
 "etb": 2.0
 }
 },
-"rulesText": "When you issue Scorned Researcher, discard two cards.\nWhen Scorned Researcher enters the battlefield, draw two cards."
+"rulesText": "When you issue Scorned Researcher, put two cards from your hand on top of your library.\nWhen Scorned Researcher enters the battlefield, draw two cards."
 },
 {
 "name": "Slipstream Distorter",
@@ -1460,11 +1455,31 @@
 "rulesText": "Flash (You can issue this order any time you could issue a response.)\nYou can issue devices as though they had flash.\nTap four untapped devices you control: Draw a card."
 },
 {
+"name": "Solar Power Transmitters",
+"imageName": "Solar Power Transmitters",
+"color": "U",
+"castingCost": "1U",
+"id": 81,
+"rarity": "U",
+"notes": {
+"power": 2.0,
+"potential": 3.5,
+"synergies": {
+"etb": 12
+},
+"tags": {
+"devices": 1.0,
+"deviceTokens": 1.0
+}
+},
+"rulesText": "At the beginning of your upkeep, defragment 1. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)\nWhenever a nontoken unit enters the battlefield under your control, you may pay 1U. If you do, create a token that’s a copy of Solar Power Transmitters."
+},
+{
 "name": "Supercoolant Technician",
 "imageName": "Supercoolant Technician",
 "color": "U",
 "castingCost": "2U",
-"id": 81,
+"id": 82,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -1481,28 +1496,27 @@
 "imageName": "Tactical Freeze Ray",
 "color": "U",
 "castingCost": "4U",
-"id": 82,
+"id": 83,
 "rarity": "U",
 "notes": {
-"power": 3.2,
-"potential": 3.7,
+"power": 1.0,
+"potential": 3.5,
 "synergies": {
-"etb": 6,
-"evasion": 12,
-"tactical": 20
+"etb": 12,
+"tactical": 40
 },
 "tags": {
 "tactical": 1.0
 }
 },
-"rulesText": "Put target unit on top of its owner’s library.\nReturn target unit to its owner’s hand.\nDisplace target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "Displace any number of target units you control. (Dematerialise those units. Return them to the battlefield under their owners’ control at the beginning of the next end step.)\nDraw a card."
 },
 {
 "name": "Thought Dampener",
 "imageName": "Thought Dampener",
 "color": "U",
 "castingCost": "2U",
-"id": 83,
+"id": 84,
 "rarity": "U",
 "notes": {
 "power": 2.8,
@@ -1517,23 +1531,6 @@
 }
 },
 "rulesText": "Whenever Thought Dampener or another unit enters the battlefield under your control, units your opponents control get -1/-0 until your next turn."
-},
-{
-"name": "Time Loop",
-"imageName": "Time Loop",
-"color": "U",
-"castingCost": "2UU",
-"id": 84,
-"rarity": "R",
-"notes": {
-"power": 0.0,
-"potential": 4.0,
-"synergies": {
-"etb": 10,
-"tactical": 20
-}
-},
-"rulesText": "At the beginning of each player’s upkeep, that player returns a unit he or she controls to its owner’s hand."
 },
 {
 "name": "Umida Incorporated",
@@ -1551,11 +1548,31 @@
         "rulesText": "+2: Search your library for up to three cards and dematerialise them. Then shuffle your library.\n0: Until your next turn, the next unit you issue can be issued as though it had flash.\n-6: Target opponent gets a tag with “Units you control get -1/-0.”"
 },
 {
+"name": "Umida Security Protocols",
+"imageName": "Umida Security Protocols",
+"color": "U",
+"castingCost": "1UU",
+"id": 86,
+"rarity": "R",
+"notes": {
+"power": 2.5,
+"potential": 2.8,
+"synergies": {
+"evasion": 12,
+"tactical": 20
+},
+"tags": {
+"tactical": 1.0
+}
+},
+"rulesText": "You may dematerialise Umida Security Protocols as you draw it if you control an Island.\nAs long as Umida Security Protocols is dematerialised, when an opponent issues a nonunit order, issue Umida Security Protocols without paying its psi cost.\nCounter target nonunit order."
+},
+{
 "name": "Undercroft Entangler",
 "imageName": "Undercroft Entangler",
 "color": "U",
 "castingCost": "3U",
-"id": 86,
+"id": 87,
 "rarity": "C",
 "notes": {
 "power": 3.2,
@@ -1570,23 +1587,6 @@
 }
 },
 "rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nWhen Undercroft Entangler enters the battlefield, return target unit to its owner’s hand."
-},
-{
-"name": "Ventilation Shaft",
-"imageName": "Ventilation Shaft",
-"color": "U",
-"castingCost": "U",
-"id": 87,
-"rarity": "U",
-"notes": {
-"power": 0.5,
-"potential": 2.5,
-"tags": {
-"devices": 1.0,
-"evasion": 1.0
-}
-},
-"rulesText": "At the beginning of your upkeep, you may have target unit you control get -1/-0 and gain cloaking until end of turn. It can’t be intercepted this turn."
 },
 {
 "name": "W.A.S.P. Advance Prototype",
@@ -1609,11 +1609,31 @@
 "rulesText": "As an additional cost to issue W.A.S.P. Advance Prototype, reveal a device card from your hand or pay 2, then put a card from your hand on top of your library or pay 2.\nFlying"
 },
 {
+"name": "Awaken Sleeper Agent",
+"imageName": "Awaken Sleeper Agent",
+"color": "B",
+"castingCost": "1B",
+"id": 89,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 3.0,
+"synergies": {
+"evasion": 12
+},
+"tags": {
+"lifegain": 1.2,
+"tactical": 1.0
+}
+},
+"rulesText": "Flash (You can issue this order any time you could issue a response.)\nModify unit\nWhen Awaken Sleeper Agent enters the battlefield, untap modified unit.\nModified unit gets +0/+3 and has lifelink."
+},
+{
 "name": "Backalley Trafficker",
 "imageName": "Backalley Trafficker",
 "color": "B",
 "castingCost": "2B",
-"id": 89,
+"id": 90,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -1627,11 +1647,28 @@
 "rulesText": "Whenever another nontoken permanent you control is put into a trashpile from the battlefield, create a 1/1 colorless Mech device unit token at the beginning of the next end step."
 },
 {
+"name": "Cloning Vats",
+"imageName": "Cloning Vats",
+"color": "B",
+"castingCost": "3B",
+"id": 91,
+"rarity": "R",
+"notes": {
+"power": 3.0,
+"potential": 3.2,
+"tags": {
+"devices": 1.0,
+"unitTokens": 1.0
+}
+},
+"rulesText": "T: Dematerialise target unit card from a trashpile.\nT: Create a tapped token that’s a copy of a dematerialised card, then put that card into its owner’s trashpile. Activate this ability only any time you could issue a strategy."
+},
+{
 "name": "Corporate Spy",
 "imageName": "Corporate Spy",
 "color": "B",
 "castingCost": "1B",
-"id": 90,
+"id": 92,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -1643,14 +1680,14 @@
 "evasion": 1.0
 }
 },
-"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nOpponents play with the top card of their libraries revealed."
+"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
 },
 {
 "name": "Deprivation Torture",
 "imageName": "Deprivation Torture",
 "color": "B",
 "castingCost": "XB",
-"id": 91,
+"id": 93,
 "rarity": "C",
 "notes": {
 "power": 3.0,
@@ -1661,45 +1698,6 @@
 }
 },
 "rulesText": "Deprivation Torture costs 1 less to issue for each 1 life players have lost this turn. (Gaining life doesn’t count against losing life.)\nTarget unit gets -X/-X until end of turn."
-},
-{
-"name": "Divide",
-"imageName": "Divide",
-"color": "B",
-"castingCost": "1BB",
-"id": 92,
-"rarity": "R",
-"notes": {
-"power": 2.5,
-"potential": 2.8,
-"synergies": {
-"evasion": 12
-},
-"tags": {
-"tactical": 1.0
-}
-},
-"rulesText": "You may dematerialise Divide as you draw it if you control a Swamp.\nAs long as Divide is dematerialised, when a unit enters the battlefield under an opponent’s control, issue Divide without paying its psi cost.\nDestroy target unit that entered the battlefield this turn."
-},
-{
-"name": "Double Agent",
-"imageName": "Double Agent",
-"color": "B",
-"castingCost": "1B",
-"id": 93,
-"rarity": "C",
-"notes": {
-"power": 2.5,
-"potential": 3.0,
-"synergies": {
-"evasion": 12
-},
-"tags": {
-"lifegain": 1.2,
-"tactical": 1.0
-}
-},
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nModify unit\nWhen Double Agent enters the battlefield, untap modified unit.\nModified unit gets +0/+3 and has lifelink."
 },
 {
 "name": "Engineered Endemic",
@@ -1721,7 +1719,7 @@
 "id": 95,
 "rarity": "C",
 "notes": {
-"power": 1.0,
+"power": 2.5,
 "potential": 3.0,
 "synergies": {
 "evasion": 14
@@ -1731,38 +1729,14 @@
 "deathTrigger": 1.0
 }
 },
-"rulesText": "Vigilance\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
-},
-{
-"name": "Frontline Eviscerator",
-"imageName": "Frontline Eviscerator",
-"color": "B",
-"castingCost": "1B",
-"id": 96,
-"rarity": "C",
-"notes": {
-"power": 2.0,
-"potential": 3.0,
-"synergies": {
-"deviceTokens": 12,
-"lifegain": 16,
-"unitTokens": 12,
-"deathTrigger": 16
-},
-"tags": {
-"devices": 1.0,
-"deviceTokens": 0.8,
-"lifeloss": 1.5
-}
-},
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nAt the beginning of your upkeep, you may sacrifice another nonland permanent. If you don’t, you lose 2 life."
+"rulesText": "Lethality (Any amount of damage this deals to a unit is enough to destroy it.)\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)    "
 },
 {
 "name": "Gambling Ring",
 "imageName": "Gambling Ring",
 "color": "B",
-"castingCost": "1B",
-"id": 97,
+"castingCost": "1BB",
+"id": 96,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -1778,7 +1752,7 @@
 "imageName": "Grasp of The Left Hand",
 "color": "B",
 "castingCost": "B",
-"id": 98,
+"id": 97,
 "rarity": "U",
 "notes": {
 "power": 4.3,
@@ -1794,28 +1768,11 @@
 "rulesText": "Destroy target unit. You lose life equal to its power."
 },
 {
-"name": "Growing Tanks",
-"imageName": "Growing Tanks",
-"color": "B",
-"castingCost": "3B",
-"id": 99,
-"rarity": "R",
-"notes": {
-"power": 3.0,
-"potential": 3.2,
-"tags": {
-"devices": 1.0,
-"unitTokens": 1.0
-}
-},
-"rulesText": "T: Dematerialise target unit card from a trashpile.\nT: Create a tapped token that’s a copy of a dematerialised card, then put that card into its owner’s trashpile. Activate this ability only any time you could issue a strategy."
-},
-{
 "name": "Hypercollider",
 "imageName": "Hypercollider",
 "color": "B",
 "castingCost": "BB",
-"id": 100,
+"id": 98,
 "rarity": "R",
 "notes": {
 "power": 1.0,
@@ -1837,7 +1794,7 @@
 "imageName": "Interrogation Process",
 "color": "B",
 "castingCost": "2B",
-"id": 101,
+"id": 99,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -1854,12 +1811,12 @@
 "name": "Laser Precision",
 "imageName": "Laser Precision",
 "color": "B",
-"castingCost": "B",
-"id": 102,
+"castingCost": "1B",
+"id": 100,
 "rarity": "U",
 "notes": {
-"power": 1.0,
-"potential": 3.5,
+"power": 2.0,
+"potential": 3.0,
 "synergies": {
 "deviceTokens": 12,
 "unitTokens": 12,
@@ -1870,14 +1827,14 @@
 "evasion": 0.4
 }
 },
-"rulesText": "Modify unit\nModified unit has plunder. (Whenever it deals combat damage to a player, its controller creates a colorless Credit device token.)\nSacrifice two other nonland permanents: Destroy target unit intercepting or intercepted by modified unit."
+"rulesText": "Modify unit\nModified unit has plunder. (Whenever it deals combat damage to a player, its controller creates a colorless Credit device token.)\nSacrifice Laser Precision: Modified unit gains deathtouch until end of turn."
 },
 {
 "name": "The Left Hand",
 "imageName": "The Left Hand",
 "color": "B",
 "castingCost": "4BB",
-"id": 103,
+"id": 101,
 "rarity": "M",
 "notes": {
 "power": 4.0,
@@ -1893,7 +1850,7 @@
 "imageName": "Market Manipulation",
 "color": "B",
 "castingCost": "1B",
-"id": 104,
+"id": 102,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -1913,7 +1870,7 @@
 "imageName": "Metamorphotic Membrane",
 "color": "B",
 "castingCost": "1B",
-"id": 105,
+"id": 103,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -1930,11 +1887,11 @@
 "imageName": "Mindmeld Torturer",
 "color": "B",
 "castingCost": "2B",
-"id": 106,
+"id": 104,
 "rarity": "C",
 "notes": {
 "power": 2.5,
-"potential": 3.5,
+"potential": 3.0,
 "synergies": {
 "deviceTokens": 12,
 "unitTokens": 12,
@@ -1945,14 +1902,14 @@
 "deathTrigger": 0.8
 }
 },
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhen Mindmeld Torturer falls, you may sacrifice a nonland permanent. If you do, target unit gets -2/-2 until end of turn."
+"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Mindmeld Torturer attacks, you may sacrifice another nonland permanent. If you do, target unit gets -1/-1 until end of turn."
 },
 {
 "name": "Moonlight Strider",
 "imageName": "Moonlight Strider",
 "color": "B",
 "castingCost": "BB",
-"id": 107,
+"id": 105,
 "rarity": "U",
 "notes": {
 "power": 3.5,
@@ -1972,7 +1929,7 @@
 "imageName": "Mortality",
 "color": "B",
 "castingCost": "6BBB",
-"id": 108,
+"id": 106,
 "rarity": "R",
 "notes": {
 "power": 3.0,
@@ -1992,7 +1949,7 @@
 "imageName": "Neural Devourer",
 "color": "B",
 "castingCost": "2B",
-"id": 109,
+"id": 107,
 "rarity": "U",
 "notes": {
 "power": 1.0,
@@ -2007,11 +1964,11 @@
 "rulesText": "Flying\nUnits you control can’t attack unless exactly two units attack."
 },
 {
-"name": "Peacekeeper",
-"imageName": "Peacekeeper",
+"name": "Peacekeeper Satellite",
+"imageName": "Peacekeeper Satellite",
 "color": "B",
 "castingCost": "1BB",
-"id": 110,
+"id": 108,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -2024,39 +1981,35 @@
 "devices": 1.0
 }
 },
-"rulesText": "Defender, flying\nPrevent all combat damage units without flying or reach would deal to Peacekeeper.\nWhenever a player loses life, put a charge counter on Peacekeeper.\nT, Remove ten charge counters from Peacekeeper: Dematerialise target permanent. Activate this ability only any time you could issue a strategy."
+"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Peacekeeper Satellite.\nWhenever a player loses life, put a charge counter on Peacekeeper Satellite.\nRemove ten charge counters from Peacekeeper Satellite: Dematerialise target unit."
 },
 {
 "name": "Prototype Evader",
 "imageName": "Prototype Evader",
 "color": "B",
 "castingCost": "2B",
-"id": 111,
+"id": 109,
 "rarity": "C",
 "notes": {
 "power": 2.5,
 "potential": 3.0,
 "synergies": {
-"deviceTokens": 12,
-"lifegain": 16,
-"unitTokens": 12,
-"deathTrigger": 14
+"lifegain": 16
 },
 "tags": {
 "devices": 1.0,
-"deviceTokens": 1.4,
 "lifeloss": 1.5,
 "evasion": 0.8
 }
 },
-"rulesText": "Flying\nPlunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nAt the beginning of your upkeep, you may sacrifice another nonland permanent. If you don’t, you lose 2 life.    "
+"rulesText": "Flying\nMenace (This unit can’t be intercepted except by two or more units.)\nAt the beginning of your upkeep, you lose 1 life. "
 },
 {
 "name": "Radiation Strike",
 "imageName": "Radiation Strike",
 "color": "B",
 "castingCost": "3BB",
-"id": 112,
+"id": 110,
 "rarity": "R",
 "notes": {
 "power": 4.5
@@ -2068,7 +2021,7 @@
 "imageName": "Rumor Marketer",
 "color": "B",
 "castingCost": "2B",
-"id": 113,
+"id": 111,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2082,11 +2035,32 @@
 "rulesText": "When Rumor Marketer enters the battlefield, target player gains or loses 2 life.\nFurtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
 },
 {
+"name": "Security Detail",
+"imageName": "Security Detail",
+"color": "B",
+"castingCost": "1B",
+"id": 112,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 3.0,
+"synergies": {
+"deviceTokens": 12,
+"unitTokens": 12,
+"deathTrigger": 14
+},
+"tags": {
+"deathTrigger": 1.0
+}
+},
+"rulesText": "Menace (This unit can’t be intercepted except by two or more units.)\nWhen Security Detail falls, create a 2/2 black Corporation Agent unit token with menace."
+},
+{
 "name": "Sewer Slitherer",
 "imageName": "Sewer Slitherer",
 "color": "B",
 "castingCost": "4B",
-"id": 114,
+"id": 113,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2104,7 +2078,7 @@
 "imageName": "Shisuku Enforcer",
 "color": "B",
 "castingCost": "4BB",
-"id": 115,
+"id": 114,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2126,7 +2100,7 @@
 "imageName": "Silent Infiltrator",
 "color": "B",
 "castingCost": "3B",
-"id": 116,
+"id": 115,
 "rarity": "U",
 "notes": {
 "power": 3.5,
@@ -2149,7 +2123,7 @@
 "imageName": "Sink into the Oceans",
 "color": "B",
 "castingCost": "1B",
-"id": 117,
+"id": 116,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2165,7 +2139,7 @@
 "imageName": "Smuggling Routes",
 "color": "B",
 "castingCost": "3B",
-"id": 118,
+"id": 117,
 "rarity": "U",
 "notes": {
 "power": 0.5,
@@ -2185,7 +2159,7 @@
 "imageName": "State of Disrepair",
 "color": "B",
 "castingCost": "3B",
-"id": 119,
+"id": 118,
 "rarity": "C",
 "notes": {
 "power": 3.0,
@@ -2204,7 +2178,7 @@
 "imageName": "Surprise Round",
 "color": "B",
 "castingCost": "B",
-"id": 120,
+"id": 119,
 "rarity": "C",
 "notes": {
 "power": 3.3,
@@ -2224,7 +2198,7 @@
 "imageName": "Surveillance Craft",
 "color": "B",
 "castingCost": "B",
-"id": 121,
+"id": 120,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2246,7 +2220,7 @@
 "imageName": "The Tartaros",
 "color": "B",
 "castingCost": "6BB",
-"id": 122,
+"id": 121,
 "rarity": "M",
 "notes": {
 "power": 1.0,
@@ -2267,7 +2241,7 @@
 "imageName": "Throatslitter",
 "color": "B",
 "castingCost": "2B",
-"id": 123,
+"id": 122,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -2287,7 +2261,7 @@
 "imageName": "Tragedy of the Great War",
 "color": "B",
 "castingCost": "1BBB",
-"id": 124,
+"id": 123,
 "rarity": "U",
 "notes": {
 "power": 3.5
@@ -2299,7 +2273,7 @@
 "imageName": "Undercity Janitor",
 "color": "B",
 "castingCost": "3B",
-"id": 125,
+"id": 124,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -2323,7 +2297,7 @@
 "imageName": "Urban Revenant",
 "color": "B",
 "castingCost": "2B",
-"id": 126,
+"id": 125,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -2341,7 +2315,7 @@
 "imageName": "Vis Whip",
 "color": "B",
 "castingCost": "1B",
-"id": 127,
+"id": 126,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -2359,25 +2333,47 @@
 "rulesText": "Equipped unit gets +1/+1 for each charge counter on Vis Whip.\nEquip—Sacrifice another nonland permanent, Put a charge counter on Vis Whip"
 },
 {
-"name": "Warapur Security Detail",
-"imageName": "Warapur Security Detail",
+"name": "Warapur Company Contract",
+"imageName": "Warapur Company Contract",
+"color": "B",
+"castingCost": "1BB",
+"id": 127,
+"rarity": "R",
+"notes": {
+"power": 2.5,
+"potential": 2.8,
+"synergies": {
+"evasion": 12
+},
+"tags": {
+"tactical": 1.0
+}
+},
+"rulesText": "You may dematerialise Warapur Company Contract as you draw it if you control a Swamp.\nAs long as Warapur Company Contract is dematerialised, when a unit enters the battlefield under an opponent’s control, issue Warapur Company Contract without paying its psi cost.\nDestroy target unit that entered the battlefield this turn."
+},
+{
+"name": "Warapur Company Enforcer",
+"imageName": "Warapur Company Enforcer",
 "color": "B",
 "castingCost": "1B",
 "id": 128,
 "rarity": "C",
 "notes": {
-"power": 2.5,
+"power": 2.0,
 "potential": 3.0,
 "synergies": {
 "deviceTokens": 12,
+"lifegain": 16,
 "unitTokens": 12,
-"deathTrigger": 14
+"deathTrigger": 16
 },
 "tags": {
-"deathTrigger": 1.0
+"devices": 1.0,
+"deviceTokens": 0.8,
+"lifeloss": 1.5
 }
 },
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhen Warapur Security Detail falls, you may sacrifice a nonland permanent. If you do, create a 2/1 black Mercenary unit token."
+"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Warapur Company Enforcer attacks, you may sacrifice another nonland permanent. If you don’t, you lose 3 life."
 },
 {
 "name": "Warship Phantom",
@@ -2463,7 +2459,7 @@
 "atarka": 0.7
 }
 },
-"rulesText": "Flying, trample\nPrevent all combat damage that units without flying or reach would deal to The Ananke.\nWhenever The Ananke enters the battlefield or attacks, it deals 1 damage to each opponent for each untapped permanent he or she controls."
+"rulesText": "Flying, trample\nPrevent all combat damage that units without flying or reach would deal to The Ananke.\nWhenever The Ananke enters the battlefield or attacks, it deals 1 damage to target unit or player for each untapped permanent he or she controls."
 },
 {
 "name": "Barrel Down",
@@ -2506,11 +2502,28 @@
 "rulesText": "Double strike\nTechnician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)"
 },
 {
+"name": "Battle Augments",
+"imageName": "Battle Augments",
+"color": "R",
+"castingCost": "1R",
+"id": 135,
+"rarity": "R",
+"notes": {
+"power": 3.5,
+"tags": {
+"devices": 1.0,
+"atarka": 1.0,
+"equipment": 1.0
+}
+},
+"rulesText": "Equipped unit gets +1/+1 and has double strike and trample.\nWhenever equipped unit deals combat damage to a player, dematerialise the top card of your library. You may play it this turn.\nEquip 3"
+},
+{
 "name": "Bergstadt Roboticists",
 "imageName": "Bergstadt Roboticists",
 "color": "R",
 "castingCost": "3R",
-"id": 135,
+"id": 136,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -2526,7 +2539,7 @@
 "imageName": "Blitz Agent",
 "color": "R",
 "castingCost": "2R",
-"id": 136,
+"id": 137,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2542,11 +2555,28 @@
 "rulesText": "Haste\nWhen Blitz Agent enters the battlefield, displace target unit an opponent controls. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
+"name": "Cache Acquisition",
+"imageName": "Cache Acquisition",
+"color": "R",
+"castingCost": "2RR",
+"id": 138,
+"rarity": "U",
+"notes": {
+"power": 0.0,
+"potential": 3.5,
+"tags": {
+"deviceTokens": 2,
+"equipment": 0.8
+}
+},
+"rulesText": "Create two 1/1 colorless Mech device unit tokens, two colorless Credit device tokens, and two colorless Equipment device tokens with “Equipped unit gets +1/+1” and equip 1."
+},
+{
 "name": "Charge Captain",
 "imageName": "Charge Captain",
 "color": "R",
 "castingCost": "R",
-"id": 137,
+"id": 139,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -2566,7 +2596,7 @@
 "imageName": "Combined Effort",
 "color": "R",
 "castingCost": "R",
-"id": 138,
+"id": 140,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -2585,7 +2615,7 @@
 "imageName": "Electric Arc",
 "color": "R",
 "castingCost": "1RRR",
-"id": 139,
+"id": 141,
 "rarity": "U",
 "notes": {
 "power": 4.0
@@ -2597,7 +2627,7 @@
 "imageName": "Execute Takeover Protocol",
 "color": "R",
 "castingCost": "5RR",
-"id": 140,
+"id": 142,
 "rarity": "R",
 "notes": {
 "power": 2.0,
@@ -2618,7 +2648,7 @@
 "imageName": "Financier Cutthroat",
 "color": "R",
 "castingCost": "R",
-"id": 141,
+"id": 143,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -2628,14 +2658,14 @@
 "equipment": 2.0
 }
 },
-"rulesText": "Whenever one or more units you control deals combat damage to a player, create a colorless Equipment device token. It has “Equipped unit gets +1/+1,” and equip 1."
+"rulesText": "Whenever one or more units you control deals combat damage to a player, arm Financier Cutthroat. (Create a colorless Equipment device token attached to this unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "The Free Thinkers",
 "imageName": "The Free Thinkers",
 "color": "R",
 "castingCost": "3RR",
-"id": 142,
+"id": 144,
 "rarity": "M",
 "notes": {
 "power": 4.0,
@@ -2651,7 +2681,7 @@
 "imageName": "Gauss Scrapgunner",
 "color": "R",
 "castingCost": "4R",
-"id": 143,
+"id": 145,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2671,7 +2701,7 @@
 "imageName": "Guerilla Fighters",
 "color": "R",
 "castingCost": "3R",
-"id": 144,
+"id": 146,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -2683,11 +2713,53 @@
 "rulesText": "As long as Guerilla Fighters is equipped, it gets +1/+1 and has menace. (This unit can’t be intercepted except by two or more units.)"
 },
 {
+"name": "Hijack",
+"imageName": "Hijack",
+"color": "R",
+"castingCost": "1RR",
+"id": 147,
+"rarity": "C",
+"notes": {
+"power": 1.0,
+"potential": 3.0,
+"synergies": {
+"atarka": 17
+},
+"tags": {
+"atarka": 1.0,
+"deviceTokens": 1.0,
+"unitTokens": 1.0
+}
+},
+"rulesText": "Gain control of target device or unit until end of turn. Untap it. It gains haste until end of turn."
+},
+{
+"name": "Hired Artillery",
+"imageName": "Hired Artillery",
+"color": "R",
+"castingCost": "2R",
+"id": 148,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 3.5,
+"synergies": {
+"devices": 25,
+"deviceTokens": 12
+},
+"tags": {
+"devices": 1.0,
+"deviceTokens": 0.8
+}
+},
+"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Hired Artillery attacks, you may sacrifice a device. If you do, Hired Artillery gets +1/+0 and gains first strike until end of turn."
+},
+{
 "name": "Homeostimulation Suit",
 "imageName": "Homeostimulation Suit",
 "color": "R",
-"castingCost": "2R",
-"id": 145,
+"castingCost": "1R",
+"id": 149,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2697,14 +2769,14 @@
 "equipment": 1.0
 }
 },
-"rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 1"
+"rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 2"
 },
 {
 "name": "Hyperadrenaline",
 "imageName": "Hyperadrenaline",
 "color": "R",
 "castingCost": "1R",
-"id": 146,
+"id": 150,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2721,49 +2793,11 @@
 "rulesText": "Target attacking unit gets +1/+0 and gains double strike until end of turn."
 },
 {
-"name": "Insist",
-"imageName": "Insist",
-"color": "R",
-"castingCost": "RR",
-"id": 147,
-"rarity": "R",
-"notes": {
-"power": 0.0,
-"potential": 3.0,
-"synergies": {
-"atarka": 17
-},
-"tags": {
-"atarka": 1.0,
-"tactical": 1.0
-}
-},
-"rulesText": "You may dematerialise Insist as you draw it if you control a Mountain.\nAs long as Insist is dematerialised, when an opponent is dealt damage, issue Insist without paying its psi cost.\nInsist deals damage to each opponent equal to the amount of damage dealt to him or her this turn."
-},
-{
-"name": "Ion Storm",
-"imageName": "Ion Storm",
-"color": "R",
-"castingCost": "5RR",
-"id": 148,
-"rarity": "U",
-"notes": {
-"power": 0.0,
-"potential": 3.5,
-"synergies": {
-"devices": 18,
-"deviceTokens": 18,
-"ramp": 12
-}
-},
-"rulesText": "Tap all devices. Ion Storm deals X damage to each opponent and each unit an opponent controls, where X is the number of devices you control tapped this way minus the number of devices you don’t control tapped this way."
-},
-{
 "name": "Iridium Throwing Knife",
 "imageName": "Iridium Throwing Knife",
 "color": "R",
 "castingCost": "1R",
-"id": 149,
+"id": 151,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -2779,7 +2813,7 @@
 "imageName": "Mechanized Rampager",
 "color": "R",
 "castingCost": "2R",
-"id": 150,
+"id": 152,
 "rarity": "U",
 "notes": {
 "power": 1.0,
@@ -2794,32 +2828,31 @@
 "rulesText": "Trample\nMechanized Rampager gets +2/+0 for each equipment you control."
 },
 {
-"name": "Octopus Squad",
-"imageName": "Octopus Squad",
+"name": "Nomads’ Assurance",
+"imageName": "Nomads Assurance",
 "color": "R",
-"castingCost": "2R",
-"id": 151,
-"rarity": "C",
+"castingCost": "2RR",
+"id": 153,
+"rarity": "R",
 "notes": {
-"power": 2.5,
-"potential": 3.5,
+"power": 0.0,
+"potential": 3.0,
 "synergies": {
-"devices": 25,
-"deviceTokens": 12
+"atarka": 17
 },
 "tags": {
-"devices": 1.0,
-"deviceTokens": 0.8
+"atarka": 1.0,
+"tactical": 1.0
 }
 },
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhen Octopus Squad falls, you may sacrifice a device. If you do, Octopus Squad deals 2 damage to target unit or player."
+"rulesText": "You may dematerialise Nomads’ Assurance as you draw it if you control a Mountain.\nAs long as Nomads’ Assurance is dematerialised, when an opponent is dealt damage, issue Nomads’ Assurance without paying its psi cost.\nNomads’ Assurance deals damage to each opponent equal to the amount of damage dealt to him or her this turn."
 },
 {
 "name": "Ohmwrecker",
 "imageName": "Ohmwrecker",
 "color": "R",
 "castingCost": "3R",
-"id": 152,
+"id": 154,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2836,28 +2869,11 @@
 "rulesText": "As long as Ohmwrecker isn’t equipped, it can’t attack or intercept unless you pay 2."
 },
 {
-"name": "Psionics Augmentation",
-"imageName": "Psionics Augmentation",
-"color": "R",
-"castingCost": "1R",
-"id": 153,
-"rarity": "R",
-"notes": {
-"power": 3.5,
-"tags": {
-"devices": 1.0,
-"atarka": 1.0,
-"equipment": 1.0
-}
-},
-"rulesText": "Equipped unit gets +1/+1 and has double strike and trample.\nWhenever equipped unit deals combat damage to a player, dematerialise the top card of your library. You may play it this turn.\nEquip 3"
-},
-{
 "name": "Renounce",
 "imageName": "Renounce",
 "color": "R",
 "castingCost": "3RR",
-"id": 154,
+"id": 155,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -2870,7 +2886,7 @@
 "imageName": "Reverse Polarity",
 "color": "R",
 "castingCost": "XRR",
-"id": 155,
+"id": 156,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -2889,7 +2905,7 @@
 "imageName": "Rip Space-Time",
 "color": "R",
 "castingCost": "3RR",
-"id": 156,
+"id": 157,
 "rarity": "C",
 "notes": {
 "power": 3.0,
@@ -2906,7 +2922,7 @@
 "imageName": "Rocket Salvo",
 "color": "R",
 "castingCost": "1R",
-"id": 157,
+"id": 158,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2923,7 +2939,7 @@
 "imageName": "Scrapyard Salvager",
 "color": "R",
 "castingCost": "1R",
-"id": 158,
+"id": 159,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -2944,7 +2960,7 @@
 "imageName": "Selfdestruct Sequence",
 "color": "R",
 "castingCost": "R",
-"id": 159,
+"id": 160,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2964,7 +2980,7 @@
 "imageName": "Slagthrower",
 "color": "R",
 "castingCost": "2R",
-"id": 160,
+"id": 161,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2984,7 +3000,7 @@
 "imageName": "Slipstream Hunters",
 "color": "R",
 "castingCost": "4R",
-"id": 161,
+"id": 162,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -3005,7 +3021,7 @@
 "imageName": "Speed Demon",
 "color": "R",
 "castingCost": "2R",
-"id": 162,
+"id": 163,
 "rarity": "U",
 "notes": {
 "power": 1.0,
@@ -3027,7 +3043,7 @@
 "imageName": "Supervolcanic Fallout",
 "color": "R",
 "castingCost": "3RR",
-"id": 163,
+"id": 164,
 "rarity": "C",
 "notes": {
 "power": 0.5,
@@ -3047,7 +3063,7 @@
 "imageName": "Supply Runner",
 "color": "R",
 "castingCost": "1R",
-"id": 164,
+"id": 165,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3058,26 +3074,7 @@
 "equipment": 0.8
 }
 },
-"rulesText": "Whenever Supply Runner deals combat damage to a player, create a colorless Equipment device token. It has “Equipped unit gets +1/+1,” and equip 1."
-},
-{
-"name": "Threaten",
-"imageName": "Threaten",
-"color": "R",
-"castingCost": "2R",
-"id": 165,
-"rarity": "C",
-"notes": {
-"power": 0.5,
-"potential": 3.0,
-"synergies": {
-"atarka": 17
-},
-"tags": {
-"atarka": 1.0
-}
-},
-"rulesText": "Untap target unit and gain control of it until end of turn. It gains haste until end of turn."
+"rulesText": "Whenever Supply Runner deals combat damage to a player, arm it. (Create a colorless Equipment device token attached to this unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "Vulcan Devastators",
@@ -3121,7 +3118,7 @@
 "ramp": 0.8
 }
 },
-"rulesText": "Sacrifice two devices: Add RR to your psi cache. Activate this ability only once each turn."
+"rulesText": "Whenever another device is put into your trashpile from the battlefield, you may pay 2. If you do, Walking Furnace deals 2 damage to target unit or player."
 },
 {
 "name": "Warapur Company Flagship",
@@ -3160,7 +3157,7 @@
 "devices": 1.0
 }
 },
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nTechnician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)"
+"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Warapur Company Grunt attacks, you may sacrifice a device. If you do, create a 1/1 colorless Mech device unit token."
 },
 {
 "name": "Warapur Company Heavy",
@@ -3220,8 +3217,8 @@
 "rulesText": "Haste\nWhen Wild Game Huntmaster enters the battlefield, for each Equipment on the battlefield, create a 1/1 colorless Mech Hound device unit token with haste and you may attach that Equipment to it. (Control of the Equipment doesn’t change.)    "
 },
 {
-"name": "Beast of Burden",
-"imageName": "Beast of Burden",
+"name": "Baljurashi Wanderer",
+"imageName": "Baljurashi Wanderer",
 "color": "G",
 "castingCost": "3GG",
 "id": 173,
@@ -3288,17 +3285,39 @@
 },
 "tags": {
 "unitTokens": 1.0,
-"tactical": 1.0
+"tactical": 1.0,
+"ramp": 1.0
 }
 },
-"rulesText": "Create two 1/1 green Mutant unit tokens, then you may sacrifice a unit. If you do, create a 1/1 green Mutant unit token."
+"rulesText": "Create two 1/1 green Xeno Scion unit tokens. They have “Sacrifice this unit: Add C to your psi cache.”"
+},
+{
+"name": "Clutch Spawning",
+"imageName": "Clutch Spawning",
+"color": "G",
+"castingCost": "4G",
+"id": 177,
+"rarity": "U",
+"notes": {
+"power": 2.5,
+"potential": 3.0,
+"synergies": {
+"tactical": 20
+},
+"tags": {
+"unitTokens": 1.2,
+"tactical": 1.0,
+"ramp": 1.0
+}
+},
+"rulesText": "If you control fewer than five units, create a number of 1/1 green Xeno Scion unit tokens equal to the difference. They have “Sacrifice this unit: Add C to your psi cache.”"
 },
 {
 "name": "Deep into the Subconscious",
 "imageName": "Deep into the Subconscious",
 "color": "G",
 "castingCost": "G",
-"id": 177,
+"id": 178,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -3317,52 +3336,11 @@
 "rulesText": "Target unit you control gets +1/+1 until end of turn for each unit you control. Return it to its owner’s hand at the beginning of the next end step."
 },
 {
-"name": "Defense Protocols",
-"imageName": "Defense Protocols",
-"color": "G",
-"castingCost": "3G",
-"id": 178,
-"rarity": "U",
-"notes": {
-"power": 2.5,
-"potential": 3.0,
-"synergies": {
-"tactical": 20
-},
-"tags": {
-"unitTokens": 1.2,
-"tactical": 1.0
-}
-},
-"rulesText": "If you control fewer than five units, create a number of 1/1 green Mutant unit tokens equal to the difference."
-},
-{
-"name": "Dominate",
-"imageName": "Dominate",
-"color": "G",
-"castingCost": "1GG",
-"id": 179,
-"rarity": "R",
-"notes": {
-"power": 2.5,
-"potential": 3.2,
-"synergies": {
-"atarka": 17,
-"tactical": 20
-},
-"tags": {
-"atarka": 1.0,
-"tactical": 1.0
-}
-},
-"rulesText": "You may dematerialise Dominate as you draw it if you control a Forest.\nAs long as Dominate is dematerialised, when a unit you control becomes the target of an order or ability, issue Dominate without paying its psi cost.\nTarget unit gets +3/+3 and gains cloaking until end of turn."
-},
-{
 "name": "Ecosystem Collapse",
 "imageName": "Ecosystem Collapse",
 "color": "G",
 "castingCost": "1GGG",
-"id": 180,
+"id": 179,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -3374,14 +3352,14 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Choose one or more —\n• Destroy target device.\n• Destroy target development.\n• Destroy target land.\n• Destroy target organization."
+"rulesText": "Destroy up to one target device, up to one target development, and up to one target land."
 },
 {
 "name": "Escaped Test Subject",
 "imageName": "Escaped Test Subject",
 "color": "G",
 "castingCost": "G",
-"id": 181,
+"id": 180,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -3397,7 +3375,7 @@
 "imageName": "Experiment T.I.T.A.N.",
 "color": "G",
 "castingCost": "3GG",
-"id": 182,
+"id": 181,
 "rarity": "U",
 "notes": {
 "power": 2.0,
@@ -3410,14 +3388,14 @@
 "etb": 0.3
 }
 },
-"rulesText": "When Experiment T.I.T.A.N. enters the battlefield, if you control five or more units, target unit you control gets +2/+2 until end of turn. Then you may have that unit fight target unit you don’t control. (Each deals damage equal to its power to the other.)    "
+"rulesText": "Defender, trample\nTap an untapped unit you control: Experiment T.I.T.A.N. gets +1/+1 and loses defender until end of turn."
 },
 {
 "name": "Extraterrestrial Exploration",
 "imageName": "Extraterrestrial Exploration",
 "color": "G",
 "castingCost": "1G",
-"id": 183,
+"id": 182,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3433,7 +3411,7 @@
 "imageName": "Failed Kushak Subject",
 "color": "G",
 "castingCost": "5GG",
-"id": 184,
+"id": 183,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -3448,14 +3426,14 @@
 "atarka": 1.0
 }
 },
-"rulesText": "Trample, cloaking\nFailed Kushak Subject enters the battlefield with three +1/+1 counters on it.\nWhenever Failed Kushak Subject deals combat damage to a player, remove a +1/+1 counter from it."
+"rulesText": "Trample, cloaking\nFailed Kushak Subject enters the battlefield with four +1/+1 counters on it.\nWhenever Failed Kushak Subject deals combat damage to a player, remove a +1/+1 counter from it."
 },
 {
 "name": "Frontier Anatomist",
 "imageName": "Frontier Anatomist",
 "color": "G",
 "castingCost": "1G",
-"id": 185,
+"id": 184,
 "rarity": "U",
 "notes": {
 "power": 0.5,
@@ -3475,7 +3453,7 @@
 "imageName": "Genome Toggle",
 "color": "G",
 "castingCost": "5GG",
-"id": 186,
+"id": 185,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -3493,7 +3471,7 @@
 "imageName": "Gestation Cycle",
 "color": "G",
 "castingCost": "1G",
-"id": 187,
+"id": 186,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -3503,14 +3481,14 @@
 "deathTrigger": 1.0
 }
 },
-"rulesText": "Modify unit\nAt the beginning of your upkeep, put a +1/+1 counter on modified unit.\nWhen Gestation Cycle is put into a trashpile from the battlefield, create a 1/1 green Mutant unit token for each +1/+1 counter on modified unit."
+"rulesText": "Modify unit\nAt the beginning of your upkeep, put a +1/+1 counter on modified unit.\nWhen modified unit falls, create an X/X green Mutant unit token, where X is the number of +1/+1 counters on it."
 },
 {
 "name": "Growth Genetics",
 "imageName": "Growth Genetics",
 "color": "G",
 "castingCost": "4GG",
-"id": 188,
+"id": 187,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -3528,7 +3506,7 @@
 "imageName": "Incubation Hulk",
 "color": "G",
 "castingCost": "5GG",
-"id": 189,
+"id": 188,
 "rarity": "R",
 "notes": {
 "power": 3.5,
@@ -3541,14 +3519,14 @@
 "deathTrigger": 1.2
 }
 },
-"rulesText": "When Incubation Hulk falls, create three 2/2 green Mutant unit tokens with “When this unit falls, create three 1/1 green Mutant unit tokens.”"
+"rulesText": "When Incubation Hulk falls, create three 2/2 green Xeno Propagator unit tokens with “When this unit falls, create three 1/1 green Xeno Scion unit tokens. They have ‘Sacrifice this unit: Add C to your psi cache.’”"
 },
 {
 "name": "The Kishar",
 "imageName": "The Kishar",
 "color": "G",
 "castingCost": "5GGG",
-"id": 190,
+"id": 189,
 "rarity": "M",
 "notes": {
 "power": 1.0,
@@ -3563,14 +3541,14 @@
 "atarka": 0.5
 }
 },
-"rulesText": "Flying, trample\nPrevent all combat damage that units without flying or reach would deal to The Kishar.\nWhenever The Kishar enters the battlefield or attacks, create three 1/1 green Mutant unit tokens."
+"rulesText": "Flying, trample\nPrevent all combat damage that units without flying or reach would deal to The Kishar.\nWhenever The Kishar enters the battlefield or attacks, create two 1/1 green Xeno Scion unit tokens. They have “Sacrifice this unit: Add C to your psi cache.”"
 },
 {
 "name": "Kushak Artifact",
 "imageName": "Kushak Artifact",
 "color": "G",
 "castingCost": "G",
-"id": 191,
+"id": 190,
 "rarity": "R",
 "notes": {
 "power": 0.0,
@@ -3590,7 +3568,7 @@
 "imageName": "Kushak Brood Warden",
 "color": "G",
 "castingCost": "3G",
-"id": 192,
+"id": 191,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -3604,14 +3582,50 @@
 "tactical": 0.5
 }
 },
-"rulesText": "2, T, Sacrifice a unit: Create two 1/1 green Mutant unit tokens."
+"rulesText": "2, T, Sacrifice a unit: Create two 1/1 green Xeno Scion unit tokens. They have “Sacrifice this unit: Add C to your psi cache.”"
 },
 {
-"name": "Kushak Research Team",
-"imageName": "Kushak Research Team",
+"name": "Kushak Interference",
+"imageName": "Kushak Interference",
 "color": "G",
 "castingCost": "1GG",
+"id": 192,
+"rarity": "R",
+"notes": {
+"power": 2.5,
+"potential": 3.2,
+"synergies": {
+"atarka": 17,
+"tactical": 20
+},
+"tags": {
+"atarka": 1.0,
+"tactical": 1.0
+}
+},
+"rulesText": "You may dematerialise Kushak Interference as you draw it if you control a Forest.\nAs long as Kushak Interference is dematerialised, when a unit you control becomes the target of an order or ability, issue Kushak Interference without paying its psi cost.\nTarget unit gets +3/+3 and gains cloaking until end of turn."
+},
+{
+"name": "Kushak R&D, Basirah Branch ",
+"imageName": "Kushak RD Basirah Branch ",
+"color": "G",
+"castingCost": "3G",
 "id": 193,
+"rarity": "M",
+"notes": {
+"power": 4.0,
+"tags": {
+"unitTokens": 1.5
+}
+},
+        "rulesText": "+1: Create a 1/1 green Xeno Scion unit token. It has “Sacrifice this unit: Add C to your psi cache.”\n-4: Destroy target device or development. Create two 1/1 green Xeno Scion unit tokens. They have “Sacrifice this unit: Add C to your psi cache.”\n-5: Put a +1/+1 counter on each Xeno unit you control for each Xeno unit you control."
+},
+{
+"name": "Kushak Research Council",
+"imageName": "Kushak Research Council",
+"color": "G",
+"castingCost": "1GG",
+"id": 194,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -3621,21 +3635,6 @@
 }
 },
 "rulesText": "Each other unit you control that’s a Mutant or a Xeno gets +1/+1 and has mutate.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
-},
-{
-"name": "Kushak Testing Facility",
-"imageName": "Kushak Testing Facility",
-"color": "G",
-"castingCost": "3G",
-"id": 194,
-"rarity": "M",
-"notes": {
-"power": 4.0,
-"tags": {
-"unitTokens": 1.4
-}
-},
-        "rulesText": "+1: Create a 1/1 green Mutant unit token.\n-5: Destroy target device or development. Create X 1/1 green Mutant unit tokens, where X is that permanent’s converted psi cost.\n-5: Put a +1/+1 counter on each Mutant unit you control for each Mutant unit you control."
 },
 {
 "name": "Lifestrider",
@@ -3712,32 +3711,11 @@
 "rulesText": "When Myth of Baljurashi enters the battlefield, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library.\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
 },
 {
-"name": "Neural Suppressor",
-"imageName": "Neural Suppressor",
-"color": "G",
-"castingCost": "4GG",
-"id": 199,
-"rarity": "R",
-"notes": {
-"power": 3.8,
-"potential": 4.2,
-"synergies": {
-"ramp": 5
-},
-"tags": {
-"devices": 1.0,
-"evasion": 0.2,
-"atarka": 1.0
-}
-},
-"rulesText": "Trample, cloaking\nNeural Suppressor enters the battlefield with three suppression counters on it.\nRemove a suppression counter from Neural Suppressor: Counter target activated ability or triggered ability. (Psi abilities can’t be targeted.)"
-},
-{
 "name": "Prey Upon",
 "imageName": "Prey Upon",
 "color": "G",
 "castingCost": "G",
-"id": 200,
+"id": 199,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3753,7 +3731,7 @@
 "imageName": "Radium Tracker",
 "color": "G",
 "castingCost": "3G",
-"id": 201,
+"id": 200,
 "rarity": "C",
 "notes": {
 "power": 3.0,
@@ -3768,7 +3746,7 @@
 "imageName": "Reverse Gravity",
 "color": "G",
 "castingCost": "4GG",
-"id": 202,
+"id": 201,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -3788,7 +3766,7 @@
 "imageName": "SAM Team",
 "color": "G",
 "castingCost": "1GG",
-"id": 203,
+"id": 202,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3808,7 +3786,7 @@
 "imageName": "Screeching Terror",
 "color": "G",
 "castingCost": "4GG",
-"id": 204,
+"id": 203,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -3821,14 +3799,14 @@
 "atarka": 1.0
 }
 },
-"rulesText": "When Screeching Terror enters the battlefield, units you control gain menace until end of turn. (They can’t be intercepted except by two or more units.)"
+"rulesText": "When Screeching Terror enters the battlefield, units you control can’t be intercepted by units with power 2 or less this turn."
 },
 {
 "name": "Sewer Monster",
 "imageName": "Sewer Monster",
 "color": "G",
 "castingCost": "7GG",
-"id": 205,
+"id": 204,
 "rarity": "C",
 "notes": {
 "power": 0.5,
@@ -3849,7 +3827,7 @@
 "imageName": "Sewer Unit",
 "color": "G",
 "castingCost": "1G",
-"id": 206,
+"id": 205,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -3866,11 +3844,67 @@
 "rulesText": "When Sewer Unit enters the battlefield, create a 1/1 colorless Mech device unit token. If a unit fell this turn, create two of those tokens instead."
 },
 {
-"name": "Strongarm Tactics",
-"imageName": "Strongarm Tactics",
+"name": "Supply Scavengers",
+"imageName": "Supply Scavengers",
+"color": "G",
+"castingCost": "3G",
+"id": 206,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 3.0,
+"synergies": {
+"unitTokens": 10
+}
+},
+"rulesText": "Trample\n1, Tap an untapped unit you control: Supply Scavengers gets +1/+1 until end of turn."
+},
+{
+"name": "Support Team",
+"imageName": "Support Team",
+"color": "G",
+"castingCost": "1G",
+"id": 207,
+"rarity": "C",
+"notes": {
+"power": 2.5,
+"potential": 2.8,
+"synergies": {
+"tactical": 20
+},
+"tags": {
+"tactical": 1.0
+}
+},
+"rulesText": "Flash (You can issue this order any time you could issue a response.)\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
+},
+{
+"name": "Suppressor of Worlds",
+"imageName": "Suppressor of Worlds",
+"color": "G",
+"castingCost": "4GG",
+"id": 208,
+"rarity": "R",
+"notes": {
+"power": 3.8,
+"potential": 4.2,
+"synergies": {
+"ramp": 5
+},
+"tags": {
+"devices": 1.0,
+"evasion": 0.2,
+"atarka": 1.0
+}
+},
+"rulesText": "Trample, cloaking\nSuppressor of Worlds enters the battlefield with three suppression counters on it.\nRemove a suppression counter from Suppressor: Counter target activated ability or triggered ability. (Psi abilities can’t be targeted.)"
+},
+{
+"name": "Surge of Fervor",
+"imageName": "Surge of Fervor",
 "color": "G",
 "castingCost": "4G",
-"id": 207,
+"id": 209,
 "rarity": "U",
 "notes": {
 "power": 3.2,
@@ -3885,41 +3919,6 @@
 }
 },
 "rulesText": "Distribute two +1/+1 counters among one or two target units.\nTarget unit gets +2/+2 and gains trample until end of turn.\nUntap target unit. That unit gains reach until end of turn."
-},
-{
-"name": "Supply Scavengers",
-"imageName": "Supply Scavengers",
-"color": "G",
-"castingCost": "3G",
-"id": 208,
-"rarity": "C",
-"notes": {
-"power": 2.5,
-"potential": 3.2,
-"synergies": {
-"unitTokens": 10
-}
-},
-"rulesText": "Supply Scavengers gets +2/+2 as long as you control five or more units."
-},
-{
-"name": "Support Team",
-"imageName": "Support Team",
-"color": "G",
-"castingCost": "1G",
-"id": 209,
-"rarity": "C",
-"notes": {
-"power": 2.5,
-"potential": 2.8,
-"synergies": {
-"tactical": 20
-},
-"tags": {
-"tactical": 1.0
-}
-},
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
 },
 {
 "name": "Terraforming Works",
@@ -4103,8 +4102,8 @@
 "rulesText": "Sacrifice another device: Thousand Spares gains indestructible and gets +X/+0 until end of turn, where X is Thousand Spares’s power."
 },
 {
-"name": "Warapur Protection Service",
-"imageName": "Warapur Protection Service",
+"name": "Warapur Company Guard",
+"imageName": "Warapur Company Guard",
 "color": "BR",
 "castingCost": "BR",
 "id": 220,
@@ -4120,7 +4119,7 @@
 "deviceTokens": 0.8
 }
 },
-"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nSacrifice a device: Warapur Protection Service deals 1 damage to each opponent."
+"rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nSacrifice a device: Warapur Company Guard deals 1 damage to each opponent."
 },
 {
 "name": "Canyon Skitterer",
@@ -4143,8 +4142,8 @@
 "rulesText": "Whenever you issue a response or strategy, if that response or strategy targets only Canyon Skitterer, you may copy it up to two times. You may choose new targets for the copies."
 },
 {
-"name": "Honored Wurmcaller",
-"imageName": "Honored Wurmcaller",
+"name": "The Honored Wurmcaller",
+"imageName": "The Honored Wurmcaller",
 "color": "RG",
 "castingCost": "3RG",
 "id": 222,
@@ -4178,8 +4177,8 @@
 "rulesText": "Whenever another unit enters the battlefield under your control, put a +1/+1 counter on each unit you control."
 },
 {
-"name": "Rooftop Misdirector",
-"imageName": "Rooftop Misdirector",
+"name": "Support Misdirector",
+"imageName": "Support Misdirector",
 "color": "GW",
 "castingCost": "2GW",
 "id": 224,
@@ -4195,7 +4194,7 @@
 "etb": 1.0
 }
 },
-"rulesText": "When Rooftop Misdirector enters the battlefield, create a 0/1 colorless Hologram device unit token for each other unit you control."
+"rulesText": "When Support Misdirector enters the battlefield, create a 0/1 colorless Hologram device unit token for each other unit you control."
 },
 {
 "name": "Publicity Officer",
@@ -4294,7 +4293,7 @@
 "name": "Titan of Shisuku Sewers",
 "imageName": "Titan of Shisuku Sewers",
 "color": "BG",
-"castingCost": "3BG",
+"castingCost": "4BG",
 "id": 230,
 "rarity": "R",
 "notes": {
@@ -4323,7 +4322,7 @@
 "equipment": 1.5
 }
 },
-"rulesText": "Double strike\nWhenever Agent Magpie deals combat damage to a player, create a colorless Equipment device token attached to Agent Magpie. It has “Equipped unit gets +1/+1,” and equip 1. "
+"rulesText": "Double strike\nWhenever Agent Magpie deals combat damage to a player, arm it. (Create a colorless Equipment device token attached to this unit. It has “Equipped unit gets +1/+1” and equip 1.)"
 },
 {
 "name": "Baljurashi Irregulars",
