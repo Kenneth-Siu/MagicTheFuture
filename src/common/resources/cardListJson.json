@@ -501,7 +501,7 @@
 "name": "Personal Forcefield",
 "imageName": "Personal Forcefield",
 "color": "W",
-"castingCost": "2W",
+"castingCost": "1W",
 "id": 29,
 "rarity": "C",
 "notes": {
@@ -2758,7 +2758,7 @@
 "name": "Homeostimulation Suit",
 "imageName": "Homeostimulation Suit",
 "color": "R",
-"castingCost": "1R",
+"castingCost": "2R",
 "id": 149,
 "rarity": "C",
 "notes": {
@@ -2769,7 +2769,7 @@
 "equipment": 1.0
 }
 },
-"rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 2"
+"rulesText": "Equipped unit has first strike.\n1R: Equipped unit gets +1/+0 until end of turn.\nEquip 1"
 },
 {
 "name": "Hyperadrenaline",
@@ -3014,7 +3014,7 @@
 "lifeloss": 2.0
 }
 },
-"rulesText": "First strike\nOther device units you control have first strike.\nTap two untapped devices you control: Slipstream Hunters deals 1 damage to target player."
+"rulesText": "First strike\nOther device units you control have first strike.\nTap four untapped devices you control: Slipstream Hunters deals 1 damage to target player."
 },
 {
 "name": "Speed Demon",
