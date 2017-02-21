@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as _ from "lodash";
 import cardList from "../../common/cardList";
+import tokensList from "../tokensList";
 import NavBar from "../../common/components/NavBar";
 import { siteMapDictionary } from "../../common/siteMap";
 import CardForPrinting from "../components/CardForPrinting";
@@ -22,7 +23,8 @@ export default class Printing extends React.Component<PrintingProps, {}> {
                 return [card.imageUrl, card.imageUrl];
             }
             return card.imageUrl;
-        }))
+        }));
+        this.printingCardListUrls.push(...tokensList);
     }
 
     render() {
