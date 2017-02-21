@@ -318,13 +318,13 @@
 "evasion": 0.8
 }
 },
-"rulesText": "Flying\nWhenever Dropship attacks and isn’t intercepted, you may tap an untapped unit you control that isn’t attacking. It becomes attacking."
+"rulesText": "Flying\nWhenever Dropship attacks and isn’t intercepted, you may tap an untapped nonattacking unit you control. It becomes attacking."
 },
 {
 "name": "Eviction Notice",
 "imageName": "Eviction Notice",
 "color": "W",
-"castingCost": "1W",
+"castingCost": "2W",
 "id": 19,
 "rarity": "C",
 "notes": {
@@ -333,7 +333,7 @@
 "lifegain": 0.4
 }
 },
-"rulesText": "Dematerialise target tapped unit at the beginning of your next upkeep. You gain life equal to its power."
+"rulesText": "Dematerialise target tapped unit. You gain 2 life."
 },
 {
 "name": "Fleet Overseer",
@@ -651,7 +651,7 @@
 "tactical": 1.5
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nVigilance\nOther Police units you control get +1/+1 and have vigilance."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nVigilance\nOther Police units you control get +1/+1 and have vigilance."
 },
 {
 "name": "Supply-Line Jet",
@@ -726,7 +726,7 @@
 "name": "Turn the Tide of Battle",
 "imageName": "Turn the Tide of Battle",
 "color": "W",
-"castingCost": "1WWW",
+"castingCost": "3WW",
 "id": 42,
 "rarity": "U",
 "notes": {
@@ -845,7 +845,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nWhen Arrester Droid enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nWhen Arrester Droid enters the battlefield, you may displace another target unit. (Dematerialise that unit. Return it to the battlefield under its owner’s control at the beginning of the next end step.)"
 },
 {
 "name": "Atmospheric Survey Net",
@@ -865,7 +865,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nXU, Sacrifice Atmospheric Survey Net: Defragment 1 X times, then draw two cards. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nXU, Sacrifice Atmospheric Survey Net: Defragment 1 X times, then draw two cards. (To defragment 1, look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "The Chronos",
@@ -1062,7 +1062,7 @@
 "name": "Fragment Firewall",
 "imageName": "Fragment Firewall",
 "color": "U",
-"castingCost": "1UUU",
+"castingCost": "4UU",
 "id": 60,
 "rarity": "U",
 "notes": {
@@ -1140,7 +1140,7 @@
 "name": "Kushak Exile",
 "imageName": "Kushak Exile",
 "color": "U",
-"castingCost": "5UU",
+"castingCost": "7U",
 "id": 64,
 "rarity": "C",
 "notes": {
@@ -1372,7 +1372,7 @@
 "etb": 1.5
 }
 },
-"rulesText": "When Reconstruction Specialist enters the battlefield, you may return target response or strategy card from your trashpile to your hand."
+"rulesText": "When Reconstruction Specialist enters the battlefield, you may return target instant or strategy card from your trashpile to your hand."
 },
 {
 "name": "Refractive Skysoarer",
@@ -1414,7 +1414,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nFurtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nFurtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)"
 },
 {
 "name": "Scorned Researcher",
@@ -1452,7 +1452,7 @@
 "tactical": 1.2
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nYou can issue devices as though they had flash.\nTap four untapped devices you control: Draw a card."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nYou can issue devices as though they had flash.\nTap four untapped devices you control: Draw a card."
 },
 {
 "name": "Solar Power Transmitters",
@@ -1545,7 +1545,7 @@
 "tactical": 1.0
 }
 },
-        "rulesText": "+2: Search your library for up to three cards and dematerialise them. Then shuffle your library.\n0: Until your next turn, the next unit you issue can be issued as though it had flash.\n-6: Target opponent gets a tag with “Units you control get -1/-0.”"
+        "rulesText": "+2: Search your library for up to three cards and dematerialise them. Then shuffle your library.\n0: Until your next turn, the next unit card you issue can be issued as though it had flash.\n-6: Target opponent gets a tag with “Units you control get -1/-0.”"
 },
 {
 "name": "Umida Security Protocols",
@@ -1626,7 +1626,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nModify unit\nWhen Awaken Sleeper Agent enters the battlefield, untap modified unit.\nModified unit gets +0/+3 and has lifelink."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nModify unit\nWhen Awaken Sleeper Agent enters the battlefield, untap modified unit.\nModified unit gets +0/+3 and has lifelink."
 },
 {
 "name": "Backalley Trafficker",
@@ -1650,7 +1650,7 @@
 "name": "Cloning Vats",
 "imageName": "Cloning Vats",
 "color": "B",
-"castingCost": "3B",
+"castingCost": "2B",
 "id": 91,
 "rarity": "R",
 "notes": {
@@ -1905,31 +1905,11 @@
 "rulesText": "Plunder (Whenever this unit deals combat damage to a player, create a colorless Credit device token.)\nWhenever Mindmeld Torturer attacks, you may sacrifice another nonland permanent. If you do, target unit gets -1/-1 until end of turn."
 },
 {
-"name": "Moonlight Strider",
-"imageName": "Moonlight Strider",
-"color": "B",
-"castingCost": "BB",
-"id": 105,
-"rarity": "U",
-"notes": {
-"power": 3.5,
-"potential": 4.0,
-"synergies": {
-"evasion": 12
-},
-"tags": {
-"lifegain": 1.8,
-"evasion": 1.0
-}
-},
-"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nLifelink"
-},
-{
 "name": "Mortality",
 "imageName": "Mortality",
 "color": "B",
 "castingCost": "6BBB",
-"id": 106,
+"id": 105,
 "rarity": "R",
 "notes": {
 "power": 3.0,
@@ -1949,7 +1929,7 @@
 "imageName": "Neural Devourer",
 "color": "B",
 "castingCost": "2B",
-"id": 107,
+"id": 106,
 "rarity": "U",
 "notes": {
 "power": 1.0,
@@ -1968,7 +1948,7 @@
 "imageName": "Peacekeeper Satellite",
 "color": "B",
 "castingCost": "1BB",
-"id": 108,
+"id": 107,
 "rarity": "R",
 "notes": {
 "power": 2.5,
@@ -1988,7 +1968,7 @@
 "imageName": "Prototype Evader",
 "color": "B",
 "castingCost": "2B",
-"id": 109,
+"id": 108,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2009,7 +1989,7 @@
 "imageName": "Radiation Strike",
 "color": "B",
 "castingCost": "3BB",
-"id": 110,
+"id": 109,
 "rarity": "R",
 "notes": {
 "power": 4.5
@@ -2021,7 +2001,7 @@
 "imageName": "Rumor Marketer",
 "color": "B",
 "castingCost": "2B",
-"id": 111,
+"id": 110,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2039,7 +2019,7 @@
 "imageName": "Security Detail",
 "color": "B",
 "castingCost": "1B",
-"id": 112,
+"id": 111,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2060,7 +2040,7 @@
 "imageName": "Sewer Slitherer",
 "color": "B",
 "castingCost": "4B",
-"id": 113,
+"id": 112,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2074,10 +2054,30 @@
 "rulesText": "Lifelink\nMutate (When this unit falls, reveal cards from the top of your library until you reveal a unit card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
 },
 {
+"name": "Shadowlight Strider",
+"imageName": "Shadowlight Strider",
+"color": "B",
+"castingCost": "1BB",
+"id": 113,
+"rarity": "U",
+"notes": {
+"power": 3.5,
+"potential": 4.0,
+"synergies": {
+"evasion": 12
+},
+"tags": {
+"lifegain": 1.8,
+"evasion": 1.0
+}
+},
+"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nLethality (Any amount of damage this deals to a unit is enough to destroy it.)\nLifelink (Damage dealt by this unit also causes you to gain that much life.)"
+},
+{
 "name": "Shisuku Enforcer",
 "imageName": "Shisuku Enforcer",
 "color": "B",
-"castingCost": "4BB",
+"castingCost": "5B",
 "id": 114,
 "rarity": "C",
 "notes": {
@@ -2260,7 +2260,7 @@
 "name": "Tragedy of the Great War",
 "imageName": "Tragedy of the Great War",
 "color": "B",
-"castingCost": "1BBB",
+"castingCost": "3BB",
 "id": 123,
 "rarity": "U",
 "notes": {
@@ -2502,28 +2502,11 @@
 "rulesText": "Double strike\nTechnician (Whenever you issue a nonunit order, this unit gets +1/+1 until end of turn.)"
 },
 {
-"name": "Battle Augments",
-"imageName": "Battle Augments",
-"color": "R",
-"castingCost": "1R",
-"id": 135,
-"rarity": "R",
-"notes": {
-"power": 3.5,
-"tags": {
-"devices": 1.0,
-"atarka": 1.0,
-"equipment": 1.0
-}
-},
-"rulesText": "Equipped unit gets +1/+1 and has double strike and trample.\nWhenever equipped unit deals combat damage to a player, dematerialise the top card of your library. You may play it this turn.\nEquip 3"
-},
-{
 "name": "Bergstadt Roboticists",
 "imageName": "Bergstadt Roboticists",
 "color": "R",
 "castingCost": "3R",
-"id": 136,
+"id": 135,
 "rarity": "U",
 "notes": {
 "power": 2.5,
@@ -2539,7 +2522,7 @@
 "imageName": "Blitz Agent",
 "color": "R",
 "castingCost": "2R",
-"id": 137,
+"id": 136,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2559,7 +2542,7 @@
 "imageName": "Cache Acquisition",
 "color": "R",
 "castingCost": "2RR",
-"id": 138,
+"id": 137,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -2576,7 +2559,7 @@
 "imageName": "Charge Captain",
 "color": "R",
 "castingCost": "R",
-"id": 139,
+"id": 138,
 "rarity": "C",
 "notes": {
 "power": 0.0,
@@ -2596,7 +2579,7 @@
 "imageName": "Combined Effort",
 "color": "R",
 "castingCost": "R",
-"id": 140,
+"id": 139,
 "rarity": "U",
 "notes": {
 "power": 0.0,
@@ -2614,20 +2597,20 @@
 "name": "Electric Arc",
 "imageName": "Electric Arc",
 "color": "R",
-"castingCost": "1RRR",
-"id": 141,
+"castingCost": "3RR",
+"id": 140,
 "rarity": "U",
 "notes": {
 "power": 4.0
 },
-"rulesText": "Electric Arc deals 6 damage divided as you choose among any number of target units and/or players."
+"rulesText": "Electric Arc deals 1 damage to target unit or player, 2 damage to another target unit or player, and 3 damage to a third target unit or player."
 },
 {
 "name": "Execute Takeover Protocol",
 "imageName": "Execute Takeover Protocol",
 "color": "R",
 "castingCost": "5RR",
-"id": 142,
+"id": 141,
 "rarity": "R",
 "notes": {
 "power": 2.0,
@@ -2648,7 +2631,7 @@
 "imageName": "Financier Cutthroat",
 "color": "R",
 "castingCost": "R",
-"id": 143,
+"id": 142,
 "rarity": "U",
 "notes": {
 "power": 1.5,
@@ -2665,7 +2648,7 @@
 "imageName": "The Free Thinkers",
 "color": "R",
 "castingCost": "3RR",
-"id": 144,
+"id": 143,
 "rarity": "M",
 "notes": {
 "power": 4.0,
@@ -2681,7 +2664,7 @@
 "imageName": "Gauss Scrapgunner",
 "color": "R",
 "castingCost": "4R",
-"id": 145,
+"id": 144,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2701,7 +2684,7 @@
 "imageName": "Guerilla Fighters",
 "color": "R",
 "castingCost": "3R",
-"id": 146,
+"id": 145,
 "rarity": "C",
 "notes": {
 "power": 1.5,
@@ -2717,7 +2700,7 @@
 "imageName": "Hijack",
 "color": "R",
 "castingCost": "1RR",
-"id": 147,
+"id": 146,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2738,7 +2721,7 @@
 "imageName": "Hired Artillery",
 "color": "R",
 "castingCost": "2R",
-"id": 148,
+"id": 147,
 "rarity": "C",
 "notes": {
 "power": 2.5,
@@ -2759,7 +2742,7 @@
 "imageName": "Homeostimulation Suit",
 "color": "R",
 "castingCost": "2R",
-"id": 149,
+"id": 148,
 "rarity": "C",
 "notes": {
 "power": 2.0,
@@ -2776,7 +2759,7 @@
 "imageName": "Hyperadrenaline",
 "color": "R",
 "castingCost": "1R",
-"id": 150,
+"id": 149,
 "rarity": "C",
 "notes": {
 "power": 1.0,
@@ -2797,7 +2780,7 @@
 "imageName": "Iridium Throwing Knife",
 "color": "R",
 "castingCost": "1R",
-"id": 151,
+"id": 150,
 "rarity": "U",
 "notes": {
 "power": 3.0,
@@ -2813,7 +2796,7 @@
 "imageName": "Mechanized Rampager",
 "color": "R",
 "castingCost": "2R",
-"id": 152,
+"id": 151,
 "rarity": "U",
 "notes": {
 "power": 1.0,
@@ -2826,6 +2809,23 @@
 }
 },
 "rulesText": "Trample\nMechanized Rampager gets +2/+0 for each equipment you control."
+},
+{
+"name": "Mindmeld Battlesuit",
+"imageName": "Mindmeld Battlesuit",
+"color": "R",
+"castingCost": "1R",
+"id": 152,
+"rarity": "R",
+"notes": {
+"power": 3.5,
+"tags": {
+"devices": 1.0,
+"atarka": 1.0,
+"equipment": 1.0
+}
+},
+"rulesText": "Equipped unit gets +1/+1 and has double strike and trample.\nWhenever equipped unit deals combat damage to a player, dematerialise the top card of your library. You may play it this turn.\nEquip 3"
 },
 {
 "name": "Nomads’ Assurance",
@@ -3339,7 +3339,7 @@
 "name": "Ecosystem Collapse",
 "imageName": "Ecosystem Collapse",
 "color": "G",
-"castingCost": "1GGG",
+"castingCost": "4GG",
 "id": 179,
 "rarity": "U",
 "notes": {
@@ -3388,7 +3388,7 @@
 "etb": 0.3
 }
 },
-"rulesText": "Defender, trample\nTap an untapped unit you control: Experiment T.I.T.A.N. gets +1/+1 and loses defender until end of turn."
+"rulesText": "Defender, trample\n2, Tap an untapped unit you control: Experiment T.I.T.A.N. gets +2/+2 and loses defender until end of turn."
 },
 {
 "name": "Extraterrestrial Exploration",
@@ -3779,13 +3779,13 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nReach"
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nReach"
 },
 {
 "name": "Screeching Terror",
 "imageName": "Screeching Terror",
 "color": "G",
-"castingCost": "4GG",
+"castingCost": "5G",
 "id": 203,
 "rarity": "C",
 "notes": {
@@ -3876,7 +3876,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nWhen Support Team enters the battlefield, you may pay 1. If you do, target unit gets +1/+1 until end of turn."
 },
 {
 "name": "Suppressor of Worlds",
@@ -3991,7 +3991,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nAs Urban Ravager enters the battlefield, sacrifice any number of units. Urban Ravager enters the battlefield with that many +1/+1 counters on it."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nAs Urban Ravager enters the battlefield, sacrifice any number of units. Urban Ravager enters the battlefield with that many +1/+1 counters on it."
 },
 {
 "name": "Wanderer Caravans",
@@ -4060,7 +4060,7 @@
 "evasion": 1.0
 }
 },
-"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nAt the beginning of each end step, if a player lost life this turn, untap Twilight Strider and each opponent loses 2 life."
+"rulesText": "Furtive (Whenever this unit attacks with exactly one other unit, it can’t be intercepted this turn.)\nAt the beginning of each end step, if a player lost life this turn, untap Twilight Strider and each opponent loses 1 life."
 },
 {
 "name": "Whisper, the Cleaner",
@@ -4139,7 +4139,7 @@
 "devices": 1.0
 }
 },
-"rulesText": "Whenever you issue a response or strategy, if that response or strategy targets only Canyon Skitterer, you may copy it up to two times. You may choose new targets for the copies."
+"rulesText": "Whenever you issue an instant or strategy, if that instant or strategy targets only Canyon Skitterer, you may copy it up to two times. You may choose new targets for the copies."
 },
 {
 "name": "The Honored Wurmcaller",
@@ -4247,7 +4247,7 @@
 "devices": 1.0
 }
 },
-"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Gravitic Collector Alpha.\nAt the beginning of each upkeep, target unit you control gets +2/+0 and gains flying until end of turn.     "
+"rulesText": "Defender, flying\nPrevent all combat damage that units without flying or reach would deal to Gravitic Collector Alpha.\nAt the beginning of each upkeep, another target unit you control gets +2/+0 and gains flying until end of turn."
 },
 {
 "name": "Scrap Ferries",
@@ -4353,7 +4353,7 @@
 "tactical": 2.0
 }
 },
-"rulesText": "Untap all lands you control during each other player’s untap step.\nYou can issue orders as though they had flash. (You can issue them any time you could issue a response.)"
+"rulesText": "Untap all lands you control during each other player’s untap step.\nYou can issue orders as though they had flash. (You can issue them any time you could issue an instant.)"
 },
 {
 "name": "Troposphere Drifter",
@@ -4373,7 +4373,7 @@
 "tactical": 1.0
 }
 },
-"rulesText": "Flash (You can issue this order any time you could issue a response.)\nFlying\nWhenever you issue an order, Troposphere Drifter gets +X/+X until end of turn, where X is that order’s converted psi cost."
+"rulesText": "Flash (You can issue this order any time you could issue an instant.)\nFlying\nWhenever you issue an order, Troposphere Drifter gets +X/+X until end of turn, where X is that order’s converted psi cost."
 },
 {
 "name": "Biodome",

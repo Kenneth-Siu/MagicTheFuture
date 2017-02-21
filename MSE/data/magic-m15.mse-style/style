@@ -123,6 +123,7 @@ styling field:
 styling field:
 	type: choice
 	name: text box height
+	choice: 138
 	choice: 142
 	choice: 145
 	choice: 150
@@ -278,7 +279,7 @@ card style:
 		z index: 2
 		padding left:   6
 		padding right:  4
-		line height hard: 1.15
+		line height hard: 1.25
 		line height line: 1.5
 		line height soft: 0.9
 	watermark:
