@@ -28,7 +28,7 @@ export const colorPairPrimers = [
             <li>Device <span className="text-muted"><i>(Artifact)</i></span></li>
             <li>Development <span className="text-muted"><i>(Enchantment)</i></span></li>
             <li>Strategy <span className="text-muted"><i>(Sorcery)</i></span></li>
-            <li>Response <span className="text-muted"><i>(Instant)</i></span></li>
+            <li>Instant</li>
             <li>Land</li>
             <li>Organization <span className="text-muted"><i>(Planeswalker)</i></span></li>
             </ul></div>,
@@ -254,13 +254,9 @@ export const colorPairPrimers = [
         "green-blue",
         "Green-Blue — Flash",
         [
-            <p className="bg-info info-box"><img src={mtgM} className="mtg-m" /> Remember that <u>responses</u> can be issued at any time, just like <u>instants</u> can be cast at any time.</p>,
-
             <p>Umida Incorporated is the megacorp always on the cutting edge and always looking to hire bright minds.</p>,
 
-            <blockquote><p>Flash <i>(You can issue this order any time you could issue a response.)</i></p></blockquote>,
-
-            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many responses and units with flash as you can. In most decks, counter-orders are a risk to include: leave the psi up, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be issued at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
+            <p>Green-blue has always been a bit of a problem child in terms of an identity, and this time around it's doing something fairly different. It encourages you to play as many instants and units with flash as you can. In most decks, what are known as counterspells are a risk to include: leave the lands untapped, and if your opponent doesn't do anything worth countering, you wasted your turn for nothing. However, if all your other cards can also be played at the end of the opponent's turn, you can develop your board or accrue card advantage while also threatening your opponent with any of a variety of actions.</p>,
 
             <p>Let's take a look at a whole bunch of them. After all, the more you have, the better.</p>,
 
