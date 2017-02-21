@@ -1,0 +1,30 @@
+@import "../../common/less/shared";
+
+@media print {
+    div.print-button {
+        display: none;
+    }
+
+    div.printing-card {
+        page-break-inside: avoid;
+        -webkit-region-break-inside: avoid;
+        page-break-before: auto;
+        page-break-after: auto;
+    }
+
+    img.card { 
+        page-break-inside: avoid;
+        -webkit-region-break-inside: avoid;
+        page-break-before: auto;
+        page-break-after: auto;
+    }
+}
+
+div.printing-card {
+    float: left;
+
+    img.card {
+        width: 6.5cm;
+        height: auto;
+    }
+}

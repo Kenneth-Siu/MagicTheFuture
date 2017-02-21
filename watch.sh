@@ -4,5 +4,6 @@ less-watch-compiler src/draftSim/less dist draftSim.less &
 less-watch-compiler src/primer/less dist primer.less &
 less-watch-compiler src/powerRankings/less dist powerRankings.less &
 less-watch-compiler src/home/less dist home.less &
+less-watch-compiler src/printing/less dist printing.less &
 
 read

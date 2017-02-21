@@ -4,7 +4,8 @@ module.exports = {
         draftSim: "./src/draftSim/draftSim.tsx",
         primer: "./src/primer/primer.tsx",
         powerRankings: "./src/powerRankings/powerRankings.tsx",
-        home: "./src/home/home.tsx"
+        home: "./src/home/home.tsx",
+        printing: "./src/printing/printing.tsx"
     },
     output: {
         filename: "[name].bundle.js",
