@@ -2996,8 +2996,8 @@
 "rulesText": "R, T, Sacrifice a device: Slagthrower deals 2 damage to target unit or player and 1 damage to you. Activate this ability only any time you could issue a strategy."
 },
 {
-"name": "Slipstream Hunters",
-"imageName": "Slipstream Hunters",
+"name": "Slipstream Hunter",
+"imageName": "Slipstream Hunter",
 "color": "R",
 "castingCost": "4R",
 "id": 162,
@@ -3014,7 +3014,7 @@
 "lifeloss": 2.0
 }
 },
-"rulesText": "First strike\nOther device units you control have first strike.\nTap four untapped devices you control: Slipstream Hunters deals 1 damage to target player."
+"rulesText": "First strike\nOther device units you control have first strike.\nTap four untapped devices you control: Slipstream Hunter deals 1 damage to target player."
 },
 {
 "name": "Speed Demon",
@@ -3214,7 +3214,7 @@
 "equipment": 6
 }
 },
-"rulesText": "Haste\nWhen Wild Game Huntmaster enters the battlefield, for each Equipment on the battlefield, create a 1/1 colorless Mech Hound device unit token with haste and you may attach that Equipment to it. (Control of the Equipment doesn’t change.)    "
+"rulesText": "Haste\nWhen Wild Game Huntmaster enters the battlefield, for each Equipment on the battlefield, create a 1/1 colorless Mech device unit token with haste and you may attach that Equipment to it. (Control of the Equipment doesn’t change.)    "
 },
 {
 "name": "Baljurashi Wanderer",
@@ -4155,7 +4155,7 @@
 "evasion": 0.2
 }
 },
-"rulesText": "At the beginning of your upkeep, you may create a 5/5 red and green legendary unit token named Shaitan. It has haste and trample."
+"rulesText": "At the beginning of your upkeep, you may create a legendary 5/5 red and green Worm unit token named Shaitan. It has haste and trample."
 },
 {
 "name": "Ingolf, the Catalyst",
