@@ -26,9 +26,7 @@ interface DraftSimState {
     hoveredCardUrl: string;
 };
 
-export interface DraftSimProps { }
-
-export default class DraftSim extends React.Component<DraftSimProps, {}> {
+export default class DraftSim extends React.Component<{}, {}> {
 
     state: DraftSimState;
     cardPicker: CardPicker;
