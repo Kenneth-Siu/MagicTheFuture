@@ -15,7 +15,7 @@ module.exports = {
     devtool: "source-map",
 
     resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
     },
 
     module: {
@@ -23,11 +23,7 @@ module.exports = {
             { test: /\.tsx?$/, loader: "ts-loader" },
             { test: /\.jpg?$/, loader: "file-loader" },
             { test: /\.png?$/, loader: "file-loader" },
-            { test: /\.json$/, loader: "json" }
-        ],
-
-        preLoaders: [
-            { test: /\.js$/, loader: "source-map-loader" }
+            { test: /\.json$/, loader: "json-loader" }
         ]
     },
 

@@ -47,7 +47,7 @@ export const colorPairPrimers = [
 
             <p>And of course, the counterpart to dealing damage in a tempo deck is throwing a spanner into the opponent's works, with high-toughness blockers and timely tricks:</p>,
 
-            previewCards("Plasma Reclaimer", "Awaken Sleeper Agent", "Undercroft Entangler"),
+            previewCards("Migratory City", "Inside Infiltration", "Undercroft Entangler"),
 
             <p>Your opponents will never figure out how they somehow lost.</p>
         ]
@@ -66,7 +66,7 @@ export const colorPairPrimers = [
 
             <p>As you can see, <u>Engine Welder</u> and <u>Rocket Salvo</u> are distinctly medicore without the help of devices, but when most every permanent in your deck is a device, they really power up.</p>,
 
-            <p>Also of note is that red also enjoys <i>sacrificing</i> devices, and there are plenty of cards that care about the number of devices you have (not necessarily device cards!), so generating oodles of device tokens might help your cause too. How? Maybe have a look at Black-Red and Red-White...</p>
+            <p>Also of note is that red also enjoys <i>sacrificing</i> devices, and there are plenty of cards that care about the number of devices you have (not necessarily device cards!), so generating oodles of device tokens might help your cause too.</p>
         ]
     ),
     new ColorPairPrimer(
